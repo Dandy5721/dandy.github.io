@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# About me [[CV]](https://drive.google.com/file/d/1KbfENGCsAXfZWAdQUl0ReBLsKogCU1Ji/view?usp=sharing)
+# About me [[CV]](https://www.dropbox.com/home/AAAI2022?preview=Curriculum+Vitae.pdf)
+
+I am a visting student at the Univeristy of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
 I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](https://www.scholat.com/hmcai.en).
 
