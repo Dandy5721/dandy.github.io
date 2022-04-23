@@ -4,7 +4,7 @@ layout: default
 
 # About me [[CV]](https://drive.google.com/file/d/1KbfENGCsAXfZWAdQUl0ReBLsKogCU1Ji/view?usp=sharing)
 
-I am a final-year Master student at Huazhong University of Science and Technology. My Advisor is [Prof. Shaoqun Zeng](http://ses.hust.edu.cn/info/1092/1343.htm).
+I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](https://www.scholat.com/hmcai.en).
 
 I am interested in fMRI data analysis and mainfold learning.
 
@@ -12,11 +12,11 @@ I am interested in fMRI data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
-- _18/12/2021_: The C++ deployment of the preprint paper (under review) is released on [Github](https://github.com/Chrisa142857/You-Only-Look-Cytopathology-Once/tree/main/cpp). The speed is lower than `1 min/WSI` with the same computation in Python.
+- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.
 
-- _15/07/2021_: Our team, FlyingPigs, got **5/40** in an emotion recognition [competition](https://ibug.doc.ic.ac.uk/resources/iccv-2021-2nd-abaw/) published in **ICCV 2021**. [[arXiv](https://arxiv.org/abs/2107.01175),[codes](https://github.com/sucv/ABAW2/tree/prototype),[leaderboard](https://github.com/dkollias/ABAW2-Results/blob/main/abaw2_va_leaderboard.pdf/)] 
+- _20/4/2022_: A paper accepted in **Human Brain Mapping**.
 
-- _30/06/2021_: A preprint paper submitted to **Medical Image Analysis**. [[arXiv](https://arxiv.org/abs/2106.15113),[codes](https://github.com/Chrisa142857/You-Only-Look-Cytopathology-Once)]
+- _08/01/2021_: A paper accepted in **IEEE International Symposium on Biomedical Imaging (ISBI) 2022 **. [[arXiv](https://arxiv.org/abs/2106.15113),[codes](https://github.com/Chrisa142857/You-Only-Look-Cytopathology-Once)]
 
 <hr/>
 
@@ -24,9 +24,9 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| Sept. 2019 - Now         | **Collaborative Innovation Center for Biomedical Engineering**, | China  |
-|                                     | Wuhan National Laboratory for Optoelectronics,  |  HUST  |
-|                                     | Advisor: [Prof. Shaoqun Zeng](http://ses.hust.edu.cn/info/1092/1343.htm) | |
+| Sept. 2019 - Now         | **Lab of Bioinformatics**, | China  |
+|                                     | School of computer Science and Engineering,  |  SCUT  |
+|                                     | Advisor: [Prof. Hongmin Cai](https://www.scholat.com/hmcai.en) | |
 | Sept. 2015 - Jul. 2019 | **Lab of Pattern Recognition and Artificial Intelligence**, | China  |
 |                                     | School of Information Science and Technology, | YNNU  |
 |                                     | Advisor: [Prof. Yang Yang](https://scholar.google.com/citations?user=7JLPFHgAAAAJ&hl=zh-CN) | |
@@ -35,16 +35,18 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| Sept. 2019 - Now         | **Huazhong Univ. of Science and Technology**, | China  |
-|                                     | M.Sc.,                       | Biomedical Engineering  |
-| Sept. 2015 - Jul. 2019 | **YunNan Normal Univ.**, | China  |
-|                                     | B.Sc.,                         | Computer Science  |
+| Sept. 2019 - Now         | **South China University and Technology**, | China  |
+|                                     | Ph.D,                       | Computer Science  |
+| Sept. 2016 - Jul. 2019   | **YunNan Normal University**, | China  |
+|                                     | M.Sc.,                       |  Software Engineering |
+| Sept. 2015 - Jul. 2019 | **China West Normal University**, | China  |
+|                                     | B.Sc.,                         | Electrical Engineering  |
 
 ## Hobbies
 
 |         |           |   |
 |:------|:------|:------|
-| Kendo | Violin | Sci-fi |
-| Climbing | Movie | Video Games |
+| Basketball | Ping-pong | History |
+| Climbing | Movie | Sleeping |
 | Comics | Fantasy | etc. |
 
