@@ -4,18 +4,19 @@ layout: default
 
 # Projects:
 
-### Comprehensive whole slide image analysis of cervical cancer using fully supervised deep learning approaches with limited learnable data
+### Developing Cutting-Edge Computational Neuroscience Method for Understanding Brain Functional Cognition
 
 - Externally Funded
-- Ziquan Wei and Shenghua Cheng and Shaoqun Zeng (2019--present)
+- Tingting Dan and Zhuobin Huang and Guorong Wu (2020--present)
+
+### Medical Image Analysis
+
+- Externally Funded
+- Tingting Dan and Hongmin Cai (2019--2020)
  
-### Feature points based real-time non-rigid registration method on multi-view multi-temporal UAV image
+### Feature point registration and Remote sensing image registration
 
-- Funded by _National College Students’ innovation and entrepreneurship training program_
-- Ziquan Wei and Yang Yang (2017--2019)
+- Funded by _Yunnan Normal University_
+- Tingting Dan and Yang Yang (2016--2019)
 
-### Remote sensing image registration based on Gaussian mixture model and Newtonian annealing optimization
-
-- Funded by _Yunnan Normal University Undergraduate Academic Research Program_
-- Ziquan Wei and Yang Yang (2016--2017)
 
