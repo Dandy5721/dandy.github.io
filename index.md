@@ -6,7 +6,7 @@ layout: default
 
 I am a visting student at the Univeristy of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
-I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](https://www.scholat.com/hmcai.en).
+I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm).
 
 I am interested in fMRI data analysis and mainfold learning.
 
