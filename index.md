@@ -14,7 +14,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
-- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.
+- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.[[IEEE TMI](https://ieeexplore.ieee.org/document/9761822)
 
 - _20/4/2022_: A paper accepted in **Human Brain Mapping**.
 
