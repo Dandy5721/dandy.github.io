@@ -32,7 +32,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| Sept. 2022 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
+| Jun. 2022 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
 |                                     | Department of Psychiatry,  |  UNC  |
 |                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
 | Sept. 2019 - Now         | **Lab of Bioinformatics**, | China  |
@@ -46,7 +46,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| JUN. 2019 - Now         | **South China University and Technology**, | China  |
+| Sept. 2019 - Now         | **South China University and Technology**, | China  |
 |                                     | Ph.D,                       | Computer Science  |
 | Sept. 2016 - Jul. 2019   | **YunNan Normal University**, | China  |
 |                                     | M.Sc.,                       |  Software Engineering |
