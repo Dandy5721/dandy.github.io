@@ -14,17 +14,17 @@ I am interested in fMRI data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
-- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.[[IEEE TMI](https://ieeexplore.ieee.org/document/9761822)
+- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.[[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
 
 - _20/4/2022_: A paper accepted in **Human Brain Mapping**.
 
-- _14/2/2022_: A paper accepted in **IEEE Transactions on Cybernetics**.[[IEEE TCYB](https://pubmed.ncbi.nlm.nih.gov/35404827/)
+- _14/2/2022_: A paper accepted in **IEEE Transactions on Cybernetics**.[[IEEE TCYB]](https://pubmed.ncbi.nlm.nih.gov/35404827/)
 
-- _10/2/2022_: A paper accepted in **Medical Image Analysis**.[[MIA](https://www.sciencedirect.com/science/article/pii/S1361841522000330)
+- _10/2/2022_: A paper accepted in **Medical Image Analysis**.[[MIA]](https://www.sciencedirect.com/science/article/pii/S1361841522000330)
 
-- _08/01/2021_: A paper accepted in **IEEE International Symposium on Biomedical Imaging (ISBI) 2022**. [[IEEE ISBI](https://arxiv.org/abs/2106.15113)
+- _08/01/2021_: A paper accepted in **IEEE International Symposium on Biomedical Imaging (ISBI) 2022**. [[IEEE ISBI]](https://arxiv.org/abs/2106.15113)
 
-- _04/01/2021_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9684475)
+- _04/01/2021_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9684475)
 
 <hr/>
 
