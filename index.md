@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# About me [[CV]](https://www.dropbox.com/home/AAAI2022?preview=Curriculum+Vitae.pdf)
+# About me [[CV]](https://www.dropbox.com/home?preview=Curriculum+Vitae.pdf)
 
 I am a visting student at the Univeristy of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
@@ -32,9 +32,12 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
+| Sept. 2019 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
+|                                     | Department of Psychiatry,  |  UNC  |
+|                                     | Advisor: [Prof. Guorong Wu](https://www.acmlab.org/about-me) | |
 | Sept. 2019 - Now         | **Lab of Bioinformatics**, | China  |
 |                                     | School of computer Science and Engineering,  |  SCUT  |
-|                                     | Advisor: [Prof. Hongmin Cai](https://www.scholat.com/hmcai.en) | |
+|                                     | Advisor: [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm) | |
 | Sept. 2016 - Jul. 2019 | **Lab of Pattern Recognition and Artificial Intelligence**, | China  |
 |                                     | School of Information Science and Technology, | YNNU  |
 |                                     | Advisor: [Prof. Yang Yang](https://scholar.google.com/citations?user=7JLPFHgAAAAJ&hl=zh-CN) | |
@@ -55,6 +58,6 @@ I am interested in fMRI data analysis and mainfold learning.
 |         |           |   |
 |:------|:------|:------|
 | Basketball | Ping-pong | History |
-| Climbing | Movie | Sleeping |
-| Comics | Fantasy | etc. |
+| Badminton | Movie | Sleeping |
+| Painting and Calligraphy | Fantasy | etc. |
 
