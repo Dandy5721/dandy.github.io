@@ -13,13 +13,13 @@ I am interested in fMRI data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
-- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**.[[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
+- _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
 
 - _20/4/2022_: A paper accepted in **Human Brain Mapping**. [[HBM]](https://onlinelibrary.wiley.com/doi/10.1002/hbm.25897)
 
-- _14/2/2022_: A paper accepted in **IEEE Transactions on Cybernetics**.[[IEEE TCYB]](https://pubmed.ncbi.nlm.nih.gov/35404827/)
+- _14/2/2022_: A paper accepted in **IEEE Transactions on Cybernetics**. [[IEEE TCYB]](https://pubmed.ncbi.nlm.nih.gov/35404827/)
 
-- _10/2/2022_: A paper accepted in **Medical Image Analysis**.[[MIA]](https://www.sciencedirect.com/science/article/pii/S1361841522000330)
+- _10/2/2022_: A paper accepted in **Medical Image Analysis**. [[MIA]](https://www.sciencedirect.com/science/article/pii/S1361841522000330)
 
 - _08/01/2021_: A paper accepted in **IEEE International Symposium on Biomedical Imaging (ISBI) 2022**. [[IEEE ISBI]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761486)
 
