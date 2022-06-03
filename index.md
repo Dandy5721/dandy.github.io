@@ -13,7 +13,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
-- _20/4/2022_: A paper accepted in **MICCAI 2022**. [[MICCAI2022]]([https://ieeexplore.ieee.org/document/9761822](https://conferences.miccai.org/2022/en/))
+- _20/4/2022_: A paper accepted in **MICCAI 2022**. [[MICCAI2022]](https://ieeexplore.ieee.org/document/9761822](https://conferences.miccai.org/2022/en/))
 
 - _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
 
