@@ -4,7 +4,7 @@ layout: default
 
 # Publications:
 
-1.   **Tingting Dan**, Zhuobin Huang, Hongmin Cai, Paul J. Laurienti, Guorong Wu*: _Neuro-RDM: An Explainable Neural Network Landscape of Reaction-Diffusion Model for Cognitive Task Recognition_, **MICCAI 2022**, 2022. [doi: 10.1109/TMI.2022.3169640](https://ieeexplore.ieee.org/document/9761822)
+1.   **Tingting Dan**, Zhuobin Huang, Hongmin Cai, Paul J. Laurienti, Won Hwa Kim, Guorong Wu*: _Neuro-RDM: An Explainable Neural Network Landscape of Reaction-Diffusion Model for Cognitive Task Recognition_, **MICCAI 2022**, 2022. [doi: 10.1109/TMI.2022.3169640](https://ieeexplore.ieee.org/document/9761822)
 2.  **Tingting Dan**, Zhuobin Huang, Hongmin Cai, Paul J. Laurienti, Guorong Wu*: _Learning Brain Dynamics of Evolving Manifold Data Instances Using Geometric-Attention Neural Network_, **IEEE Transaction on Medical Imaging**, 2022. [doi: 10.1109/TMI.2022.3169640](https://ieeexplore.ieee.org/document/9761822)
 3. **Tingting Dan**, Zhuobin Huang, Hongmin Cai, Robert G Lyday, Paul J. Laurienti, Guorong Wu*: _Uncovering Spectral Signatures of Resting-State Functional Connectivity by Geometric Deep Learning on Riemannian Manifold_, 2022. **Human Brain Mapping**, 2021. [DOI: 10.1002/hbm.25897](https://onlinelibrary.wiley.com/doi/10.1002/hbm.25897)
 4. **Tingting Dan**, Zhuobin Huang, Hongmin Cai, Paul J. Laurienti, Guorong Wu*: _Brain State Recognition Guide by Detection for Transitions of Dynamic Functional Connectivities on Riemannian Manifold_, 2022. **IEEE International Symposium on Biomedical Imaging (ISBI)**, 2022. [DOI:10.1109/ISBI52829.2022.9761486](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761486)
