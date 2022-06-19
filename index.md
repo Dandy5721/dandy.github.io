@@ -55,7 +55,7 @@ I am interested in fMRI data analysis and mainfold learning.
 |                                     | Ph.D,                       | Computer Science  |
 | Sept. 2019 - Now         | **South China University and Technology**, | China  |
 |                                     | Ph.D,                       | Computer Science  |
-| Sept. 2016 - Jul. 2019   | **YunNan Normal University**, | China  |
+| Sept. 2016 - Jul. 2019   | **Yunnan Normal University**, | China  |
 |                                     | M.Sc.,                       |  Software Engineering |
 | Sept. 2015 - Jul. 2019 | **China West Normal University**, | China  |
 |                                     | B.Sc.,                         | Electrical Engineering  |
