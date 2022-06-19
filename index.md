@@ -4,6 +4,7 @@ layout: default
 
 # About me [[CV]](https://www.dropbox.com/home?preview=Curriculum+Vitae.pdf)
 
+I am a Fellow Trainee at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
 I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm).
 
@@ -33,6 +34,9 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
+| Jun. 2022 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
+|                                     | Department of Psychiatry,  |  UNC  |
+|                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
 | JuL. 2020 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
 |                                     | Department of Psychiatry (Online),  |  UNC  |
 |                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
@@ -47,6 +51,8 @@ I am interested in fMRI data analysis and mainfold learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
+| Jun. 2022 - Now         | **University of North Carolina at Chapel Hill**, | USA  |
+|                                     | Ph.D,                       | Computer Science  |
 | Sept. 2019 - Now         | **South China University and Technology**, | China  |
 |                                     | Ph.D,                       | Computer Science  |
 | Sept. 2016 - Jul. 2019   | **YunNan Normal University**, | China  |
