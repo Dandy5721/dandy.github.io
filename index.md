@@ -52,7 +52,7 @@ I am interested in fMRI data analysis and mainfold learning.
 |         |           |   |
 |:-------------|:------------------|:------|
 | Jun. 2022 - Now         | **University of North Carolina at Chapel Hill**, | USA  |
-|                                     | Ph.D,                       | Computer Science  |
+|                                     | RA,                       | Computer Science  |
 | Sept. 2019 - Now         | **South China University and Technology**, | China  |
 |                                     | Ph.D,                       | Computer Science  |
 | Sept. 2016 - Jul. 2019   | **Yunnan Normal University**, | China  |
