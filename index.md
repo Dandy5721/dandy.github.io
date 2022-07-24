@@ -4,7 +4,7 @@ layout: default
 
 # About me [[CV]](https://www.dropbox.com/home?preview=Curriculum+Vitae.pdf)
 
-I am a Research Assistent at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
+I am a gg Research Assistent at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
 I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm).
 
