@@ -16,7 +16,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 - _11/14/2022_: A paper accepted in **Artificial Intelligence in Medicine**. [[AIIM]](https://ieeexplore.ieee.org/document/9761822](https://conferences.miccai.org/2022/en/))
 
-- _03/6/2022_: A paper accepted in **MICCAI 2022**. [[MICCAI2022]]([https://conferences.miccai.org/2022/en/](https://link.springer.com/chapter/10.1007/978-3-031-16452-1_35)))
+- _03/6/2022_: A paper accepted in **MICCAI 2022**. [[MICCAI2022]](https://link.springer.com/chapter/10.1007/978-3-031-16452-1_35)
 
 - _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
 
