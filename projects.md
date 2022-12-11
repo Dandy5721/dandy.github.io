@@ -4,6 +4,11 @@ layout: default
 
 # Projects:
 
+### Manifold-based deep model for neuroscience behavior studies
+
+- Funded by Dr. Wu
+- Tingting Dan and Guorong Wu (2022--present)
+
 ### Developing Cutting-Edge Computational Neuroscience Method for Understanding Brain Functional Cognition
 
 - Externally Funded
