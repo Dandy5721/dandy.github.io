@@ -6,7 +6,7 @@ layout: default
 
 ### Manifold-based Deep Model for Neuroscience Behavior Studies
 
-- Funded by Dr. Wu
+- Funded by _UNC_
 - Tingting Dan and Guorong Wu (2022--present)
 
 ### Developing Cutting-Edge Computational Neuroscience Method for Understanding Brain Functional Cognition
