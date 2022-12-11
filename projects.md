@@ -4,7 +4,7 @@ layout: default
 
 # Projects:
 
-### Manifold-based deep model for neuroscience behavior studies
+### Manifold-based Deep Model for Neuroscience Behavior Studies
 
 - Funded by Dr. Wu
 - Tingting Dan and Guorong Wu (2022--present)
@@ -19,7 +19,7 @@ layout: default
 - Externally Funded
 - Tingting Dan and Hongmin Cai (2019--2020)
  
-### Feature point registration and Remote sensing image registration
+### Feature Point Registration and Remote Sensing Image Registration
 
 - Funded by _Yunnan Normal University_
 - Tingting Dan and Yang Yang (2016--2019)
