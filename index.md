@@ -22,7 +22,7 @@ I am interested in fMRI data analysis and mainfold learning.
 
 - _20/4/2022_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEE TMI]](https://ieeexplore.ieee.org/document/9761822)
 
-- _20/4/2022_: A paper accepted in **Human Brain Mapping**. [[HBM]](https://onlinelibrary.wiley.com/doi/10.1002/hbm.25897) [[Code]] (https://github.com/Dandy5721/Geo-Net4Net)
+- _20/4/2022_: A paper accepted in **Human Brain Mapping**. [[HBM]](https://onlinelibrary.wiley.com/doi/10.1002/hbm.25897) [[Code]](https://github.com/Dandy5721/Geo-Net4Net)
 
 - _14/2/2022_: A paper accepted in **IEEE Transactions on Cybernetics**. [[IEEE TCYB]](https://pubmed.ncbi.nlm.nih.gov/35404827/)
 
