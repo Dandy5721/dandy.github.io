@@ -8,7 +8,7 @@ I am a Research Assistent at the University of North Carolina at Chapel Hill. My
 
 I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm).
 
-I am interested in fMRI data analysis and mainfold learning.
+I am interested in neuroimage data analysis and mainfold learning.
 
 <hr/>
 
