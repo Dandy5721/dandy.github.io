@@ -16,7 +16,7 @@ I am interested in neuroimage data analysis and mainfold learning.
 
 - _12/09/2022_: A paper accepted in **Frontiers of Computer Science**. [[FCS]](https://www.sciencedirect.com/science/article/pii/S0933365722002056)
 
-- _11/14/2022_: A paper accepted in **Artificial Intelligence in Medicine**. [[AIIM]](https://www.sciencedirect.com/science/article/pii/S0933365722002056)
+- _11/14/2022_: A paper accepted in **Artificial Intelligence in Medicine**. [[AIIM]](https://www.sciencedirect.com/science/article/pii/S0933365722002056)[[Code]](https://github.com/Dandy5721/GeepGA)
 
 - _03/6/2022_: A paper accepted in **MICCAI 2022**. [[MICCAI2022]](https://link.springer.com/chapter/10.1007/978-3-031-16452-1_35)
 
