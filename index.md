@@ -14,6 +14,9 @@ I am interested in neuroimage data analysis and mainfold learning.
 
 **<font color=red>News:</font>**
 
+- _1/22/2023_: Two paper accepted in **ISBI 2023**. [[ISBI2023]](http://2023.biomedicalimaging.org/en/)
+
+
 - _12/09/2022_: A paper accepted in **Frontiers of Computer Science**. [[FCS]](https://www.sciencedirect.com/science/article/pii/S0933365722002056)
 
 - _11/14/2022_: A paper accepted in **Artificial Intelligence in Medicine**. [[AIIM]](https://www.sciencedirect.com/science/article/pii/S0933365722002056)[[Code]](https://github.com/Dandy5721/GeepGA)
