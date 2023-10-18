@@ -4,15 +4,23 @@ layout: default
 
 # About me [[CV]](https://www.dropbox.com/home?preview=Curriculum+Vitae.pdf)
 
-I am a Research Assistent at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
+I am a Post-doc at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
+
+I am a Research Assistant at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
 
 I am a final-year PhD student at South China University of Technology. My Advisor is [Prof. Hongmin Cai](http://www2.scut.edu.cn/bioinformatics/td/list.htm).
 
-I am interested in neuroimage data analysis and mainfold learning.
+I am interested in neuroimage data analysis, and geometric deep learning.
 
 <hr/>
 
 **<font color=red>News:</font>**
+
+- _08/21/2023_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
+
+
+- _06/23/2023_: Four papers accepted in **IEEE MICCAI 2023**. [[MICCAI2023]](https://conferences.miccai.org/2023/en/)
+
 
 - _01/22/2023_: Two papers accepted in **IEEE ISBI 2023**. [[ISBI2023]](http://2023.biomedicalimaging.org/en/)
 
