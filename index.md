@@ -47,14 +47,17 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| Jun. 2022 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
+| Sept. 2023 - Now         | **Advanced Computational Medicine Laboratory**, | USA  |
+|                                     | Department of Psychiatry,  |  UNC  |
+|                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
+| Jun. 2022 - Sept. 2023        | **Advanced Computational Medicine Laboratory**, | USA  |
 |                                     | Department of Psychiatry,  |  UNC  |
 |                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
 | JuL. 2020 - Jun. 2022         | **Advanced Computational Medicine Laboratory**, | USA  |
 |                                     | Department of Psychiatry (Online),  |  UNC  |
 |                                     | Advisor: [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) | |
 | Sept. 2019 - Now         | **Lab of Bioinformatics**, | China  |
-|                                     | School of computer Science and Engineering,  |  SCUT  |
+|                                     | School of Computer Science and Engineering,  |  SCUT  |
 |                                     | Advisor: [Prof. Hongmin Cai](https://scholar.google.com/citations?user=B2BWq_EAAAAJ&hl=en) | |
 | Sept. 2016 - Jul. 2019 | **Lab of Pattern Recognition and Artificial Intelligence**, | China  |
 |                                     | School of Information Science and Technology, | YNNU  |
