@@ -12,7 +12,7 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 **<font color=red>News:</font>**
 
-- _09/30/2023_: A paper accepted in **Thirty-seventh Conference on Neural Information Processing Systems**. [[NeurIPS 2023]](arxiv-2307.00222)
+- _09/30/2023_: A paper accepted in **Thirty-seventh Conference on Neural Information Processing Systems**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
 
 - _08/21/2023_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
