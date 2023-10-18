@@ -17,7 +17,7 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 - _08/21/2023_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
-- _06/23/2023_: Four papers accepted in **IEEE MICCAI 2023**. [[MICCAI2023]](https://conferences.miccai.org/2023/en/)
+- _06/23/2023_: Four papers accepted in **MICCAI 2023**. [[MICCAI2023]](https://conferences.miccai.org/2023/en/)
 
 
 - _01/22/2023_: Two papers accepted in **IEEE ISBI 2023**. [[ISBI2023]](http://2023.biomedicalimaging.org/en/)
