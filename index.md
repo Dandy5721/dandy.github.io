@@ -4,7 +4,7 @@ layout: default
 
 # About me [[CV]](https://www.dropbox.com/home?preview=Curriculum+Vitae.pdf)
 
-I am a Post-doc at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/about-me).
+I am a Post-doc at the University of North Carolina at Chapel Hill. My Advisor is [Prof. Guorong Wu](https://www.acmlab.org/team).
 
 I am interested in neuroimage data analysis, and geometric deep learning.
 
@@ -12,7 +12,12 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 **<font color=red>News:</font>**
 
-- _09/30/2023_: A paper accepted in **The 41st International Conference on Machine Learning**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
+
+- _06/17/2024_: Four paper accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+
+- _05/14/2024_: A paper accepted in **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+
+- _05/01/2024_: A paper accepted in **The 41st International Conference on Machine Learning**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
 
 - _09/30/2023_: A paper accepted in **Thirty-seventh Conference on Neural Information Processing Systems**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
 
