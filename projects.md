@@ -4,6 +4,11 @@ layout: default
 
 # Projects:
 
+### Geometric Deep Model
+
+- Funded by _UNC_
+- Tingting Dan and Guorong Wu (2023--present)
+
 ### Manifold-based Deep Model for Neuroscience Behavior Studies
 
 - Funded by _UNC_
