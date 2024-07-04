@@ -12,6 +12,8 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 **<font color=red>News:</font>**
 
+- _09/30/2023_: A paper accepted in **The 41st International Conference on Machine Learning**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
+
 - _09/30/2023_: A paper accepted in **Thirty-seventh Conference on Neural Information Processing Systems**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
 
 - _08/21/2023_: A paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
