@@ -73,9 +73,11 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 |         |           |   |
 |:-------------|:------------------|:------|
-| Jun. 2022 - Now         | **University of North Carolina at Chapel Hill**, | USA  |
+| Sept. 2023 - Now        | **University of North Carolina at Chapel Hill**, | USA  |
+|                                     | Post-Doc Research Associate,      | Computer Science  |
+| Jun. 2022 - Sept. 2023         | **University of North Carolina at Chapel Hill**, | USA  |
 |                                     | RA,                       | Computer Science  |
-| Sept. 2019 - Now         | **South China University and Technology**, | China  |
+| Sept. 2019 - Sept. 2023         | **South China University and Technology**, | China  |
 |                                     | Ph.D,                       | Computer Science  |
 | Sept. 2016 - Jul. 2019   | **Yunnan Normal University**, | China  |
 |                                     | M.Sc.,                       |  Software Engineering |
