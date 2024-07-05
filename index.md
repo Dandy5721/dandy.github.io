@@ -13,7 +13,7 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 **<font color=red>News:</font>**
 
 
-- _06/17/2024_: Four paper accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+- _06/17/2024_: Four papers accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
 
 - _05/14/2024_: A paper accepted in **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
 
