@@ -12,7 +12,7 @@ I am interested in neuroimage data analysis, and geometric deep learning.
 
 **<font color=red>News:</font>**
 
-- _09/25/2024_: A papers accepted in **NeurIP 2024**. [[NeurIP 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
+- _09/25/2024_: A papers accepted in **NeurIP 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
 
 - _06/17/2024_: Four papers accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
 
