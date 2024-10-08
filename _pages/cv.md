@@ -6,7 +6,7 @@ author_profile: false
 redirect_from:
   - /resume
 ---
-
+## No More ~
 <!--<embed src="https://github.com/Chrisa142857/Chrisa142857.github.io/blob/293786f0fafaf79812a6d8d550477bfbfe0e2ebb/files/ziquanwei_cv.pdf" width="500" height="375" type="application/pdf">!-->
 
 <!--<embed src="/files/*.pdf" width="100%" height="auto" type="application/pdf">
