@@ -34,7 +34,7 @@ redirect_from:
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)">NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes</a></h3>
-    <p>Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu</p>
+    <p>Ziquan Wei, <strong>Tingting Dan</strong>, Jiaqi Ding, Paul Laurienti, Guorong Wu</p>
     <p><a href="[code-link-here](https://anonymous.4open.science/r/neuro_detour-47E1/)"><strong>Code</strong></a></p>
 
   </div>
@@ -42,11 +42,11 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
-    <img src="images/Neuropath.png" alt="Description" style="width: 100%;">
+    <img src="images/Tau.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)">NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes</a></h3>
-    <p>Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu</p>
+    <h3><a href="[[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X))">TauFlowNet: Revealing latent propagation mechanism of tau aggregates using deep neural transport equations</a></h3>
+    <p><strong>Tingting Dan</strong>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu</p>
     <p><a href="[code-link-here](https://anonymous.4open.science/r/neuro_detour-47E1/)"><strong>Code</strong></a></p>
 
   </div>
