@@ -1,93 +1,72 @@
-# The Minimal theme
 
-[![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
+<h1 align="center">
+AcadHomepage
+</h1>
 
-*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
+<div align="center">
 
-![Thumbnail of minimal](thumbnail.png)
+[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
+</div>
 
-## Usage
+<p align="center">A Modern and Responsive Academic Personal Homepage</p>
 
-To use the Minimal theme:
+<p align="center">
+    <br>
+    <img src="docs/screenshot.png" width="100%"/>
+    <br>
+</p>
 
-1. Add the following to your site's `_config.yml`:
+Some examples:
+- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
+- [Personal Homepage of the author](https://rayeren.github.io/)
 
-    ```yml
-    theme: jekyll-theme-minimal
-    ```
+## Key Features
+- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
+- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
+- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
+- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
+- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+## Quick Start
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
+1. Configure the google scholar citation crawler:
+    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
+    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
+    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
+1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
+1. Modify the configuration of your homepage `_config.yml`:
+    1. `title`: the title of your homepage
+    1. `description`: the description of your homepage
+    1. `repository`: USER_NAME/REPO_NAME  
+    1. `google_analytics_id` (optional): google analytics ID
+    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
+    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
+    1. More configuration details are described in the comments.
+1. Add your homepage content in `_pages/about.md`.
+    1. You can use html+markdown syntax just same as jekyll.
+    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
+        ```html
+        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
+        ``` 
+        > Q: How to get the google scholar paper ID?   
+        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
+1. Your page will be published at `https://USERNAME.github.io`.
 
+## Debug Locally
 
+1. Clone your REPO to local using `git clone`.
+1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
+1. Run `bash run_server.sh` to start Jekyll livereload server.
+1. Open http://127.0.0.1:4000 in your browser.
+1. If you change the source code of the website, the livereload server will automatically refresh.
+1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
 
-## Customizing
+# Acknowledges
 
-### Configuration variables
-
-Minimal will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-logo: [Location of the logo]
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-### Layouts
-
-If you'd like to change the theme's HTML layout:
-
-1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
-
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
+- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
+- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
