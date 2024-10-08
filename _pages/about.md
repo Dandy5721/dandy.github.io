@@ -33,19 +33,9 @@ redirect_from:
 
 <br />
 
-🔭 I’m currently working on building a human connectomics foundation model with graph learning.
-
-🌱 I’m currently learning human brain MRI data processing.
-
-👯 I’m looking to collaborate on scaling the brain connectomics model.
-
-🤔 I’m dreaming of how to make a time machine.
-
-⚡ Fun fact: Time machine is not impossible regarding memorable experiences.
-
-😄 Pronouns: Zi-chyuan (/tʃüan/).
+🔭 I’m currently working on human brain data analysis.
 
 <details>
-<summary>Powered Since May 2023</summary>
+<summary>Powered Since Oct. 2024</summary>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fziquanw.com&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%F0%9F%8F%A0Visits++&edge_flat=false"/></a>
 </details>
