@@ -26,7 +26,7 @@ redirect_from:
 - 😁 _08/21/2023_: One paper was accepted by **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
-# 📝 Recent Publications (*: equal contribution/co-first author) 
+# 📝 Recent Publications (*: co-first author) 
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
