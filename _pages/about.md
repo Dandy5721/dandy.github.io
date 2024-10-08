@@ -14,11 +14,6 @@ redirect_from:
 
 ### Hi, thanks for stopping by! 😉🎶😊
 
-<div align='right'>My Github status</div>
-<a href='https://github.com/chrisa142857'>
-    <img align='right' width='280' src='https://github-readme-stats.vercel.app/api?username=chrisa142857&count_private=true&show_icons=true&theme=onedark&hide_rank=true&hide_title=true&bg_color=264653&border_color=2a9d8f&icon_color=e76f51&text_color=eae2b7'>
-</a>
-
 👋 I'm **Tingting Dan** . A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team) at UNC-Chapel Hill. I got my PhD degree at South China University of Technology [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN) My research interests cover geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis.
 
 <span style="color:red">**News:**</span>
