@@ -9,10 +9,8 @@ redirect_from:
 ---
 
 [![](https://img.shields.io/badge/GoogleScholar-T._Dan-lightblue?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op) &ensp;
-[![](https://img.shields.io/badge/arXiv-Z._Wei-B31B1B?style=social&logo=arxiv)](https://arxiv.org/a/wei_z_3.html) &ensp;
-[![](https://img.shields.io/badge/LinkedIn-Z._Wei-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/weiziquan142857/?locale=en_US) &ensp;
-[![](https://img.shields.io/badge/ResearchGate-Z.%20Wei-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Ziquan-Wei) &ensp;
-[![](https://img.shields.io/badge/WeChat-_Z._Wei_-blue?style=social&logo=wechat)](/images/wechat_QRcode.JPG) &ensp;
+[![](https://img.shields.io/badge/arXiv-T._Dan-B31B1B?style=social&logo=arxiv)](https://arxiv.org/search/q-bio?searchtype=author&query=Dan%2C+T) &ensp;
+[![](https://img.shields.io/badge/ResearchGate-T.%20Dan-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Tingting-Dan) &ensp;
 
 ### Hi there 👋
 
