@@ -26,7 +26,7 @@ redirect_from:
 - 😁 _08/21/2023_: One paper was accepted by **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
-# 📝 Recent Publications 
+# 📝 Recent Publications (*: equal contribution/co-first author) 
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
@@ -83,7 +83,7 @@ redirect_from:
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="[[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes](https://www.researchgate.net/publication/371407063_HoloBrain_A_Harmonic_Holography_for_Self-organized_Brain_Function))">HoloBrain: A Harmonic Holography for Self-organized Brain Function</a></h3>
-    <p>Huan Liu, <strong>Tingting Dan</strong>, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu</p>
+    <p>Huan Liu, <strong>Tingting Dan</strong>*, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu</p>
     <p><a href="[code-link-here](https://anonymous.4open.science/r/neuro_detour-47E1/)"><strong>Code</strong></a></p>
 
   </div>
