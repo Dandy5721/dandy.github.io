@@ -20,9 +20,9 @@ redirect_from:
  - ✌️ _09/25/2024_: One paper was accepted by **NeurIP 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
  - 😎 _06/17/2024_: Four papers accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
  - 👍 _05/14/2024_: One paper accepted in **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
- - 🤞_05/01/2024_: One paper accepted in **The 41st International Conference on Machine Learning**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
+ - 🤞_05/01/2024_: One paper accepted in **ICML 2024**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
  - 😉 _01/22/2024_: One papers accepted in **IEEE ISBI 2024**. [[ISBI2024]](http://2023.biomedicalimaging.org/en/)
- - ❤️ _09/30/2023_: One paper accepted in **Thirty-seventh Conference on Neural Information Processing Systems**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
+ - ❤️ _09/30/2023_: One paper accepted in **NeurIPS 2023**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
 - 😁 _08/21/2023_: One paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
