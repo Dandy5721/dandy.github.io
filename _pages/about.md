@@ -12,11 +12,11 @@ redirect_from:
 [![](https://img.shields.io/badge/arXiv-T._Dan-B31B1B?style=social&logo=arxiv)](https://arxiv.org/search/q-bio?searchtype=author&query=Dan%2C+T) &ensp;
 [![](https://img.shields.io/badge/ResearchGate-T.%20Dan-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Tingting-Dan) &ensp;
 
-### Hi, thanks for stopping by! 😉🎶😊
+## Hi, thanks for stopping by! 😉🎶😊
 
 👋 I'm **Tingting Dan** . A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team) at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis.
 
-🔥 <span style="color:red">**News:**</span>
+# 🔥 <span style="color:red">**News:**</span>
  - ✌️ _09/25/2024_: One paper was accepted by **NeurIP 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
  - 😎 _06/17/2024_: Four papers accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
  - 👍 _05/14/2024_: One paper accepted in **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
@@ -26,9 +26,9 @@ redirect_from:
 - 😁 _08/21/2023_: One paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
-# 📝 Publications 
+# 📝 Recent Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP main</div><img src='images/llovi.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP main</div><img src='images/Neuropath.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A Simple LLM Framework for Long-Range Video Question-Answering](https://arxiv.org/pdf/2312.17235.pdf)
