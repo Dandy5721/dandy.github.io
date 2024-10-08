@@ -19,12 +19,13 @@ redirect_from:
     <img align='right' width='280' src='https://github-readme-stats.vercel.app/api?username=chrisa142857&count_private=true&show_icons=true&theme=onedark&hide_rank=true&hide_title=true&bg_color=264653&border_color=2a9d8f&icon_color=e76f51&text_color=eae2b7'>
 </a>
 
-👋 I'm **Ziquan Wei** (魏梓泉 in Chinese). A researcher and PhD student supervised by [Dr. Guorong Wu](https://www.acmlab.org/team) at UNC-Chapel Hill. I'm meanwhile the system administrator at [ACMLab](https://www.acmlab.org). Previously, I obtained a Master's degree supervised by [Prof. Shaoqun Zeng](https://zh.wikipedia.org/wiki/%E6%9B%BE%E7%BB%8D%E7%BE%A4) and a Bachelor's degree supervised by [Prof. Yang Yang](https://scholar.google.com/citations?user=7JLPFHgAAAAJ&hl=zh-CN). My research interests are graph learning, brain modeling and decoding, computational neuroscience, and machine learning.
+👋 I'm **Tingting Dan** . A Post-Doc supervised by [Dr. Guorong Wu](https://www.acmlab.org/team) at UNC-Chapel Hill. I got my PhD degree at South China University of Technology [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN) My research interests cover geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis.
 
 <span style="color:red">**News:**</span>
- - ⭐ My paper is accepted by NeurIPS 2024.
- - ⭐ My paper is accepted by MICCAI 2024.
- - ⭐ One paper is accepted by ICML 2024.
+ - ⭐ _09/25/2024_: One paper was accepted by **NeurIP 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
+ - ⭐ _06/17/2024_: Four papers accepted in **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+ - ⭐ _05/14/2024_: A paper accepted in **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+
 
 <br />
 
