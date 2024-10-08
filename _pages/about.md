@@ -12,7 +12,7 @@ redirect_from:
 [![](https://img.shields.io/badge/arXiv-T._Dan-B31B1B?style=social&logo=arxiv)](https://arxiv.org/search/q-bio?searchtype=author&query=Dan%2C+T) &ensp;
 [![](https://img.shields.io/badge/ResearchGate-T.%20Dan-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Tingting-Dan) &ensp;
 
-### Hi there 👋
+### Hi, thanks for stopping by! 😉🎶😊
 
 <div align='right'>My Github status</div>
 <a href='https://github.com/Chrisa142857'>
