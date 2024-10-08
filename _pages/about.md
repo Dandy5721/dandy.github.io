@@ -33,7 +33,7 @@ redirect_from:
   <div style="flex: 1; padding-right: 20px;">
     <div>
       <div style="background-color: #f0f0f0; padding: 5px; font-size: 14px;">NeurIPS 2024</div>
-      <img src="images/Neuropath.png" alt="sym" style="width: 100%; max-width: 300px;">
+      <img src="images/Neuropath.png" alt="sym" style="width: 100%; max-width: 1000px;">
     </div>
   </div>
 
