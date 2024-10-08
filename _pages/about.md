@@ -26,6 +26,26 @@ redirect_from:
 - 😁 _08/21/2023_: One paper accepted in **IEEE Transaction on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
+# 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP main</div><img src='images/llovi.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A Simple LLM Framework for Long-Range Video Question-Answering](https://arxiv.org/pdf/2312.17235.pdf)
+
+Ce Zhang, Taixi Lu, Md Mohaiminul Islam, Ziyang Wang, **Shoubin Yu**, Mohit Bansal, Gedas Bertasius
+
+[**Code**](https://github.com/CeeZh/LLoVi)
+- We present LLoVi, a simple yet effective framework with LLM for long-range video question-answering.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2024</div><img src='images/iva0.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Zero-Shot Controllable Image-to-Video Animation via Motion Decomposition](https://www.amazon.science/publications/zero-shot-controllable-image-to-video-animation-via-motion-decomposition)
+
+
 <br />
 
 🔭 I’m currently working on human brain data analysis.
