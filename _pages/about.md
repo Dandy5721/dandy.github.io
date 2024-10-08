@@ -38,9 +38,9 @@ redirect_from:
   </div>
 
   <div style="flex: 2;">
-    [**NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes**](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
+    [NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
 
-    **Ziquan Wei, Tingting Dan, Jiaqi Ding, Paul Laurienti, Guorong Wu**
+    Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu
 
     [**Code**](https://anonymous.4open.science/r/neuro_detour-47E1/README.md)
   </div>
