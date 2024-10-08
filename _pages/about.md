@@ -28,6 +28,21 @@ redirect_from:
 
 # 📝 Recent Publications 
 
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/Neuropath.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="your-link-here">Your Title Here</a></h3>
+    <p>Author 1, Author 2, Author 3, Author 4</p>
+    <p><a href="code-link-here"><strong>Code</strong></a></p>
+    <ul>
+      <li>We present a simple yet effective framework for your task.</li>
+    </ul>
+  </div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Neuropath.png' alt="sym" width="40%"></div></div>
 <div class='paper-box-text' markdown="1">
 
