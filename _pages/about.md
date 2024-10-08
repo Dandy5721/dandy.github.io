@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Ziquan Wei's academic website"
+title: "Tingting Dan's home page"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-[![](https://img.shields.io/badge/GoogleScholar-Z._Wei-lightblue?style=social&logo=googlescholar)](https://scholar.google.com/citations?user=z1IYb2oAAAAJ&hl=en) &ensp;
+[![](https://img.shields.io/badge/GoogleScholar-T._Dan-lightblue?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op) &ensp;
 [![](https://img.shields.io/badge/arXiv-Z._Wei-B31B1B?style=social&logo=arxiv)](https://arxiv.org/a/wei_z_3.html) &ensp;
 [![](https://img.shields.io/badge/LinkedIn-Z._Wei-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/weiziquan142857/?locale=en_US) &ensp;
 [![](https://img.shields.io/badge/ResearchGate-Z.%20Wei-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Ziquan-Wei) &ensp;
