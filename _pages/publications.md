@@ -13,8 +13,6 @@ author_profile: true
 
 # All-->
 
-
-
   You can also find my articles on <u><a href="{{https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=FMcmg0gAAAAJ}}">my Google Scholar profile</a>.</u>
 
 
