@@ -28,27 +28,7 @@ redirect_from:
 
 # 📝 Recent Publications 
 
-<div style="display: flex; align-items: center; margin: 20px;">
-
-  <div style="flex: 1; padding-right: 20px;">
-    <div>
-      <div style="background-color: #f0f0f0; padding: 5px; font-size: 14px;">NeurIPS 2024</div>
-      <img src="images/Neuropath.png" alt="sym" style="width: 100%; max-width: 1000px;">
-    </div>
-  </div>
-
-  <div style="flex: 2;">
-    [NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
-
-    Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu
-
-    [**Code**](https://anonymous.4open.science/r/neuro_detour-47E1/README.md)
-  </div>
-
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Neuropath.png' alt="sym" width="50%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Neuropath.png' alt="sym" width="40%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
