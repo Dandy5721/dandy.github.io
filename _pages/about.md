@@ -28,15 +28,15 @@ redirect_from:
 
 # 📝 Recent Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP main</div><img src='images/Neuropath.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Neuropath.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[A Simple LLM Framework for Long-Range Video Question-Answering](https://arxiv.org/pdf/2312.17235.pdf)
+[NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
 
-Ce Zhang, Taixi Lu, Md Mohaiminul Islam, Ziyang Wang, **Shoubin Yu**, Mohit Bansal, Gedas Bertasius
+Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu
 
-[**Code**](https://github.com/CeeZh/LLoVi)
-- We present LLoVi, a simple yet effective framework with LLM for long-range video question-answering.
+[**Code**](https://anonymous.4open.science/r/neuro_detour-47E1/README.md)
+
 </div>
 </div>
 
