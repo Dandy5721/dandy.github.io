@@ -42,7 +42,7 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
-    <img src="images/Tau.png" alt="Description" style="width: 100%;">
+    <img src="images/tau.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="[[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X))">TauFlowNet: Revealing latent propagation mechanism of tau aggregates using deep neural transport equations</a></h3>
@@ -52,6 +52,17 @@ redirect_from:
   </div>
 </div>
 
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ICML2024.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="[[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes]([https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X](https://www.researchgate.net/publication/380906541_Exploring_the_Enigma_of_Neural_Dynamics_Through_A_Scattering-Transform_Mixer_Landscape_for_Riemannian_Manifold)))">Exploring the Enigma of Neural Dynamics Through A Scattering-Transform Mixer Landscape for Riemannian Manifold</a></h3>
+    <p><strong>Tingting Dan</strong>, Ziquan Wei, Won Hwa Kim, Guorong Wu</p>
+    <p><a href="[code-link-here](https://anonymous.4open.science/r/neuro_detour-47E1/)"><strong>Code</strong></a></p>
+
+  </div>
+</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIA 2024</div><img src='images/iva0.jpg' alt="sym" width="100%"></div></div>
