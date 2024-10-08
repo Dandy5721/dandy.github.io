@@ -36,24 +36,12 @@ redirect_from:
     <h3><a href="[your-link-here](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)">NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes</a></h3>
     <p>Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu</p>
     <p><a href="[code-link-here](https://anonymous.4open.science/r/neuro_detour-47E1/)"><strong>Code</strong></a></p>
-    <ul>
-      <li>We present a simple yet effective framework for your task.</li>
-    </ul>
+
   </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Neuropath.png' alt="sym" width="40%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
-
-Ziquan Wei, **Tingting Dan**, Jiaqi Ding, Paul Laurienti, Guorong Wu
-
-[**Code**](https://anonymous.4open.science/r/neuro_detour-47E1/README.md)
-
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIA 2024</div><img src='images/iva0.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
