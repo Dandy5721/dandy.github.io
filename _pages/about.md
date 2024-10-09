@@ -14,7 +14,7 @@ redirect_from:
 
 ## Hi, thanks for stopping by! 😉🎶😊🎈
 
-🔓🗨️I'm **Tingting Dan**👧👩‍🎓. A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team)👨👨‍🎓 at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover **geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis**.
+🗨️I'm **Tingting Dan**👧👩‍🎓. A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team)👨👨‍🎓 at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover **geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis**.
 
 ## 🔥 <span style="color:red">**News:**</span>
  - ✌️ _09/25/2024_: One paper was accepted by **NeurIPS 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
