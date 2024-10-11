@@ -65,6 +65,17 @@ redirect_from:
   </div>
 </div>
 
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/nips.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html">Re-Think and Re-Design Graph Neural Networks in Spaces of Continuous Graph Diffusion Functionals</a></h3>
+    <p><strong>Tingting Dan</strong>, Jiaqi Ding, Ziquan Wei, Shahar Kovalsky, Minjeong Kim, Won Hwa Kim, Guorong Wu</p>
+    <p><a href="https://github.com/Dandy5721/GNN-PDE-COV"><strong>Code</strong></a></p>
+
+  </div>
+</div>
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
