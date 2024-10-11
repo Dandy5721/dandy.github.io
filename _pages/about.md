@@ -115,7 +115,7 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
-    <img src="images/tmi2.png" alt="Description" style="width: 100%;">
+    <img src="images/hbm.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering shape signatures of resting-state functional connectivity by geometric deep learning on Riemannian manifold</a></h3>
