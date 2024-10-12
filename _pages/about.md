@@ -107,7 +107,7 @@ redirect_from:
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761822">Learning Brain Dynamics of Evolving Manifold Functional MRI Data Using Geometric-Attention Neural Network</a></h3>
-    <p><strong>Tingting Dan</strong>*, Zhuobin Huang, Hongmin Cai, Paul Laurienti, Guorong Wu </p>
+    <p><strong>Tingting Dan</strong>, Zhuobin Huang, Hongmin Cai, Paul Laurienti, Guorong Wu </p>
     <p><a href="https://github.com/Dandy5721/Geometric-attention-neural-network"><strong>Code</strong></a></p>
 
   </div>
@@ -119,7 +119,7 @@ redirect_from:
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering shape signatures of resting-state functional connectivity by geometric deep learning on Riemannian manifold</a></h3>
-    <p><strong>Tingting Dan</strong>*, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu</p>
+    <p><strong>Tingting Dan</strong>, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu</p>
     <p><a href="https://github.com/Dandy5721/GeoNet4Net"><strong>Code</strong></a></p>
 
   </div>
