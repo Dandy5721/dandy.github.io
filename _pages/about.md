@@ -46,7 +46,7 @@ redirect_from:
     <img src="images/tau.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X">TauFlowNet: Revealing latent propagation mechanism of tau aggregates using deep neural transport equations</a></h3>
+    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X">TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations</a></h3>
     <p><strong>Tingting Dan</strong>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu</p>
     <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
 
