@@ -118,7 +118,7 @@ redirect_from:
     <img src="images/hbm.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering shape signatures of resting-state functional connectivity by geometric deep learning on Riemannian manifold</a></h3>
+    <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering Shape Signatures of Resting-state Functional Connectivity by Geometric Deep Learning on Riemannian Manifold</a></h3>
     <p><strong>Tingting Dan</strong>, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu</p>
     <p><a href="https://github.com/Dandy5721/GeoNet4Net"><strong>Code</strong></a></p>
 
