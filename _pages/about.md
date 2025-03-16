@@ -36,6 +36,26 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
+    <img src="images/IPMI1.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression</a></h3>
+    <p> <strong>Tingting Dan</strong> and Guorong Wu </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ipmi2.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases</a></h3>
+    <p> Haifeng Huang, Yi Wang, <strong>Tingting Dan*</strong>, Yang Yang and Guorong Wu</p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
     <img src="images/ICLR.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
