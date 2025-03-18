@@ -130,7 +130,7 @@ redirect_from:
     <img src="images/ipmi.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://www.researchgate.net/publication/371407063_HoloBrain_A_Harmonic_Holography_for_Self-organized_Brain_Function">HoloBrain: A Harmonic Holography for Self-organized Brain Function</a></h3>
+    <h3><a href="https://www.researchgate.net/publication/371407063_HoloBrain_A_Harmonic_Holography_for_Self-organized_Brain_Function">HoloBrain: A Harmonic Holography for Self-organized Brain Function <strong>(Oral)</strong></a></h3>
     <p>Huan Liu, <strong>Tingting Dan</strong>*, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu</p>
     <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
 
