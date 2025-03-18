@@ -21,7 +21,7 @@ redirect_from:
  
  - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**.
   - 😉 _01/22/2025_: Two papers were accepted by **IPMI 2025**.
- - 🌟 _01/22/2025_: One paper was accepted by **ICLR 2025 (Spotlight)**.
+ - 🌟 _01/22/2025_: One paper was accepted by **ICLR 2025 (Spotlight)**. [[ICLR 2025]](https://github.com/Hannah37/ConDOR-ICLR25/tree/main)
  - ✨ _01/01/2025_: Two papers (ONE Tutorial) were accepted by **IEEE ISBI 2025**.
  - ✌️ _09/25/2024_: One paper was accepted by **NeurIPS 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
  - 🎉 _06/17/2024_: Four papers were accepted by **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
