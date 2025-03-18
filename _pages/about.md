@@ -59,9 +59,9 @@ redirect_from:
     <img src="images/ICLR.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies</a></h3>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies <strong>Spotlight</strong> </a></h3>
     <p> Hyuna Cho, Ziquan Wei, Seungjoo Lee, <strong>Tingting Dan</strong>, Guorong Wu and Won Hwa Kim</p>
-    <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
+    <p><a href="https://github.com/Hannah37/ConDOR-ICLR25/tree/main"><strong>Code</strong></a></p>
   </div>
 </div>
 
