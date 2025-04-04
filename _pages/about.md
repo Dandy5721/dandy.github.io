@@ -39,7 +39,7 @@ redirect_from:
     <img src="images/IPMI1.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression</a></h3>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression (Oral)</a></h3>
     <p> <strong>Tingting Dan</strong> and Guorong Wu </p>
   </div>
 </div>
