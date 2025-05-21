@@ -74,7 +74,7 @@ redirect_from:
       border-radius: 2px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     ">
-      IPMI 2025
+      IPMI2025
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
