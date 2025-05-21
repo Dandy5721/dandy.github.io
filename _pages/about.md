@@ -49,7 +49,7 @@ redirect_from:
       border-radius: 2px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     ">
-      TMI
+      IEEE TMI
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
@@ -122,7 +122,7 @@ redirect_from:
       border-radius: 2px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     ">
-      IPMI2025
+      ICLR2025
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
@@ -133,8 +133,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/Neuropath.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      NeurIPS2024
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes">NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes</a></h3>
@@ -145,8 +159,22 @@ redirect_from:
 
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/tau.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      MIA
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X">TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations</a></h3>
@@ -156,33 +184,74 @@ redirect_from:
   </div>
 </div>
 
+
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/ICML2024.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      ICML2024
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://www.researchgate.net/publication/380906541_Exploring_the_Enigma_of_Neural_Dynamics_Through_A_Scattering-Transform_Mixer_Landscape_for_Riemannian_Manifold">Exploring the Enigma of Neural Dynamics Through A Scattering-Transform Mixer Landscape for Riemannian Manifold</a></h3>
     <p><strong>Tingting Dan</strong>, Ziquan Wei, Won Hwa Kim, Guorong Wu</p>
     <p><a href="https://github.com/Dandy5721/ICML2024"><strong>Code</strong></a></p>
-
   </div>
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/nips.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      NeurIPS2023
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html">Re-Think and Re-Design Graph Neural Networks in Spaces of Continuous Graph Diffusion Functionals</a></h3>
     <p><strong>Tingting Dan</strong>, Jiaqi Ding, Ziquan Wei, Shahar Kovalsky, Minjeong Kim, Won Hwa Kim, Guorong Wu</p>
     <p><a href="https://github.com/Dandy5721/GNN-PDE-COV"><strong>Code</strong></a></p>
-
   </div>
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/tmi.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IEEE TMI
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://www.researchgate.net/publication/373488429_Developing_Explainable_Deep_Model_for_Discovering_Novel_Control_Mechanism_of_Neuro-Dynamics">Developing Explainable Deep Model for Discovering Novel Control Mechanism of Neuro-Dynamics</a></h3>
@@ -193,8 +262,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/ipmi.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IPMI2023
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://www.researchgate.net/publication/371407063_HoloBrain_A_Harmonic_Holography_for_Self-organized_Brain_Function">HoloBrain: A Harmonic Holography for Self-organized Brain Function <strong>(Oral)</strong></a></h3>
@@ -205,8 +288,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/tmi2.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IEEE TMI
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761822">Learning Brain Dynamics of Evolving Manifold Functional MRI Data Using Geometric-Attention Neural Network</a></h3>
@@ -217,8 +314,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/hbm.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      HBM
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering Shape Signatures of Resting-state Functional Connectivity by Geometric Deep Learning on Riemannian Manifold</a></h3>
