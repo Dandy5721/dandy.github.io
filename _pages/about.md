@@ -39,9 +39,9 @@ redirect_from:
     <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: #007BFF;
+      top: 5px;
+      left: 5px;
+      background-color: #cab2d6;
       color: white;
       padding: 4px 8px;
       font-weight: bold;
