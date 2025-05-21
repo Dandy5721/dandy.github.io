@@ -46,7 +46,7 @@ redirect_from:
       padding: 4px 8px;
       font-weight: bold;
       font-size: 12px;
-      border-radius: 4px;
+      border-radius: 2px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     ">
       TMI
@@ -71,7 +71,7 @@ redirect_from:
       padding: 4px 8px;
       font-weight: bold;
       font-size: 12px;
-      border-radius: 4px;
+      border-radius: 2px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     ">
       IPMI 2025
