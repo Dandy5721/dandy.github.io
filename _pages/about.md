@@ -34,187 +34,169 @@ redirect_from:
 
 ## 📝 Recent Publications (*: co-first author) 
 
-<!-- 1. TMI -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
+<div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
-    <img src="images/tmi2025.png" alt="TMI" style="width: 100%;">
+    <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
     <div style="
-      position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #cab2d6;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
       TMI
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">
-      Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport
-    </a></h3>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport</a></h3>
     <p><strong>Tingting Dan</strong>, Yanquan Huang, Yang Yang and Guorong Wu</p>
   </div>
 </div>
 
-<!-- 2. IPMI 2025 Oral -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
+
+<div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
-    <img src="images/IPMI1.png" alt="IPMI2025" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+    <img src="images/IPMI1.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #cab2d6;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
       IPMI2025
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">
-      Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression (Oral)
-    </a></h3>
-    <p><strong>Tingting Dan</strong> and Guorong Wu</p>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression (Oral)</a></h3>
+    <p> <strong>Tingting Dan</strong> and Guorong Wu </p>
   </div>
 </div>
 
-<!-- 3. IPMI -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/ipmi124.png" alt="IPMI" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      IPMI
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ipmi124.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">
-      A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases
-    </a></h3>
-    <p>Haifeng Huang, Yi Wang, <strong>Tingting Dan*</strong>, Yang Yang and Guorong Wu</p>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases</a></h3>
+    <p> Haifeng Huang, Yi Wang, <strong>Tingting Dan*</strong>, Yang Yang and Guorong Wu</p>
   </div>
 </div>
 
-<!-- 4. ICLR -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/ICLR.png" alt="ICLR" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      ICLR
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ICLR.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">
-      Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies <strong>(Spotlight)</strong>
-    </a></h3>
-    <p>Hyuna Cho, Ziquan Wei, Seungjoo Lee, <strong>Tingting Dan</strong>, Guorong Wu and Won Hwa Kim</p>
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies <strong>(Spotlight)</strong> </a></h3>
+    <p> Hyuna Cho, Ziquan Wei, Seungjoo Lee, <strong>Tingting Dan</strong>, Guorong Wu and Won Hwa Kim</p>
     <p><a href="https://github.com/Hannah37/ConDOR-ICLR25/tree/main"><strong>Code</strong></a></p>
   </div>
 </div>
 
-<!-- 5. NeuroPath -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/Neuropath.png" alt="NeuroPath" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      NeuroPath
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/Neuropath.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes">
-      NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes
-    </a></h3>
+    <h3><a href="https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes">NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes</a></h3>
     <p>Ziquan Wei, <strong>Tingting Dan</strong>, Jiaqi Ding, Paul Laurienti, Guorong Wu</p>
     <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
   </div>
 </div>
 
-<!-- 6. ICML 2024 -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/ICML24.png" alt="ICML2024" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      ICML2024
-    </div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/tau.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3>Bridging Topology and Geometry: Scalable Neural Optimal Transport on Manifold</h3>
-    <p>Haifeng Huang, <strong>Tingting Dan*</strong>, Guorong Wu</p>
+    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X">TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations</a></h3>
+    <p><strong>Tingting Dan</strong>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu</p>
+    <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
+
   </div>
 </div>
 
-<!-- 7. NeurIPS -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/neurips23.png" alt="NeurIPS" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      NeurIPS
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ICML2024.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/58dcb6e2519d8e931e508d02d4a0d77f-Abstract-Conference.html">
-      Hyperbolic Graph Matching Network via Attentive Metric Learning
-    </a></h3>
-    <p><strong>Tingting Dan</strong>, Jiaqi Ding, Yiyang Xu, Guorong Wu</p>
-    <p><a href="https://github.com/HypergraphMatching/HGMN"><strong>Code</strong></a></p>
+    <h3><a href="https://www.researchgate.net/publication/380906541_Exploring_the_Enigma_of_Neural_Dynamics_Through_A_Scattering-Transform_Mixer_Landscape_for_Riemannian_Manifold">Exploring the Enigma of Neural Dynamics Through A Scattering-Transform Mixer Landscape for Riemannian Manifold</a></h3>
+    <p><strong>Tingting Dan</strong>, Ziquan Wei, Won Hwa Kim, Guorong Wu</p>
+    <p><a href="https://github.com/Dandy5721/ICML2024"><strong>Code</strong></a></p>
+
   </div>
 </div>
 
-<!-- 8. TMI -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/tmi2023.png" alt="TMI" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      TMI
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/nips.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/document/10026481">
-      Modeling Disease Progression via Pathology Deformation Field
-    </a></h3>
-    <p><strong>Tingting Dan</strong>, Hanlin Zhu, Guorong Wu</p>
-    <p><a href="https://github.com/tndanc/DDF"><strong>Code</strong></a></p>
+    <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html">Re-Think and Re-Design Graph Neural Networks in Spaces of Continuous Graph Diffusion Functionals</a></h3>
+    <p><strong>Tingting Dan</strong>, Jiaqi Ding, Ziquan Wei, Shahar Kovalsky, Minjeong Kim, Won Hwa Kim, Guorong Wu</p>
+    <p><a href="https://github.com/Dandy5721/GNN-PDE-COV"><strong>Code</strong></a></p>
+
   </div>
 </div>
 
-<!-- 9. HBM -->
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <div style="flex: 1; position: relative;">
-    <img src="images/hbm.png" alt="HBM" style="width: 100%;">
-    <div style="position: absolute; top: 5px; left: 5px;
-      background-color: #cab2d6; color: white;
-      padding: 4px 8px; font-weight: bold;
-      font-size: 12px; border-radius: 2px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
-      HBM
-    </div>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/tmi.png" alt="Description" style="width: 100%;">
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/37068782/">
-      Characterizing Dynamic Brain States Using Graph Convolutional Networks
-    </a></h3>
-    <p><strong>Tingting Dan</strong>, Hanlin Zhu, Guorong Wu</p>
-    <p><a href="https://github.com/tndanc/DBS-GCN"><strong>Code</strong></a></p>
+    <h3><a href="https://www.researchgate.net/publication/373488429_Developing_Explainable_Deep_Model_for_Discovering_Novel_Control_Mechanism_of_Neuro-Dynamics">Developing Explainable Deep Model for Discovering Novel Control Mechanism of Neuro-Dynamics</a></h3>
+    <p><strong>Tingting Dan</strong>, Minjeong Kim, Won Hwa Kim, Guorong Wu</p>
+    <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
+
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/ipmi.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://www.researchgate.net/publication/371407063_HoloBrain_A_Harmonic_Holography_for_Self-organized_Brain_Function">HoloBrain: A Harmonic Holography for Self-organized Brain Function <strong>(Oral)</strong></a></h3>
+    <p>Huan Liu, <strong>Tingting Dan</strong>*, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu</p>
+    <p><a href="https://anonymous.4open.science/r/neuro_detour-47E1/"><strong>Code</strong></a></p>
+
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/tmi2.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761822">Learning Brain Dynamics of Evolving Manifold Functional MRI Data Using Geometric-Attention Neural Network</a></h3>
+    <p><strong>Tingting Dan</strong>, Zhuobin Huang, Hongmin Cai, Paul Laurienti, Guorong Wu </p>
+    <p><a href="https://github.com/Dandy5721/Geometric-attention-neural-network"><strong>Code</strong></a></p>
+
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/hbm.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897">Uncovering Shape Signatures of Resting-state Functional Connectivity by Geometric Deep Learning on Riemannian Manifold</a></h3>
+    <p><strong>Tingting Dan</strong>, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu</p>
+    <p><a href="https://github.com/Dandy5721/GeoNet4Net"><strong>Code</strong></a></p>
+
   </div>
 </div>
 
