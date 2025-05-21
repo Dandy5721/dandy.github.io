@@ -35,6 +35,41 @@ redirect_from:
 ## 📝 Recent Publications (*: co-first author) 
 
 <div style="display: flex; align-items: center;">
+  <div style="flex: 1; position: relative;">
+    <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #007BFF;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      TMI
+    </div>
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport</a></h3>
+    <p><strong>Tingting Dan</strong>, Yanquan Huang, Yang Yang and Guorong Wu</p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport </a></h3>
+    <p> <strong>Tingting Dan</strong>, Yanquan Huang, Yang Yang and Guorong Wu </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
   <div style="flex: 1;">
     <img src="images/IPMI1.png" alt="Description" style="width: 100%;">
   </div>
