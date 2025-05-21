@@ -17,7 +17,7 @@ redirect_from:
 🗨️I'm **Tingting Dan**👧👩‍🎓. A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team)👨👨‍🎓 at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover **geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis**.
 
 ## 🔥 <span style="color:red">**News:**</span>
- - 🔓 <span style="color:blue"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
+ - 🔓 <span style="color:red"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
  
  - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/10955188)
   - 😉 _01/22/2025_: Two papers were accepted by **IPMI 2025 (Oral)**.
@@ -41,7 +41,7 @@ redirect_from:
       position: absolute;
       top: 5px;
       left: 5px;
-      background-color: #cab2d6;
+      background-color: #4dbcd5;
       color: white;
       padding: 4px 8px;
       font-weight: bold;
@@ -66,7 +66,7 @@ redirect_from:
       position: absolute;
       top: 5px;
       left: 5px;
-      background-color: #cab2d6;
+      background-color: #4dbcd5;
       color: white;
       padding: 4px 8px;
       font-weight: bold;
@@ -84,8 +84,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/ipmi124.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IPMI2025
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases</a></h3>
