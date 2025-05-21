@@ -43,7 +43,7 @@ redirect_from:
       left: 5px;
       background-color: #4dbcd5;
       color: white;
-      padding: 4px 8px;
+      padding: 3px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -68,7 +68,7 @@ redirect_from:
       left: 5px;
       background-color: #4dbcd5;
       color: white;
-      padding: 4px 8px;
+      padding: 3px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -92,7 +92,7 @@ redirect_from:
       left: 5px;
       background-color: #4dbcd5;
       color: white;
-      padding: 4px 8px;
+      padding: 3px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -108,8 +108,22 @@ redirect_from:
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+  <div style="flex: 1; position: relative;">
     <img src="images/ICLR.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IPMI2025
+    </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies <strong>(Spotlight)</strong> </a></h3>
