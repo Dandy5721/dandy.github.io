@@ -16,7 +16,7 @@ redirect_from:
 
 🗨️I'm **Tingting Dan**👧👩‍🎓. A Post-Doc Research Associate supervised by [Dr. Guorong Wu](https://www.acmlab.org/team)👨👨‍🎓 at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover **geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis**.
 
-# 🔥 <span style="color:black">**News:**</span>
+## 🔥 News
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
 
  - 🧠 _05/12/2025_: A paper was early accepted by **MICCAI 2025**.
