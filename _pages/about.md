@@ -39,11 +39,11 @@ redirect_from:
     <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -64,11 +64,11 @@ redirect_from:
     <img src="images/IPMI1.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -88,11 +88,11 @@ redirect_from:
     <img src="images/ipmi124.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -112,11 +112,11 @@ redirect_from:
     <img src="images/ICLR.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -137,11 +137,11 @@ redirect_from:
     <img src="images/Neuropath.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -163,11 +163,11 @@ redirect_from:
     <img src="images/tau.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -190,11 +190,11 @@ redirect_from:
     <img src="images/ICML2024.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -215,11 +215,11 @@ redirect_from:
     <img src="images/nips.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -240,11 +240,11 @@ redirect_from:
     <img src="images/tmi.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -266,11 +266,11 @@ redirect_from:
     <img src="images/ipmi.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -292,11 +292,11 @@ redirect_from:
     <img src="images/tmi2.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
@@ -318,11 +318,11 @@ redirect_from:
     <img src="images/hbm.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       background-color: #4dbcd5;
       color: white;
-      padding: 3px 8px;
+      padding: 2px 8px;
       font-weight: bold;
       font-size: 12px;
       border-radius: 2px;
