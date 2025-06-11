@@ -22,15 +22,15 @@ redirect_from:
  - 🧠 _05/12/2025_: A paper was early accepted by **MICCAI 2025**.
  - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/10955188)
   - 💯 _01/22/2025_: Two papers were accepted by **IPMI 2025 (Oral)**.
- - 🌟 _01/22/2025_: One paper was accepted by **ICLR 2025 (Spotlight)**. [[ICLR 2025]](https://github.com/Hannah37/ConDOR-ICLR25/tree/main)
+ - 🌟 _01/22/2025_: A paper was accepted by **ICLR 2025 (Spotlight)**. [[ICLR 2025]](https://github.com/Hannah37/ConDOR-ICLR25/tree/main)
  - ✨ _01/01/2025_: Two papers (ONE Tutorial) were accepted by **IEEE ISBI 2025**. [[ISBI 2025]](https://ieeexplore.ieee.org/abstract/document/10981127)
- - ✌️ _09/25/2024_: One paper was accepted by **NeurIPS 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
+ - ✌️ _09/25/2024_: A paper was accepted by **NeurIPS 2024**. [[NeurIPS 2024]](https://www.researchgate.net/publication/384365261_NeuroPath_A_Neural_Pathway_Transformer_for_Joining_the_Dots_of_Human_Connectomes)
  - 🎉 _06/17/2024_: Four papers were accepted by **MICCAI 2024**. [[MICCAI 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
- - 👍 _05/14/2024_: One paper was accepted by **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
- - 🤞_05/01/2024_: One paper was accepted by **ICML 2024**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
- - 😉 _01/22/2024_: One papers was accepted by **IEEE ISBI 2024 (Oral)**. [[ISBI2024]](http://2023.biomedicalimaging.org/en/)
- - ❤️ _09/30/2023_: One paper was accepted by **NeurIPS 2023**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
-- 😁 _08/21/2023_: One paper was accepted by **IEEE Transactions on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
+ - 👍 _05/14/2024_: A paper was accepted by **Medicial Imgae Analysis**. [[MIA 2024]](https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X)
+ - 🤞_05/01/2024_: A paper was accepted by **ICML 2024**. [[ICML 2024]](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FMcmg0gAAAAJ&sortby=pubdate&citft=1&citft=2&citft=3&email_for_op=dandycn721%40gmail.com&citation_for_view=FMcmg0gAAAAJ:k_IJM867U9cC)
+ - 😉 _01/22/2024_: A papers was accepted by **IEEE ISBI 2024 (Oral)**. [[ISBI2024]](http://2023.biomedicalimaging.org/en/)
+ - ❤️ _09/30/2023_: A paper was accepted by **NeurIPS 2023**. [[NeurIPS 2023]](https://www.researchgate.net/publication/372074848_Re-Think_and_Re-Design_Graph_Neural_Networks_in_Spaces_of_Continuous_Graph_Diffusion_Functionals)
+- 😁 _08/21/2023_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[IEEETMI2023]](https://ieeexplore.ieee.org/abstract/document/10233889)
 
 
 ## 📝 Recent Publications (*: co-first author) 
