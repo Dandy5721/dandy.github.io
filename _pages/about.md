@@ -11,6 +11,30 @@ redirect_from:
 [![](https://img.shields.io/badge/GoogleScholar-T._Dan-lightblue?style=social&logo=googlescholar)](https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op) &ensp;
 [![](https://img.shields.io/badge/arXiv-T._Dan-B31B1B?style=social&logo=arxiv)](https://arxiv.org/search/q-bio?searchtype=author&query=Dan%2C+T) &ensp;
 [![](https://img.shields.io/badge/ResearchGate-T.%20Dan-lightgrey?style=social&logo=researchgate)](https://www.researchgate.net/profile/Tingting-Dan) &ensp;
+<style>
+.hover-img {
+  position: relative;
+  display: inline-block;
+}
+.hover-img img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.hover-img:hover img.default {
+  display: none;
+}
+.hover-img:hover img.hover {
+  display: inline;
+}
+</style>
+
+<a href="https://www.researchgate.net/profile/Tingting-Dan" class="hover-img">
+  <img class="default" src="https://img.shields.io/badge/ResearchGate-T.%20Dan-lightgrey?style=social&logo=researchgate">
+  <img class="hover" src="https://img.shields.io/badge/ResearchGate-T.%20Dan-green?style=social&logo=researchgate">
+</a>
+
 
 🖐️Hi, thanks for stopping by! 😉🎶😊🎈 🗨️I'm a Post-Doc Research Associate 👧👩‍🎓 supervised by [Dr. Guorong Wu](https://www.acmlab.org/team)👨👨‍🎓 at UNC-Chapel Hill. I got my PhD degree at South China University of Technology advised by [Prof. Guorong Wu](https://scholar.google.com/citations?user=XVsMB2kAAAAJ&hl=en) and [Prof. Hongmin Cai](https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN). My research interests cover **geometric deep learning, graph learning, computational neuroscience, machine learning and neuroimage data analysis**.
 
