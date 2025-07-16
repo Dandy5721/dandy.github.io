@@ -19,7 +19,7 @@ redirect_from:
 ## 🔥 News
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
  
- - 🌳 _06/09/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**.
+ - 🌳 _06/09/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/11039163)
  - 🍰 _05/21/2025_: A paper was accepted by **IEEE Transactions on Biomedical Engineering**.
  - 🧠 _05/12/2025_: A paper was early accepted by **MICCAI 2025**.
  - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/10955188)
@@ -56,7 +56,7 @@ redirect_from:
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://openreview.net/pdf?id=9UGfOJBuL8">Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport</a></h3>
+    <h3><a href="https://ieeexplore.ieee.org/abstract/document/10955188">Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport</a></h3>
     <p><strong>Tingting Dan</strong>, Yanquan Huang, Yang Yang and Guorong Wu</p>
   </div>
 </div>
