@@ -39,6 +39,31 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
+    <img src="images/tmi_zx.png" alt="Description" style="width: 100%;">
+    <div style="
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      background-color: #4dbcd5;
+      color: white;
+      padding: 2px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    ">
+      IEEE TMI
+    </div>
+  </div>
+  <div style="flex: 1; margin-left: 20px;">
+    <h3><a href="https://ieeexplore.ieee.org/abstract/document/10955188">Understanding Brain Functional Dynamics Through Neural Koopman Operator with Control Mechanism</a></h3>
+    <p> Zhixuan Zhou, <strong>Tingting Dan</strong>, and Guorong Wu</p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; position: relative;">
     <img src="images/tmi2025.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
