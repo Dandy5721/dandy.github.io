@@ -20,10 +20,10 @@ redirect_from:
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/ **(remote)** externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
  
   - 🫀  _09/05/2025_: A paper was accepted by **Nature Communications**. [[NC]](https://ieeexplore.ieee.org/abstract/document/11039163)
- - 🌳 _06/09/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/11039163)
+ - 🌳 _06/09/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[IEEETMI]](https://ieeexplore.ieee.org/abstract/document/11039163)
  - 🍰 _05/21/2025_: A paper was accepted by **IEEE Transactions on Biomedical Engineering**.
  - 🧠 _05/12/2025_: A paper was early accepted by **MICCAI 2025**.
- - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[TMI]](https://ieeexplore.ieee.org/abstract/document/10955188)
+ - 🫡 _03/15/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[IEEETMI]](https://ieeexplore.ieee.org/abstract/document/10955188)
   - 💯 _01/22/2025_: Two papers were accepted by **IPMI 2025 (Oral)**. [[IPMI]](https://link.springer.com/chapter/10.1007/978-3-031-96625-5_3)
  - 🌟 _01/22/2025_: A paper was accepted by **ICLR 2025 (Spotlight)**. [[ICLR 2025]](https://github.com/Hannah37/ConDOR-ICLR25/tree/main)
  - ✨ _01/01/2025_: Two papers (ONE Tutorial) were accepted by **IEEE ISBI 2025**. [[ISBI 2025]](https://ieeexplore.ieee.org/abstract/document/10981127)
