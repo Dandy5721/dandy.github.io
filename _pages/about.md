@@ -19,7 +19,7 @@ redirect_from:
 ## 🔥 News
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/ **(remote)** externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
 
- - 🫀  _09/18/2025_: Six papers were accepted by **NeurIPS 2025**.
+ - 👋  _09/18/2025_: Six papers were accepted by **NeurIPS 2025**.
   - 🫀  _09/05/2025_: A paper was accepted by **Nature Communications**. [[NC]](https://ieeexplore.ieee.org/abstract/document/11039163)
  - 🌳 _06/09/2025_: A paper was accepted by **IEEE Transactions on Medical Imaging**. [[IEEETMI]](https://ieeexplore.ieee.org/abstract/document/11039163)
  - 🍰 _05/21/2025_: A paper was accepted by **IEEE Transactions on Biomedical Engineering**.
