@@ -164,7 +164,7 @@ GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dy
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></h3>
-    <p> Zhixuan Zhou, <strong>Tingting Dan*</strong>and Guorong Wu</p>
+    <p> Zhixuan Zhou, <strong>Tingting Dan*</strong> and Guorong Wu</p>
   </div>
 </div>
 
@@ -190,7 +190,7 @@ Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 BrainFlow: A Holistic Pathway of Dynamic Neural System on Mainfold </a></h3>
-    <p> Zhixuan Zhou <strong>, Tingting Dan</strong>and Guorong Wu</p>
+    <p> Zhixuan Zhou, <strong>Tingting Dan</strong> and Guorong Wu</p>
   </div>
 </div>
 
@@ -216,7 +216,7 @@ BrainFlow: A Holistic Pathway of Dynamic Neural System on Mainfold </a></h3>
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 BrainMoE: Cognition Joint Embedding via Mixture-of-Expert Towards Robust Brain Foundation Model </a></h3>
-    <p> Ziquan Wei, <strong>Tingting Dan</strong>and Guorong Wu</p>
+    <p> Ziquan Wei, <strong>Tingting Dan</strong> and Guorong Wu</p>
   </div>
 </div>
 
