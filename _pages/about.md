@@ -41,7 +41,7 @@ redirect_from:
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
-    <img src="images/NC.png" alt="Description" style="width: 100%;">
+    <img src="images/NC2.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
       top: 2px;
