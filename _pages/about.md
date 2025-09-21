@@ -164,7 +164,7 @@ GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dy
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></h3>
-    <p> Zhixuan Zhou, <strong>Tingting Dan*</strong> and Guorong Wu</p>
+    <p> Jiaqi Ding, <strong>Tingting Dan*</strong> and Guorong Wu</p>
   </div>
 </div>
 
