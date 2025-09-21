@@ -91,7 +91,7 @@ Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean 
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
-    <img src="images/MFG4AD.png" alt="Description" style="width: 100%;">
+    <img src="images/MFG4AD2.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
       top: 2px;
