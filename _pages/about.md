@@ -84,7 +84,7 @@ redirect_from:
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean Field Game </a></h3>
-    <p> <strong>Tingting Dan*</strong>, Xinwei Huang, WonHwa Kim and Guorong Wu</p>
+    <p> <strong>Tingting Dan</strong>, Xinwei Huang, WonHwa Kim and Guorong Wu</p>
   </div>
 </div>
 
@@ -110,7 +110,7 @@ Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean 
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Game </a></h3>
-    <p> <strong>Tingting Dan*</strong>, Zhihao Fan and Guorong Wu</p>
+    <p> <strong>Tingting Dan</strong>, Zhihao Fan and Guorong Wu</p>
   </div>
 </div>
 
@@ -137,7 +137,7 @@ Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Ga
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dynamics on Riemannian Manifolds </a></h3>
-    <p> <strong>Tingting Dan*</strong>, Jiaqi Ding and Guorong Wu</p>
+    <p> <strong>Tingting Dan</strong>, Jiaqi Ding and Guorong Wu</p>
   </div>
 </div>
 
