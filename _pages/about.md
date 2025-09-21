@@ -190,7 +190,7 @@ Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></
   <div style="flex: 1; margin-left: 20px;">
     <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
 BrainFlow: A Holistic Pathway of Dynamic Neural System on Mainfold </a></h3>
-    <p> Zhixuan Zhou, <strong>Tingting Dan</strong>and Guorong Wu</p>
+    <p> Zhixuan Zhou <strong>, Tingting Dan</strong>and Guorong Wu</p>
   </div>
 </div>
 
