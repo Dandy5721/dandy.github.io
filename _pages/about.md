@@ -82,7 +82,7 @@ redirect_from:
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/117507">	
 Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean Field Game </a></h3>
     <p> <strong>Tingting Dan</strong>, Xinwei Huang, WonHwa Kim and Guorong Wu</p>
   </div>
@@ -108,7 +108,7 @@ Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean 
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/120347">	
 Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Game </a></h3>
     <p> <strong>Tingting Dan</strong>, Zhihao Fan and Guorong Wu</p>
   </div>
@@ -135,7 +135,7 @@ Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Ga
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/119697">	
 GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dynamics on Riemannian Manifolds </a></h3>
     <p> <strong>Tingting Dan</strong>, Jiaqi Ding and Guorong Wu</p>
   </div>
@@ -162,7 +162,7 @@ GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dy
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/115400">	
 Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></h3>
     <p> Jiaqi Ding, <strong>Tingting Dan*</strong> and Guorong Wu</p>
   </div>
@@ -188,7 +188,7 @@ Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs </a></
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/116813">	
 BrainFlow: A Holistic Pathway of Dynamic Neural System on Mainfold </a></h3>
     <p> Zhixuan Zhou, <strong>Tingting Dan</strong> and Guorong Wu</p>
   </div>
@@ -214,7 +214,7 @@ BrainFlow: A Holistic Pathway of Dynamic Neural System on Mainfold </a></h3>
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">	
+    <h3><a href="https://neurips.cc/virtual/2025/poster/120350">	
 BrainMoE: Cognition Joint Embedding via Mixture-of-Expert Towards Robust Brain Foundation Model </a></h3>
     <p> Ziquan Wei, <strong>Tingting Dan</strong> and Guorong Wu</p>
   </div>
