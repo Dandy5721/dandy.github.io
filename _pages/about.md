@@ -58,7 +58,7 @@ redirect_from:
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://ieeexplore.ieee.org/abstract/document/11039163">Explore Brain-Inspired Machine Intelligence for Connecting Dots on Graphs Through Holographic Blueprint of Oscillatory Synchronization</a></h3>
+    <h3><a href="https://www.nature.com/articles/s41467-025-64471-2">Explore Brain-Inspired Machine Intelligence for Connecting Dots on Graphs Through Holographic Blueprint of Oscillatory Synchronization</a></h3>
     <p> <strong>Tingting Dan</strong>, Jiaqi Ding and Guorong Wu</p>
   </div>
 </div>
