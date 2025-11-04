@@ -146,7 +146,7 @@ GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dy
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
-    <img src="images/Kurmotor.png" alt="Description" style="width: 100%;">
+    <img src="images/BRICK.png" alt="Description" style="width: 100%;">
     <div style="
       position: absolute;
       top: 2px;
