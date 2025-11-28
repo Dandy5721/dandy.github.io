@@ -118,7 +118,7 @@ Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Ga
 
 
 
-<!-- <div style="display: flex; align-items: center;">
+ <div style="display: flex; align-items: center;">
   <div style="flex: 1; position: relative;">
     <img src="images/Geodynamics.png" alt="Description" style="width: 100%;">
     <div style="
