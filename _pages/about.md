@@ -137,7 +137,7 @@ Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Ga
     </div>
   </div>
   <div style="flex: 1; margin-left: 20px;">
-    <h3><a href="https://neurips.cc/virtual/2025/poster/119697">	
+    <h3><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/136222">	
 GeoDynamics: A Geometric State‑Space Neural Network for Understanding Brain Dynamics on Riemannian Manifolds </a></h3>
     <p> <strong>Tingting Dan</strong>, Jiaqi Ding and Guorong Wu</p>
   </div>
