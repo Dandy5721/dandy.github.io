@@ -20,6 +20,7 @@ redirect_from:
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/ **(remote)** externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
 
   - 😁 _01/30/2025_: A paper was accepted by **Information Science**. [[INS]](https://arxiv.org/abs/2409.11377)
+  - 🤝 _01/26/2025_: A paper was accepted by **ICLR 2026**. [[ICLR 2026]](https://openreview.net/forum?id=zexMILcQOV)
   - 😊 _01/13/2025_: Three papers were accepted by **IEEE ISBI 2026**. [[ISBI 2026]](https://biomedicalimaging.org/2026/)
   - 🎄 _12/31/2025_: A papers were accepted by **Medicial Imgae Analysis**. [[MIA]](https://aaai.org/conference/aaai/aaai-26/)
   - 🍰  _11/07/2025_: Two papers were accepted by **AAAI 2026**, one is selected as **Oral** presenttaion. [[AAAI2026]](https://aaai.org/conference/aaai/aaai-26/)
