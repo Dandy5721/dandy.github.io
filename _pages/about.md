@@ -19,7 +19,7 @@ redirect_from:
 ## 🔥 News
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/ **(remote)** externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
 
-  - 😉 _05/20/2025_: A paper was accepted by **IEEE TPAMI**. [[TPAMI]](https://arxiv.org/abs/2605.09771)
+  - 😉 _05/20/2025_: A paper was accepted by **IEEE TPAMI**. [[TPAMI]](https://ieeexplore.ieee.org/abstract/document/11534115)
   -  🎉 _05/12/2025_: A paper was accepted by **ICML 2025**. [[ICML]](https://arxiv.org/abs/2605.09771)
   - 😁 _01/30/2025_: A paper was accepted by **Information Science**. [[INS]](https://arxiv.org/abs/2409.11377)
   - 🤝 _01/26/2025_: A paper was accepted by **ICLR 2026**. [[ICLR 2026]](https://openreview.net/forum?id=zexMILcQOV)
