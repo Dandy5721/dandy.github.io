@@ -19,7 +19,8 @@ redirect_from:
 ## 🔥 News
  - 🔓 <span style="color:black"> Our lab (PI: [Dr. Guorong Wu](https://www.acmlab.org/team)) is looking for **highly motivated students** (*computer science, medical image analysis, machine learning and bioinformatics*), in terms of **PhD students**/RA/TA/ **(remote)** externship/internship/**visiting students**. Interested candidates are strongly encouraged to contact **Dr. Wu by [email](grwu@med.unc.edu),** together with resume and transcripts.</span>
 
- - 🤖 **Welcome to visit our [CyberNeuro Assistant](https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/new-writeup-1770305204789)!**
+ - 🤖 **Welcome to visit our [CyberNeuro Assistant](https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/new-writeup-1770305204789)!** Next-Generation Platform for Mental Health Research
+
  - 🧠 **Check out our [CyberNeuro Assistant](https://acmlab.github.io/brain-network-chart/)!** An interactive visualization tool for exploring complex brain connectivity and network structures.
 
   - 😉 _05/20/2025_: A paper was accepted by **IEEE TPAMI**. [[TPAMI]](https://ieeexplore.ieee.org/abstract/document/11534115)
