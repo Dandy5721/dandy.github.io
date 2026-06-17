@@ -7,7 +7,7 @@
 <meta name="description" content="Tingting Dan — Postdoctoral Research Associate at UNC-Chapel Hill. Geometric deep learning, graph learning, computational neuroscience and neuroimaging." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Great+Vibes&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
 <style>
 :root{
   --bg:#070a17;
@@ -56,8 +56,11 @@ nav{
   transition:.3s;
 }
 nav.scrolled{background:rgba(7,10,23,.82);border-bottom:1px solid var(--panel-brd)}
-.brand{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
-.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--grad);box-shadow:0 0 14px var(--violet)}
+.brand{font-family:'Dancing Script','Great Vibes',cursive;font-weight:700;font-style:italic;font-size:2rem;line-height:1;letter-spacing:.5px;display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--grad);box-shadow:0 0 14px var(--violet);flex:none}
+.brand .wm{display:inline-flex}
+.brand .wm span{display:inline-block;background:linear-gradient(120deg,#a5b4fc 0%,#c084fc 45%,#22d3ee 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 12px rgba(139,92,246,.4));opacity:0;transform:translateY(14px) scale(.6) rotate(-12deg);animation:letterIn .6s cubic-bezier(.2,.85,.25,1.25) forwards}
+@keyframes letterIn{to{opacity:1;transform:translateY(0) scale(1) rotate(0)}}
 .nav-links{display:flex;gap:6px;align-items:center}
 .nav-links a{
   font-size:.9rem;color:var(--ink-soft);padding:8px 14px;border-radius:10px;font-weight:500;transition:.2s;
@@ -265,7 +268,7 @@ footer a{color:var(--ink-soft)}
 <div class="bg-orbs"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
 
 <nav id="nav">
-  <a class="brand" href="#hero"><span class="dot"></span>Tingting&nbsp;Dan</a>
+  <a class="brand" href="#hero" aria-label="Wanda"><span class="dot"></span><span class="wm" aria-hidden="true"><span style="animation-delay:.1s">W</span><span style="animation-delay:.24s">a</span><span style="animation-delay:.38s">n</span><span style="animation-delay:.52s">d</span><span style="animation-delay:.66s">a</span></span></a>
   <button class="menu-btn" id="menuBtn">☰</button>
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
