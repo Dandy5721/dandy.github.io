@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tingting Dan · Computational Neuroscience & Geometric Deep Learning</title>
+<meta name="description" content="Tingting Dan — Postdoctoral Research Associate at UNC-Chapel Hill. Geometric deep learning, graph learning, computational neuroscience and neuroimaging." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#070a17;
+  --bg-2:#0b0f24;
+  --panel:rgba(255,255,255,.04);
+  --panel-brd:rgba(255,255,255,.09);
+  --ink:#eef1ff;
+  --ink-soft:#aab2d5;
+  --ink-dim:#7a83ad;
+  --indigo:#6366f1;
+  --violet:#8b5cf6;
+  --cyan:#22d3ee;
+  --grad:linear-gradient(120deg,#6366f1 0%,#8b5cf6 50%,#22d3ee 100%);
+  --grad-2:linear-gradient(120deg,#818cf8,#c084fc);
+  --maxw:1120px;
+  --r:18px;
+  --shadow:0 20px 60px -20px rgba(99,102,241,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--violet);color:#fff}
+/* ambient gradient blobs */
+.bg-orbs{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5}
+.orb.a{width:520px;height:520px;background:#4f46e5;top:-160px;left:-120px}
+.orb.b{width:460px;height:460px;background:#7c3aed;top:30%;right:-160px;opacity:.4}
+.orb.c{width:420px;height:420px;background:#0891b2;bottom:-160px;left:25%;opacity:.32}
+
+/* ===== NAV ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px clamp(18px,5vw,48px);
+  backdrop-filter:blur(14px);
+  background:rgba(7,10,23,.55);
+  border-bottom:1px solid transparent;
+  transition:.3s;
+}
+nav.scrolled{background:rgba(7,10,23,.82);border-bottom:1px solid var(--panel-brd)}
+.brand{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--grad);box-shadow:0 0 14px var(--violet)}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{
+  font-size:.9rem;color:var(--ink-soft);padding:8px 14px;border-radius:10px;font-weight:500;transition:.2s;
+}
+.nav-links a:hover{color:#fff;background:var(--panel)}
+.nav-cta{background:var(--grad);color:#fff !important;font-weight:600 !important;box-shadow:0 8px 24px -8px var(--violet)}
+.nav-cta:hover{filter:brightness(1.1)}
+.menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+
+/* ===== layout ===== */
+section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
+.wrap{max-width:var(--maxw);margin:0 auto}
+.eyebrow{font-family:'JetBrains Mono';font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--grad)}
+.h2{font-family:'Space Grotesk';font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;line-height:1.15;letter-spacing:-.5px;margin-bottom:14px}
+.lead{color:var(--ink-soft);font-size:1.05rem;max-width:640px}
+.gtext{background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* ===== HERO ===== */
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px}
+#net{position:absolute;inset:0;z-index:0;width:100%;height:100%}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--panel-brd);padding:7px 16px;border-radius:100px;font-size:.82rem;color:var(--ink-soft);margin-bottom:26px}
+.hero-tag .pulse{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.6)}70%{box-shadow:0 0 0 10px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:700;line-height:1.02;letter-spacing:-1.5px;margin-bottom:8px}
+.hero-role{font-size:clamp(1.05rem,2.2vw,1.35rem);color:var(--ink-soft);font-weight:500;margin-bottom:22px}
+.hero-role b{color:var(--ink);font-weight:600}
+.hero-desc{color:var(--ink-soft);font-size:1.02rem;max-width:540px;margin-bottom:30px}
+.hero-desc strong{color:#fff;font-weight:600}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:.95rem;transition:.25s;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 12px 30px -10px var(--violet)}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn-ghost{background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink)}
+.btn-ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.socials{display:flex;gap:12px;flex-wrap:wrap}
+.socials a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink-soft);transition:.25s}
+.socials a:hover{color:#fff;border-color:var(--violet);background:rgba(139,92,246,.14);transform:translateY(-3px)}
+.socials svg{width:20px;height:20px}
+
+/* hero portrait */
+.portrait-wrap{position:relative;justify-self:center}
+.portrait{
+  position:relative;width:min(330px,72vw);aspect-ratio:1;border-radius:28px;overflow:hidden;
+  border:1px solid var(--panel-brd);
+  box-shadow:var(--shadow);
+}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 55%,rgba(7,10,23,.55))}
+.ring{position:absolute;inset:-18px;border-radius:36px;border:1px solid rgba(139,92,246,.35);animation:spin 18s linear infinite}
+.ring.two{inset:-34px;border-radius:46px;border-color:rgba(34,211,238,.18);animation-duration:26s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.float-card{
+  position:absolute;background:rgba(11,15,36,.82);backdrop-filter:blur(8px);
+  border:1px solid var(--panel-brd);border-radius:14px;padding:11px 15px;box-shadow:var(--shadow);
+}
+.float-card .k{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.float-card .v{font-size:.72rem;color:var(--ink-dim);letter-spacing:.5px}
+.fc-1{top:8%;left:-46px;animation:bob 5s ease-in-out infinite}
+.fc-2{bottom:10%;right:-40px;animation:bob 6s ease-in-out infinite .5s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* ===== STATS ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--r);padding:26px 22px;text-align:center;transition:.3s}
+.stat:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.4);background:rgba(139,92,246,.06)}
+.stat .num{font-family:'Space Grotesk';font-weight:700;font-size:2.4rem;line-height:1;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat .lab{margin-top:8px;color:var(--ink-soft);font-size:.86rem}
+
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:1fr;gap:30px}
+.about-card{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--r);padding:34px}
+.about-card p{color:var(--ink-soft);margin-bottom:14px}
+.about-card a{color:#a5b4fc;font-weight:500}
+.about-card a:hover{text-decoration:underline}
+.interests{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.28);color:#c7d0ff;padding:8px 15px;border-radius:100px;font-size:.85rem;font-weight:500}
+.chip svg{width:15px;height:15px}
+
+/* ===== NEWS ===== */
+.news-scroll{max-height:460px;overflow-y:auto;padding-right:14px;margin-top:6px}
+.news-scroll::-webkit-scrollbar{width:7px}
+.news-scroll::-webkit-scrollbar-thumb{background:rgba(139,92,246,.4);border-radius:10px}
+.news-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
+.timeline{position:relative;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--violet),transparent)}
+.tl-item{position:relative;margin-bottom:22px}
+.tl-item::before{content:"";position:absolute;left:-29px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--violet);box-shadow:0 0 10px rgba(139,92,246,.7)}
+.tl-date{font-family:'JetBrains Mono';font-size:.76rem;color:var(--cyan);letter-spacing:1px}
+.tl-body{color:var(--ink-soft);font-size:.95rem;margin-top:3px}
+.tl-body b{color:#fff}
+.tl-body .venue{display:inline-block;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);color:#7dd3fc;font-size:.72rem;font-weight:600;padding:1px 9px;border-radius:6px;margin-left:4px}
+.tl-body a{color:#a5b4fc}
+
+/* ===== PUBLICATIONS ===== */
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:8px 0 30px}
+.filter{background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink-soft);padding:8px 17px;border-radius:100px;font-size:.85rem;font-weight:500;cursor:pointer;transition:.2s}
+.filter:hover{color:#fff}
+.filter.active{background:var(--grad);color:#fff;border-color:transparent}
+.pub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.pub{
+  display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--panel-brd);
+  border-radius:var(--r);overflow:hidden;transition:.3s;
+}
+.pub:hover{transform:translateY(-6px);border-color:rgba(139,92,246,.45);box-shadow:var(--shadow)}
+.pub-thumb{position:relative;aspect-ratio:16/8.2;overflow:hidden;background:#0d1126}
+.pub-thumb img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.pub:hover .pub-thumb img{transform:scale(1.06)}
+.badge{position:absolute;top:12px;left:12px;background:rgba(7,10,23,.78);backdrop-filter:blur(6px);border:1px solid var(--panel-brd);color:#fff;font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:8px}
+.badge.hot{background:var(--grad);border-color:transparent}
+.pub-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.pub-title{font-family:'Space Grotesk';font-weight:600;font-size:1.02rem;line-height:1.3;margin-bottom:9px}
+.pub-title a:hover{color:#c7d0ff}
+.pub-authors{color:var(--ink-dim);font-size:.85rem;margin-bottom:14px;flex:1}
+.pub-authors b{color:var(--ink-soft)}
+.pub-links{display:flex;gap:10px;flex-wrap:wrap}
+.pub-links a{font-size:.8rem;font-weight:600;color:#a5b4fc;display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid var(--panel-brd);border-radius:8px;transition:.2s}
+.pub-links a:hover{background:rgba(139,92,246,.14);border-color:var(--violet);color:#fff}
+.more-row{text-align:center;margin-top:34px}
+
+/* ===== CONTACT ===== */
+#contact .wrap{text-align:center}
+.contact-card{background:linear-gradient(160deg,rgba(99,102,241,.12),rgba(34,211,238,.06));border:1px solid var(--panel-brd);border-radius:26px;padding:clamp(36px,6vw,64px)}
+.contact-card h2{font-family:'Space Grotesk';font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:14px}
+.contact-card p{color:var(--ink-soft);max-width:560px;margin:0 auto 28px}
+.recruit{margin-top:30px;background:var(--panel);border:1px dashed rgba(139,92,246,.4);border-radius:14px;padding:18px 22px;font-size:.92rem;color:var(--ink-soft)}
+.recruit b{color:#fff}
+.recruit a{color:#a5b4fc;font-weight:600}
+
+footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
+footer a{color:var(--ink-soft)}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;text-align:center}
+  .hero-tag,.cta-row,.socials{justify-content:center}
+  .hero-desc{margin-left:auto;margin-right:auto}
+  .portrait-wrap{order:-1}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .pub-grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;right:14px;left:14px;background:rgba(11,15,36,.97);border:1px solid var(--panel-brd);border-radius:16px;padding:14px}
+  .nav-links.open a{width:100%}
+  .menu-btn{display:block}
+  .fc-1{left:-12px}.fc-2{right:-8px}
+}
+</style>
+</head>
+<body>
+<div class="bg-orbs"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+
+<nav id="nav">
+  <a class="brand" href="#hero"><span class="dot"></span>Tingting&nbsp;Dan</a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="/cv/">CV</a>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <canvas id="net"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-tag"><span class="pulse"></span>Open to collaboration · UNC-Chapel Hill</div>
+      <h1>Tingting <span class="gtext">Dan</span></h1>
+      <div class="hero-role"><b>Postdoctoral Research Associate</b> · Computational Neuroscience &amp; Geometric Deep Learning</div>
+      <p class="hero-desc">I build <strong>brain-inspired machine intelligence</strong> — teaching graphs, manifolds and neural dynamics to reveal how the human brain works and how disease spreads through it.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#publications">View Research →</a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+      <div class="socials">
+        <a href="mailto:grwu.med@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2v3.3L12 20l7-3.5v-3.3l-7 3.8-7-3.8z"/></svg></a>
+        <a href="https://arxiv.org/a/dan_t_1" target="_blank" rel="noopener" title="arXiv" aria-label="arXiv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity=".0"/><path d="M5 19 12 5l7 14M8 14h8"/></svg></a>
+        <a href="https://www.researchgate.net/profile/Tingting-Dan" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm2.7 13.5-2-3.1h-1.2v3.1H9.8V8.3h2.9c1.8 0 2.9.9 2.9 2.5 0 1.1-.6 1.9-1.5 2.3l2.2 3.4h-1.6zm-1.9-5.9h-1.3v2.3h1.3c.9 0 1.4-.4 1.4-1.2 0-.7-.5-1.1-1.4-1.1z"/></svg></a>
+        <a href="https://github.com/Dandy5721" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.6 2.9 8.4 7 9.8.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4.1-1.4 7-5.2 7-9.8C22 6.6 17.5 2 12 2z"/></svg></a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="ring"></div><div class="ring two"></div>
+      <div class="portrait"><img src="images/bio-photo.jpg" alt="Tingting Dan" /></div>
+      <div class="float-card fc-1"><div class="k">Nature&nbsp;Comms</div><div class="v">2025 · First author</div></div>
+      <div class="float-card fc-2"><div class="k">15+ NeurIPS</div><div class="v">2023 – 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats" style="padding-top:20px;padding-bottom:40px">
+  <div class="wrap stats reveal">
+    <div class="stat"><div class="num" data-count="40">0</div><div class="lab">Peer-reviewed papers</div></div>
+    <div class="stat"><div class="num" data-count="15">0</div><div class="lab">NeurIPS / ICML / ICLR</div></div>
+    <div class="stat"><div class="num" data-count="1" data-suffix=" Nat.Comm">0</div><div class="lab">Nature Communications</div></div>
+    <div class="stat"><div class="num" data-count="6" data-suffix="×">0</div><div class="lab">IEEE TMI / TPAMI</div></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">About me</div>
+    <h2 class="h2">Bridging <span class="gtext">geometry, graphs &amp; the brain</span></h2></div>
+    <div class="about-grid reveal">
+      <div class="about-card">
+        <p>👋 Hi, thanks for stopping by! I'm a <b style="color:#fff">Postdoctoral Research Associate</b> supervised by <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a> at <b style="color:#fff">UNC-Chapel Hill</b>. I earned my Ph.D. at South China University of Technology, advised by Prof. Guorong Wu and <a href="https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Prof. Hongmin Cai</a>.</p>
+        <p>My research develops <b style="color:#fff">brain-inspired machine intelligence</b>: rethinking graph neural networks through continuous diffusion and mean-field games, modeling neural dynamics on Riemannian manifolds, and uncovering how neuropathology propagates across human connectomes — work that has appeared in Nature Communications, NeurIPS, ICML, ICLR, IEEE TPAMI and TMI.</p>
+        <div class="interests">
+          <span class="chip">🧠 Computational Neuroscience</span>
+          <span class="chip">📐 Geometric Deep Learning</span>
+          <span class="chip">🕸️ Graph Learning</span>
+          <span class="chip">🤖 Machine Learning</span>
+          <span class="chip">🩻 Neuroimage Analysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section id="news" style="padding-top:40px">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">What's new</div>
+    <h2 class="h2">Recent <span class="gtext">News</span></h2>
+    <p class="lead">A running log of accepted papers and lab updates.</p></div>
+    <div class="news-scroll reveal" id="newsScroll"><div class="timeline" id="timeline"></div></div>
+  </div>
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+<section id="publications" style="padding-top:40px">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">Selected work</div>
+    <h2 class="h2">Recent <span class="gtext">Publications</span></h2>
+    <p class="lead">* denotes co-first author. A selection — see Google Scholar for the full list.</p></div>
+    <div class="filters reveal" id="filters"></div>
+    <div class="pub-grid" id="pubGrid"></div>
+    <div class="more-row reveal">
+      <a class="btn btn-ghost" id="showMore">Show all publications ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact-card">
+      <div class="eyebrow" style="justify-content:center">Get in touch</div>
+      <h2>Let's connect</h2>
+      <p>Always happy to discuss geometric deep learning, brain networks, and neuroimaging — or potential collaborations.</p>
+      <div class="cta-row" style="justify-content:center;margin-bottom:0">
+        <a class="btn btn-primary" href="mailto:grwu.med@gmail.com">✉️ Email me</a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn btn-ghost" href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="recruit">🔓 Our lab (PI: <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a>) is looking for <b>highly motivated students</b> in computer science, medical image analysis, machine learning &amp; bioinformatics — PhD / RA / TA / (remote) externship / internship / visiting positions. Interested candidates are encouraged to contact <b>Dr. Wu</b> at <a href="mailto:grwu@med.unc.edu">grwu@med.unc.edu</a> with a resume and transcripts.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="yr"></span> Tingting Dan · Built with ☕ &amp; curiosity ·
+  <a href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+<script>
+/* ---------- year ---------- */
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---------- nav scroll + mobile ---------- */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+const navLinks=document.getElementById('navLinks');
+document.getElementById('menuBtn').onclick=()=>navLinks.classList.toggle('open');
+navLinks.querySelectorAll('a').forEach(a=>a.onclick=()=>navLinks.classList.remove('open'));
+
+/* ---------- reveal on scroll ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- count up ---------- */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||(end>=40?'+':'+');
+  let t0=null;const dur=1400;
+  const step=ts=>{if(!t0)t0=ts;const p=Math.min((ts-t0)/dur,1);
+    el.textContent=Math.round(p*end)+(p===1?suf:'');
+    if(p<1)requestAnimationFrame(step);};
+  requestAnimationFrame(step);cio.unobserve(el);
+}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* ---------- NEWS data ---------- */
+const news=[
+  ["05/2025","A paper accepted by <b>IEEE TPAMI</b>","TPAMI","https://ieeexplore.ieee.org/abstract/document/11534115"],
+  ["05/2025","A paper accepted by <b>ICML 2025</b>","ICML 2025","https://arxiv.org/abs/2605.09771"],
+  ["01/2025","A paper accepted by <b>Information Sciences</b>","INS","https://arxiv.org/abs/2409.11377"],
+  ["01/2025","A paper accepted by <b>ICLR 2026</b>","ICLR 2026","https://openreview.net/forum?id=zexMILcQOV"],
+  ["01/2025","Three papers accepted by <b>IEEE ISBI 2026</b>","ISBI 2026","https://biomedicalimaging.org/2026/"],
+  ["12/2025","A paper accepted by <b>Medical Image Analysis</b>","MIA","#"],
+  ["11/2025","Two papers accepted by <b>AAAI 2026</b> — one selected as <b>Oral</b>","AAAI 2026","https://aaai.org/conference/aaai/aaai-26/"],
+  ["10/2025","A paper accepted by <b>Biosensors and Bioelectronics</b>","Biosensors","https://authors.elsevier.com/c/1l-xk3PVtq0Pzq"],
+  ["09/2025","<b>Six</b> papers accepted by <b>NeurIPS 2025</b>","NeurIPS 2025","https://neurips.cc/"],
+  ["09/2025","A paper accepted by <b>Nature Communications</b>","Nat. Comms","https://www.nature.com/articles/s41467-025-64471-2"],
+  ["06/2025","A paper accepted by <b>IEEE Trans. Medical Imaging</b>","IEEE TMI","https://ieeexplore.ieee.org/abstract/document/11039163"],
+  ["05/2025","A paper accepted by <b>IEEE Trans. Biomedical Engineering</b>","IEEE TBME","https://pubmed.ncbi.nlm.nih.gov/41460887/"],
+  ["05/2025","A paper early-accepted by <b>MICCAI 2025</b>","MICCAI 2025","#"],
+  ["03/2025","A paper accepted by <b>IEEE Trans. Medical Imaging</b>","IEEE TMI","https://ieeexplore.ieee.org/abstract/document/10955188"],
+  ["01/2025","Two papers accepted by <b>IPMI 2025 (Oral)</b>","IPMI 2025","https://link.springer.com/chapter/10.1007/978-3-031-96625-5_3"],
+  ["01/2025","A paper accepted by <b>ICLR 2025 (Spotlight)</b>","ICLR 2025","https://github.com/Hannah37/ConDOR-ICLR25/tree/main"],
+  ["01/2025","Two papers (one Tutorial) accepted by <b>IEEE ISBI 2025</b>","ISBI 2025","https://ieeexplore.ieee.org/abstract/document/10981127"],
+  ["09/2024","A paper accepted by <b>NeurIPS 2024</b>","NeurIPS 2024","https://www.researchgate.net/publication/384365261"],
+  ["06/2024","<b>Four</b> papers accepted by <b>MICCAI 2024</b>","MICCAI 2024","#"],
+  ["05/2024","A paper accepted by <b>Medical Image Analysis</b>","MIA 2024","https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X"],
+  ["05/2024","A paper accepted by <b>ICML 2024</b>","ICML 2024","https://github.com/Dandy5721/ICML2024"],
+  ["01/2024","A paper accepted by <b>IEEE ISBI 2024 (Oral)</b>","ISBI 2024","#"],
+  ["09/2023","A paper accepted by <b>NeurIPS 2023</b>","NeurIPS 2023","https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html"],
+  ["08/2023","A paper accepted by <b>IEEE Trans. Medical Imaging</b>","IEEE TMI","https://ieeexplore.ieee.org/abstract/document/10233889"]
+];
+document.getElementById('timeline').innerHTML=news.map(n=>`
+  <div class="tl-item"><div class="tl-date">${n[0]}</div>
+  <div class="tl-body">${n[1]}<a href="${n[3]}" target="_blank" rel="noopener" class="venue">${n[2]} ↗</a></div></div>`).join('');
+
+/* ---------- PUBLICATIONS data ---------- */
+const pubs=[
+ {img:"NC2.png",badge:"Nature Communications",hot:1,cat:"Journal",title:"Explore Brain-Inspired Machine Intelligence for Connecting Dots on Graphs Through Holographic Blueprint of Oscillatory Synchronization",authors:"<b>Tingting Dan</b>, Jiaqi Ding, Guorong Wu",links:[["Paper","https://www.nature.com/articles/s41467-025-64471-2"]]},
+ {img:"MFG.png",badge:"NeurIPS 2025",hot:1,cat:"Conference",title:"Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean Field Game",authors:"<b>Tingting Dan</b>, Xinwei Huang, WonHwa Kim, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/117507"]]},
+ {img:"MFG4AD2.png",badge:"NeurIPS 2025",hot:1,cat:"Conference",title:"Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Game",authors:"<b>Tingting Dan</b>, Zhihao Fan, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/120347"]]},
+ {img:"Geodynamics.png",badge:"NeurIPS 2025",hot:1,cat:"Conference",title:"GeoDynamics: A Geometric State-Space Neural Network for Understanding Brain Dynamics on Riemannian Manifolds",authors:"<b>Tingting Dan</b>, Jiaqi Ding, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/loc/san-diego/poster/136222"]]},
+ {img:"BRICK.png",badge:"NeurIPS 2025",cat:"Conference",title:"Let Brain Rhythm Shape Machine Intelligence for Connecting Dots on Graphs",authors:"Jiaqi Ding, <b>Tingting Dan*</b>, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/115400"]]},
+ {img:"BrainFlow.png",badge:"NeurIPS 2025",cat:"Conference",title:"BrainFlow: A Holistic Pathway of Dynamic Neural System on Manifold",authors:"Zhixuan Zhou, <b>Tingting Dan</b>, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/116813"]]},
+ {img:"brainmoe.png",badge:"NeurIPS 2025",cat:"Conference",title:"BrainMoE: Cognition Joint Embedding via Mixture-of-Expert Towards Robust Brain Foundation Model",authors:"Ziquan Wei, <b>Tingting Dan</b>, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/120350"]]},
+ {img:"tmi_zx.png",badge:"IEEE TMI",cat:"Journal",title:"Understanding Brain Functional Dynamics Through Neural Koopman Operator with Control Mechanism",authors:"Zhixuan Zhou, <b>Tingting Dan</b>, Guorong Wu",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11039163"]]},
+ {img:"tmi2025.png",badge:"IEEE TMI",cat:"Journal",title:"Revealing Cortical Spreading Pathway of Neuropathological Events by Neural Optimal Mass Transport",authors:"<b>Tingting Dan</b>, Yanquan Huang, Yang Yang, Guorong Wu",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/10955188"]]},
+ {img:"IPMI1.png",badge:"IPMI 2025 · Oral",cat:"Conference",title:"Explainable Deep Model for Understanding Neuropathological Events Through Neural Symbolic Regression",authors:"<b>Tingting Dan</b>, Guorong Wu",links:[["Paper","https://openreview.net/pdf?id=9UGfOJBuL8"]]},
+ {img:"ipmi124.png",badge:"IPMI 2025",cat:"Conference",title:"A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases",authors:"Haifeng Huang, Yi Wang, <b>Tingting Dan*</b>, Yang Yang, Guorong Wu",links:[["Paper","https://openreview.net/pdf?id=9UGfOJBuL8"]]},
+ {img:"ICLR.png",badge:"ICLR 2025 · Spotlight",cat:"Conference",title:"Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies",authors:"Hyuna Cho, Ziquan Wei, Seungjoo Lee, <b>Tingting Dan</b>, Guorong Wu, Won Hwa Kim",links:[["Paper","https://openreview.net/pdf?id=9UGfOJBuL8"],["Code","https://github.com/Hannah37/ConDOR-ICLR25/tree/main"]]},
+ {img:"Neuropath.png",badge:"NeurIPS 2024",cat:"Conference",title:"NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes",authors:"Ziquan Wei, <b>Tingting Dan</b>, Jiaqi Ding, Paul Laurienti, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/384365261"],["Code","https://anonymous.4open.science/r/neuro_detour-47E1/"]]},
+ {img:"tau.png",badge:"Medical Image Analysis",cat:"Journal",title:"TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations",authors:"<b>Tingting Dan</b>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu",links:[["Paper","https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X"]]},
+ {img:"ICML2024.png",badge:"ICML 2024",cat:"Conference",title:"Exploring the Enigma of Neural Dynamics Through A Scattering-Transform Mixer Landscape for Riemannian Manifold",authors:"<b>Tingting Dan</b>, Ziquan Wei, Won Hwa Kim, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/380906541"],["Code","https://github.com/Dandy5721/ICML2024"]]},
+ {img:"nips.png",badge:"NeurIPS 2023",cat:"Conference",title:"Re-Think and Re-Design Graph Neural Networks in Spaces of Continuous Graph Diffusion Functionals",authors:"<b>Tingting Dan</b>, Jiaqi Ding, Ziquan Wei, Shahar Kovalsky, Minjeong Kim, Won Hwa Kim, Guorong Wu",links:[["Paper","https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html"],["Code","https://github.com/Dandy5721/GNN-PDE-COV"]]},
+ {img:"tmi.png",badge:"IEEE TMI",cat:"Journal",title:"Developing Explainable Deep Model for Discovering Novel Control Mechanism of Neuro-Dynamics",authors:"<b>Tingting Dan</b>, Minjeong Kim, Won Hwa Kim, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/373488429"]]},
+ {img:"ipmi.png",badge:"IPMI 2023 · Oral",cat:"Conference",title:"HoloBrain: A Harmonic Holography for Self-organized Brain Function",authors:"Huan Liu, <b>Tingting Dan*</b>, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/371407063"]]},
+ {img:"tmi2.png",badge:"IEEE TMI",cat:"Journal",title:"Learning Brain Dynamics of Evolving Manifold Functional MRI Data Using Geometric-Attention Neural Network",authors:"<b>Tingting Dan</b>, Zhuobin Huang, Hongmin Cai, Paul Laurienti, Guorong Wu",links:[["Paper","https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761822"],["Code","https://github.com/Dandy5721/Geometric-attention-neural-network"]]},
+ {img:"hbm.png",badge:"Human Brain Mapping",cat:"Journal",title:"Uncovering Shape Signatures of Resting-state Functional Connectivity by Geometric Deep Learning on Riemannian Manifold",authors:"<b>Tingting Dan</b>, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu",links:[["Paper","https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897"],["Code","https://github.com/Dandy5721/GeoNet4Net"]]}
+];
+const INIT=8;
+const grid=document.getElementById('pubGrid');
+let activeCat="All",expanded=false;
+function card(p){
+  return `<article class="pub" data-cat="${p.cat}">
+    <div class="pub-thumb"><img loading="lazy" src="images/${p.img}" alt=""><span class="badge ${p.hot?'hot':''}">${p.badge}</span></div>
+    <div class="pub-body">
+      <div class="pub-title"><a href="${p.links[0][1]}" target="_blank" rel="noopener">${p.title}</a></div>
+      <div class="pub-authors">${p.authors}</div>
+      <div class="pub-links">${p.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]==='Code'?'⟨/⟩ ':'↗ '}${l[0]}</a>`).join('')}</div>
+    </div></article>`;
+}
+function render(){
+  let list=pubs.filter(p=>activeCat==="All"||p.cat===activeCat);
+  if(!expanded)list=list.slice(0,INIT);
+  grid.innerHTML=list.map(card).join('');
+}
+const cats=["All",...new Set(pubs.map(p=>p.cat))];
+document.getElementById('filters').innerHTML=cats.map((c,i)=>`<button class="filter ${i===0?'active':''}" data-c="${c}">${c}</button>`).join('');
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');activeCat=b.dataset.c;render();
+});
+const moreBtn=document.getElementById('showMore');
+moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
+render();
+
+/* ---------- neural-network hero canvas ---------- */
+(function(){
+  const c=document.getElementById('net'),x=c.getContext('2d');
+  let w,h,nodes,DPR=Math.min(devicePixelRatio||1,2);
+  const mouse={x:-999,y:-999};
+  function size(){
+    const r=c.parentElement.getBoundingClientRect();
+    w=r.width;h=r.height;c.width=w*DPR;c.height=h*DPR;x.setTransform(DPR,0,0,DPR,0,0);
+    const n=Math.min(90,Math.floor(w*h/13000));
+    nodes=Array.from({length:n},()=>({
+      x:Math.random()*w,y:Math.random()*h,
+      vx:(Math.random()-.5)*.32,vy:(Math.random()-.5)*.32,
+      r:Math.random()*1.8+1
+    }));
+  }
+  addEventListener('resize',size);
+  addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;});
+  addEventListener('mouseleave',()=>{mouse.x=mouse.y=-999;});
+  function loop(){
+    x.clearRect(0,0,w,h);
+    for(const p of nodes){
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>w)p.vx*=-1;
+      if(p.y<0||p.y>h)p.vy*=-1;
+      const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);
+      if(d<130){p.x+=dx/d*1.1;p.y+=dy/d*1.1;}
+    }
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
+        if(d<128){
+          const o=(1-d/128)*.5;
+          const g=x.createLinearGradient(a.x,a.y,b.x,b.y);
+          g.addColorStop(0,`rgba(99,102,241,${o})`);
+          g.addColorStop(1,`rgba(34,211,238,${o})`);
+          x.strokeStyle=g;x.lineWidth=.7;
+          x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();
+        }
+      }
+    }
+    for(const p of nodes){
+      x.beginPath();x.arc(p.x,p.y,p.r,0,7);
+      x.fillStyle='rgba(165,180,252,.9)';x.fill();
+      x.beginPath();x.arc(p.x,p.y,p.r*3,0,7);
+      x.fillStyle='rgba(139,92,246,.08)';x.fill();
+    }
+    requestAnimationFrame(loop);
+  }
+  size();loop();
+})();
+</script>
+</body>
+</html>
