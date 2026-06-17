@@ -240,8 +240,8 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 
 footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
 footer a{color:var(--ink-soft)}
-footer .credit{margin-top:10px;font-size:.82rem;color:var(--ink-dim)}
-footer .credit b{font-weight:600;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.viewer-credit{margin-top:16px;text-align:center;font-size:.88rem;color:var(--ink-dim)}
+.viewer-credit b{font-weight:600;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
@@ -408,6 +408,7 @@ footer .credit b{font-weight:600;background:var(--grad-2);-webkit-background-cli
         <div class="viewer-hint">drag to rotate · scroll to zoom</div>
       </div>
     </div>
+    <p class="viewer-credit reveal">Developed by my students <b>Yucheng Li</b> &amp; <b>Yiyao Chen</b> 💜</p>
   </div>
 </section>
 
@@ -455,7 +456,6 @@ footer .credit b{font-weight:600;background:var(--grad-2);-webkit-background-cli
 <footer>
   © <span id="yr"></span> Tingting Dan · Built with ☕ &amp; curiosity ·
   <a href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
-  <div class="credit">Developed by my students <b>Yucheng Li</b> &amp; <b>Yiyao Chen</b> 💜</div>
 </footer>
 
 <script>
