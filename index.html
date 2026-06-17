@@ -192,6 +192,29 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .recruit{margin-top:30px;background:var(--panel);border:1px dashed rgba(139,92,246,.4);border-radius:14px;padding:18px 22px;font-size:.92rem;color:var(--ink-soft)}
 .recruit b{color:#fff}
 .recruit a{color:#a5b4fc;font-weight:600}
+.recruit.in-about{margin-top:26px}
+
+/* ===== recruit highlight under About ===== */
+.recruit-banner{margin-top:22px;display:flex;gap:16px;align-items:flex-start;background:linear-gradient(135deg,rgba(99,102,241,.14),rgba(34,211,238,.06));border:1px solid rgba(139,92,246,.32);border-radius:var(--r);padding:20px 24px}
+.recruit-banner .ico{font-size:1.5rem;line-height:1.3}
+.recruit-banner .rb-body{color:var(--ink-soft);font-size:.95rem}
+.recruit-banner .rb-body b{color:#fff}
+.recruit-banner .rb-body a{color:#a5b4fc;font-weight:600}
+.recruit-banner .rb-title{font-family:'Space Grotesk';font-weight:600;color:#fff;font-size:1.02rem;margin-bottom:6px;display:block}
+
+/* ===== PROJECT / CyberNeuro ===== */
+.project-card{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center;background:var(--panel);border:1px solid var(--panel-brd);border-radius:24px;padding:clamp(24px,3.5vw,40px);position:relative;overflow:hidden}
+.project-card::before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.22),transparent 70%);top:-140px;right:-120px;pointer-events:none}
+.project-tag{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.5px;padding:6px 14px;border-radius:100px;margin-bottom:16px}
+.project-card h3{font-family:'Space Grotesk';font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;line-height:1.15;margin-bottom:8px}
+.project-card .sub{color:#c7d0ff;font-weight:600;font-size:1rem;margin-bottom:14px}
+.project-card p{color:var(--ink-soft);margin-bottom:14px;font-size:.97rem}
+.project-feats{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-direction:column;gap:9px}
+.project-feats li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft);font-size:.93rem}
+.project-feats li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--cyan)}
+.project-links{display:flex;gap:11px;flex-wrap:wrap}
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--panel-brd);box-shadow:var(--shadow);background:#000}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
 footer a{color:var(--ink-soft)}
@@ -207,6 +230,8 @@ footer a{color:var(--ink-soft)}
   .portrait-wrap{order:-1}
   .stats{grid-template-columns:repeat(2,1fr)}
   .pub-grid{grid-template-columns:1fr}
+  .project-card{grid-template-columns:1fr;gap:24px}
+  .project-card .pc-media{order:-1}
 }
 @media(max-width:680px){
   .nav-links{display:none}
@@ -225,6 +250,7 @@ footer a{color:var(--ink-soft)}
   <button class="menu-btn" id="menuBtn">☰</button>
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
+    <a href="#cyberneuro">CyberNeuro</a>
     <a href="#news">News</a>
     <a href="#publications">Publications</a>
     <a href="cv/">CV</a>
@@ -237,18 +263,19 @@ footer a{color:var(--ink-soft)}
   <canvas id="net"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-tag"><span class="pulse"></span>Open to collaboration · UNC-Chapel Hill</div>
+      <div class="hero-tag"><span class="pulse"></span>Assistant Professor · Recruiting students &amp; open to collaboration</div>
       <h1>Tingting <span class="gtext">Dan</span></h1>
-      <div class="hero-role"><b>Postdoctoral Research Associate</b> · Computational Neuroscience &amp; Geometric Deep Learning</div>
+      <div class="hero-role"><b>Assistant Professor</b> · Computational Neuroscience · Machine Learning · AI4Science · Multi-Agent Systems</div>
       <p class="hero-desc">I build <strong>brain-inspired machine intelligence</strong> — teaching graphs, manifolds and neural dynamics to reveal how the human brain works and how disease spreads through it.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#publications">View Research →</a>
         <a class="btn btn-ghost" href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener">Google Scholar</a>
       </div>
       <div class="socials">
-        <a href="mailto:grwu.med@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="mailto:tdan@email.unc.edu" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
         <a href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2v3.3L12 20l7-3.5v-3.3l-7 3.8-7-3.8z"/></svg></a>
-        <a href="https://arxiv.org/a/dan_t_1" target="_blank" rel="noopener" title="arXiv" aria-label="arXiv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity=".0"/><path d="M5 19 12 5l7 14M8 14h8"/></svg></a>
+        <a href="https://x.com/dan_tingting" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://arxiv.org/search/?searchtype=author&query=Dan%2C+Tingting" target="_blank" rel="noopener" title="arXiv" aria-label="arXiv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity=".0"/><path d="M5 19 12 5l7 14M8 14h8"/></svg></a>
         <a href="https://www.researchgate.net/profile/Tingting-Dan" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm2.7 13.5-2-3.1h-1.2v3.1H9.8V8.3h2.9c1.8 0 2.9.9 2.9 2.5 0 1.1-.6 1.9-1.5 2.3l2.2 3.4h-1.6zm-1.9-5.9h-1.3v2.3h1.3c.9 0 1.4-.4 1.4-1.2 0-.7-.5-1.1-1.4-1.1z"/></svg></a>
         <a href="https://github.com/Dandy5721" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.6 2.9 8.4 7 9.8.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4.1-1.4 7-5.2 7-9.8C22 6.6 17.5 2 12 2z"/></svg></a>
       </div>
@@ -283,14 +310,54 @@ footer a{color:var(--ink-soft)}
     <h2 class="h2">Bridging <span class="gtext">geometry, graphs &amp; the brain</span></h2></div>
     <div class="about-grid reveal">
       <div class="about-card">
-        <p>👋 Hi, thanks for stopping by! I'm a <b style="color:#fff">Postdoctoral Research Associate</b> supervised by <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a> at <b style="color:#fff">UNC-Chapel Hill</b>. I earned my Ph.D. at South China University of Technology, advised by Prof. Guorong Wu and <a href="https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Prof. Hongmin Cai</a>.</p>
-        <p>My research develops <b style="color:#fff">brain-inspired machine intelligence</b>: rethinking graph neural networks through continuous diffusion and mean-field games, modeling neural dynamics on Riemannian manifolds, and uncovering how neuropathology propagates across human connectomes — work that has appeared in Nature Communications, NeurIPS, ICML, ICLR, IEEE TPAMI and TMI.</p>
+        <p>👋 Hi, thanks for stopping by! I'm an <b style="color:#fff">Assistant Professor</b> at <b style="color:#fff">UNC-Chapel Hill</b>, working closely with <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a>'s lab. I earned my Ph.D. at South China University of Technology, advised by Prof. Guorong Wu and <a href="https://scholar.google.com.hk/citations?user=B2BWq_EAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Prof. Hongmin Cai</a>.</p>
+        <p>My research develops <b style="color:#fff">brain-inspired machine intelligence</b>: rethinking graph neural networks through continuous diffusion and mean-field games, modeling neural dynamics on Riemannian manifolds, building <b style="color:#fff">AI4Science</b> and <b style="color:#fff">multi-agent</b> systems for neuroscience, and uncovering how neuropathology propagates across human connectomes — work that has appeared in Nature Communications, NeurIPS, ICML, ICLR, IEEE TPAMI and TMI.</p>
         <div class="interests">
           <span class="chip">🧠 Computational Neuroscience</span>
-          <span class="chip">📐 Geometric Deep Learning</span>
-          <span class="chip">🕸️ Graph Learning</span>
           <span class="chip">🤖 Machine Learning</span>
-          <span class="chip">🩻 Neuroimage Analysis</span>
+          <span class="chip">🔬 AI4Science</span>
+          <span class="chip">🛰️ Multi-Agent Systems</span>
+        </div>
+      </div>
+    </div>
+    <div class="recruit-banner reveal">
+      <div class="ico">🔓</div>
+      <div class="rb-body">
+        <b class="rb-title">We're recruiting — join our lab!</b>
+        Our lab (PI: <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a>) is looking for <b>highly motivated students</b> in computer science, medical image analysis, machine learning &amp; bioinformatics — <b>PhD / RA / TA / (remote) externship / internship / visiting</b> positions. Interested candidates are encouraged to contact <b>Dr. Wu</b> at <a href="mailto:grwu@med.unc.edu">grwu@med.unc.edu</a> with a resume and transcripts.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECT / CYBERNEURO ===== -->
+<section id="cyberneuro" style="padding-top:40px">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">Featured project</div>
+    <h2 class="h2">CyberNeuro <span class="gtext">Assistant</span></h2>
+    <p class="lead">An agentic AI platform we're building for next-generation mental-health and brain research.</p></div>
+    <div class="project-card reveal">
+      <div class="pc-text">
+        <span class="project-tag">🧠 AI4Science · Multi-Agent · Live</span>
+        <h3>Your AI co-pilot for brain science</h3>
+        <div class="sub">A Next-Generation Platform for Mental Health Research</div>
+        <p><b style="color:#fff">CyberNeuro Assistant</b> brings large medical foundation models and a team of cooperating AI agents to the neuroscientist's desk — turning raw connectomes and neuroimaging data into insight through natural-language conversation and interactive visualization.</p>
+        <ul class="project-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Chat with your data — ask questions about brain networks &amp; neuroimaging in plain language</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Multi-agent reasoning that plans, retrieves and analyzes across modalities</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Interactive 3D visualization of complex brain connectivity &amp; network structures</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Built for the MedGemma Impact Challenge to accelerate mental-health discovery</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=rDU-kkI3ZA4" target="_blank" rel="noopener">▶ Watch demo</a>
+          <a class="btn btn-ghost" href="https://acmlab.github.io/brain-network-chart/" target="_blank" rel="noopener">🌐 Live demo</a>
+          <a class="btn btn-ghost" href="https://x.com/dan_tingting/status/2039788219353743803" target="_blank" rel="noopener">𝕏 Read the thread</a>
+          <a class="btn btn-ghost" href="https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/new-writeup-1770305204789" target="_blank" rel="noopener">📝 MedGemma writeup</a>
+        </div>
+      </div>
+      <div class="pc-media">
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/rDU-kkI3ZA4" title="CyberNeuro Assistant demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -327,13 +394,13 @@ footer a{color:var(--ink-soft)}
     <div class="contact-card">
       <div class="eyebrow" style="justify-content:center">Get in touch</div>
       <h2>Let's connect</h2>
-      <p>Always happy to discuss geometric deep learning, brain networks, and neuroimaging — or potential collaborations.</p>
+      <p>Always happy to discuss computational neuroscience, machine learning, AI4Science and multi-agent systems — or potential collaborations.</p>
       <div class="cta-row" style="justify-content:center;margin-bottom:0">
-        <a class="btn btn-primary" href="mailto:grwu.med@gmail.com">✉️ Email me</a>
+        <a class="btn btn-primary" href="mailto:tdan@email.unc.edu">✉️ tdan@email.unc.edu</a>
+        <a class="btn btn-ghost" href="https://x.com/dan_tingting" target="_blank" rel="noopener">𝕏 @dan_tingting</a>
         <a class="btn btn-ghost" href="https://scholar.google.com/citations?hl=en&user=FMcmg0gAAAAJ&view_op" target="_blank" rel="noopener">Google Scholar</a>
         <a class="btn btn-ghost" href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <div class="recruit">🔓 Our lab (PI: <a href="https://www.acmlab.org/team" target="_blank" rel="noopener">Dr. Guorong Wu</a>) is looking for <b>highly motivated students</b> in computer science, medical image analysis, machine learning &amp; bioinformatics — PhD / RA / TA / (remote) externship / internship / visiting positions. Interested candidates are encouraged to contact <b>Dr. Wu</b> at <a href="mailto:grwu@med.unc.edu">grwu@med.unc.edu</a> with a resume and transcripts.</div>
     </div>
   </div>
 </section>
