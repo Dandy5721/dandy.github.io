@@ -220,6 +220,21 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--panel-brd);box-shadow:var(--shadow);background:#000}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
+/* ===== BRAIN VIEWER ===== */
+.viewer{background:var(--panel);border:1px solid var(--panel-brd);border-radius:20px;padding:14px}
+.viewer-tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.vtab{background:rgba(255,255,255,.04);border:1px solid var(--panel-brd);color:var(--ink-soft);padding:9px 16px;border-radius:100px;font-size:.88rem;font-weight:600;cursor:pointer;transition:.2s;font-family:inherit;display:inline-flex;align-items:center;gap:7px}
+.vtab:hover{color:#fff}
+.vtab.active{background:var(--grad);color:#fff;border-color:transparent}
+.vtab.vopen{margin-left:auto;text-decoration:none;color:var(--ink-soft)}
+.vtab.vopen:hover{color:#fff;border-color:var(--violet)}
+.viewer-stage{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--panel-brd);background:#05060f;height:min(72vh,640px)}
+.viewer-stage iframe{width:100%;height:100%;border:0;display:block;background:#05060f}
+.viewer-load{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--ink-soft);font-size:.9rem;pointer-events:none;transition:opacity .5s}
+.viewer-load.hide{opacity:0}
+.viewer-load .spin{width:38px;height:38px;border-radius:50%;border:3px solid rgba(139,92,246,.25);border-top-color:var(--violet);animation:spin 1s linear infinite}
+.viewer-hint{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(7,10,23,.7);backdrop-filter:blur(6px);border:1px solid var(--panel-brd);color:var(--ink-soft);font-size:.74rem;padding:5px 14px;border-radius:100px;pointer-events:none;z-index:2}
+
 footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
 footer a{color:var(--ink-soft)}
 
@@ -255,6 +270,7 @@ footer a{color:var(--ink-soft)}
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
     <a href="#cyberneuro">CyberNeuro</a>
+    <a href="#brainviewer">Brain Viewer</a>
     <a href="#news">News</a>
     <a href="#publications">Publications</a>
     <a class="nav-cta" href="#contact">Get in touch</a>
@@ -364,6 +380,27 @@ footer a{color:var(--ink-soft)}
         <div class="video-frame">
           <iframe src="https://www.youtube-nocookie.com/embed/rDU-kkI3ZA4" title="CyberNeuro Assistant demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BRAIN VIEWER ===== -->
+<section id="brainviewer" style="padding-top:40px">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">Interactive · WebGL</div>
+    <h2 class="h2">Play with the <span class="gtext">Brain</span></h2>
+    <p class="lead">Real 3D neuroimaging, right in your browser — spin it, zoom in, and explore. Drag to rotate · scroll to zoom.</p></div>
+    <div class="viewer reveal">
+      <div class="viewer-tabs">
+        <button class="vtab active" data-src="images/atlas_multi.html">🧠 Brain Atlas</button>
+        <button class="vtab" data-src="images/tractseg-sub002S1261.html">🧬 Fiber Tracts</button>
+        <a class="vtab vopen" id="vopen" href="images/atlas_multi.html" target="_blank" rel="noopener" title="Open full screen in a new tab">⛶ Full screen</a>
+      </div>
+      <div class="viewer-stage">
+        <div class="viewer-load" id="viewerLoad"><div class="spin"></div><span>Loading 3D brain…</span></div>
+        <iframe id="brainFrame" title="Interactive brain viewer" loading="lazy" src="images/atlas_multi.html" allowfullscreen></iframe>
+        <div class="viewer-hint">drag to rotate · scroll to zoom</div>
       </div>
     </div>
   </div>
@@ -523,6 +560,23 @@ document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
 const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
+
+/* ---------- brain viewer tabs ---------- */
+(function(){
+  const frame=document.getElementById('brainFrame'),vopen=document.getElementById('vopen'),load=document.getElementById('viewerLoad');
+  if(!frame)return;
+  const showLoad=()=>{if(load)load.classList.remove('hide');};
+  const hideLoad=()=>{if(load)load.classList.add('hide');};
+  frame.addEventListener('load',hideLoad);
+  document.querySelectorAll('.vtab[data-src]').forEach(t=>t.addEventListener('click',()=>{
+    if(t.classList.contains('active'))return;
+    document.querySelectorAll('.vtab[data-src]').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    showLoad();
+    frame.src=t.dataset.src;
+    vopen.href=t.dataset.src;
+  }));
+})();
 
 /* ---------- neural-network hero canvas ---------- */
 (function(){
