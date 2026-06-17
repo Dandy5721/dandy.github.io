@@ -122,8 +122,9 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 }
 .float-card .k{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .float-card .v{font-size:.72rem;color:var(--ink-dim);letter-spacing:.5px}
-.fc-1{top:8%;left:-46px;animation:bob 5s ease-in-out infinite}
-.fc-2{bottom:10%;right:-40px;animation:bob 6s ease-in-out infinite .5s}
+.fc-1{top:6%;left:-46px;animation:bob 5s ease-in-out infinite}
+.fc-2{top:42%;right:-44px;animation:bob 6s ease-in-out infinite .5s}
+.fc-3{bottom:7%;left:-30px;animation:bob 5.5s ease-in-out infinite 1s}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
 /* ===== STATS ===== */
@@ -238,7 +239,7 @@ footer a{color:var(--ink-soft)}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;right:14px;left:14px;background:rgba(11,15,36,.97);border:1px solid var(--panel-brd);border-radius:16px;padding:14px}
   .nav-links.open a{width:100%}
   .menu-btn{display:block}
-  .fc-1{left:-12px}.fc-2{right:-8px}
+  .fc-1{left:-12px}.fc-2{right:-8px}.fc-3{left:-8px}
 }
 </style>
 </head>
@@ -289,6 +290,7 @@ footer a{color:var(--ink-soft)}
       </div>
       <div class="float-card fc-1"><div class="k">Nature&nbsp;Comms</div><div class="v">2025 · First author</div></div>
       <div class="float-card fc-2"><div class="k">15+ NeurIPS</div><div class="v">2023 – 2025</div></div>
+      <div class="float-card fc-3"><div class="k">IEEE&nbsp;TPAMI</div><div class="v">2026 · First author</div></div>
     </div>
   </div>
 </section>
@@ -296,10 +298,10 @@ footer a{color:var(--ink-soft)}
 <!-- ===== STATS ===== -->
 <section id="stats" style="padding-top:20px;padding-bottom:40px">
   <div class="wrap stats reveal">
-    <div class="stat"><div class="num" data-count="40">0</div><div class="lab">Peer-reviewed papers</div></div>
+    <div class="stat"><div class="num" data-count="80">0</div><div class="lab">Peer-reviewed papers</div></div>
     <div class="stat"><div class="num" data-count="15">0</div><div class="lab">NeurIPS / ICML / ICLR</div></div>
     <div class="stat"><div class="num" data-count="1" data-suffix=" Nat.Comm">0</div><div class="lab">Nature Communications</div></div>
-    <div class="stat"><div class="num" data-count="6" data-suffix="×">0</div><div class="lab">IEEE TMI / TPAMI</div></div>
+    <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="lab">IEEE TMI / TPAMI / MIA</div></div>
   </div>
 </section>
 
@@ -470,6 +472,7 @@ document.getElementById('timeline').innerHTML=news.map(n=>`
 
 /* ---------- PUBLICATIONS data ---------- */
 const pubs=[
+ {img:"mean_field.png",badge:"IEEE TPAMI 2026",hot:1,cat:"Journal",title:"A Variational Mean-Field Control Framework for Graph Representation Learning",authors:"<b>Tingting Dan</b>, Zhixuan Zhou, Won Hwa Kim, Guorong Wu",links:[["Paper","https://ieeexplore.ieee.org/abstract/document/11534115"]]},
  {img:"NC2.png",badge:"Nature Communications",hot:1,cat:"Journal",title:"Explore Brain-Inspired Machine Intelligence for Connecting Dots on Graphs Through Holographic Blueprint of Oscillatory Synchronization",authors:"<b>Tingting Dan</b>, Jiaqi Ding, Guorong Wu",links:[["Paper","https://www.nature.com/articles/s41467-025-64471-2"]]},
  {img:"MFG.png",badge:"NeurIPS 2025",hot:1,cat:"Conference",title:"Explore In-Context Message Passing Operator for Graph Neural Networks in A Mean Field Game",authors:"<b>Tingting Dan</b>, Xinwei Huang, WonHwa Kim, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/117507"]]},
  {img:"MFG4AD2.png",badge:"NeurIPS 2025",hot:1,cat:"Conference",title:"Uncover Governing Law of Pathology Propagation Mechanism Through A Mean-Field Game",authors:"<b>Tingting Dan</b>, Zhihao Fan, Guorong Wu",links:[["Paper","https://neurips.cc/virtual/2025/poster/120347"]]},
@@ -483,11 +486,11 @@ const pubs=[
  {img:"ipmi124.png",badge:"IPMI 2025",cat:"Conference",title:"A Multi-Layer Neural Transport Model for Characterizing Pathology Propagation in Neurodegenerative Diseases",authors:"Haifeng Huang, Yi Wang, <b>Tingting Dan*</b>, Yang Yang, Guorong Wu",links:[["Paper","https://openreview.net/pdf?id=9UGfOJBuL8"]]},
  {img:"ICLR.png",badge:"ICLR 2025 · Spotlight",cat:"Conference",title:"Conditional Diffusion with Ordinal Regression: Longitudinal Data Generation for Neurodegenerative Disease Studies",authors:"Hyuna Cho, Ziquan Wei, Seungjoo Lee, <b>Tingting Dan</b>, Guorong Wu, Won Hwa Kim",links:[["Paper","https://openreview.net/pdf?id=9UGfOJBuL8"],["Code","https://github.com/Hannah37/ConDOR-ICLR25/tree/main"]]},
  {img:"Neuropath.png",badge:"NeurIPS 2024",cat:"Conference",title:"NeuroPath: A Neural Pathway Transformer for Joining the Dots of Human Connectomes",authors:"Ziquan Wei, <b>Tingting Dan</b>, Jiaqi Ding, Paul Laurienti, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/384365261"],["Code","https://anonymous.4open.science/r/neuro_detour-47E1/"]]},
- {img:"tau.png",badge:"Medical Image Analysis",cat:"Journal",title:"TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations",authors:"<b>Tingting Dan</b>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu",links:[["Paper","https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X"]]},
+ {img:"tau.png",badge:"Medical Image Analysis",cat:"Journal",title:"TauFlowNet: Revealing Latent Propagation Mechanism of Tau Aggregates Using Deep Neural Transport Equations",authors:"<b>Tingting Dan</b>, Mustafa Dere, Won Hwa Kim, Minjeong Kim, Guorong Wu",links:[["Paper","https://www.sciencedirect.com/science/article/abs/pii/S136184152400135X"],["Code","https://anonymous.4open.science/r/neuro_detour-47E1/"]]},
  {img:"ICML2024.png",badge:"ICML 2024",cat:"Conference",title:"Exploring the Enigma of Neural Dynamics Through A Scattering-Transform Mixer Landscape for Riemannian Manifold",authors:"<b>Tingting Dan</b>, Ziquan Wei, Won Hwa Kim, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/380906541"],["Code","https://github.com/Dandy5721/ICML2024"]]},
  {img:"nips.png",badge:"NeurIPS 2023",cat:"Conference",title:"Re-Think and Re-Design Graph Neural Networks in Spaces of Continuous Graph Diffusion Functionals",authors:"<b>Tingting Dan</b>, Jiaqi Ding, Ziquan Wei, Shahar Kovalsky, Minjeong Kim, Won Hwa Kim, Guorong Wu",links:[["Paper","https://proceedings.neurips.cc/paper_files/paper/2023/hash/b9fd027eb16434174b8bb3d3b18110af-Abstract-Conference.html"],["Code","https://github.com/Dandy5721/GNN-PDE-COV"]]},
- {img:"tmi.png",badge:"IEEE TMI",cat:"Journal",title:"Developing Explainable Deep Model for Discovering Novel Control Mechanism of Neuro-Dynamics",authors:"<b>Tingting Dan</b>, Minjeong Kim, Won Hwa Kim, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/373488429"]]},
- {img:"ipmi.png",badge:"IPMI 2023 · Oral",cat:"Conference",title:"HoloBrain: A Harmonic Holography for Self-organized Brain Function",authors:"Huan Liu, <b>Tingting Dan*</b>, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/371407063"]]},
+ {img:"tmi.png",badge:"IEEE TMI",cat:"Journal",title:"Developing Explainable Deep Model for Discovering Novel Control Mechanism of Neuro-Dynamics",authors:"<b>Tingting Dan</b>, Minjeong Kim, Won Hwa Kim, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/373488429"],["Code","https://anonymous.4open.science/r/neuro_detour-47E1/"]]},
+ {img:"ipmi.png",badge:"IPMI 2023 · Oral",cat:"Conference",title:"HoloBrain: A Harmonic Holography for Self-organized Brain Function",authors:"Huan Liu, <b>Tingting Dan*</b>, Won Hwa Kim, Minjeong Kim, Paul Laurienti, Guorong Wu",links:[["Paper","https://www.researchgate.net/publication/371407063"],["Code","https://anonymous.4open.science/r/neuro_detour-47E1/"]]},
  {img:"tmi2.png",badge:"IEEE TMI",cat:"Journal",title:"Learning Brain Dynamics of Evolving Manifold Functional MRI Data Using Geometric-Attention Neural Network",authors:"<b>Tingting Dan</b>, Zhuobin Huang, Hongmin Cai, Paul Laurienti, Guorong Wu",links:[["Paper","https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9761822"],["Code","https://github.com/Dandy5721/Geometric-attention-neural-network"]]},
  {img:"hbm.png",badge:"Human Brain Mapping",cat:"Journal",title:"Uncovering Shape Signatures of Resting-state Functional Connectivity by Geometric Deep Learning on Riemannian Manifold",authors:"<b>Tingting Dan</b>, Zhuobin Huang, Hongmin Cai, Robert G. Lyday, Paul Laurienti, Guorong Wu",links:[["Paper","https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25897"],["Code","https://github.com/Dandy5721/GeoNet4Net"]]}
 ];
