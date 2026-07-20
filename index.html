@@ -242,6 +242,14 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 
 footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
 footer a{color:var(--ink-soft)}
+/* ===== VISITOR MAP ===== */
+#visitors{padding-top:10px;padding-bottom:70px}
+.vmap-wrap{text-align:center}
+.vmap-box{display:inline-block;background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--r);padding:16px;max-width:100%;line-height:0}
+.vmap-inner{width:340px;max-width:80vw;max-height:230px;overflow:hidden}
+.vmap-inner img,.vmap-inner canvas,.vmap-inner iframe,.vmap-inner div,.vmap-inner a{max-width:100%!important;max-height:230px!important}
+.vmap-note{margin-top:12px;font-size:.8rem;color:var(--ink-dim);line-height:1.6}
+
 .viewer-credit{margin-top:16px;text-align:center;font-size:.88rem;color:var(--ink-dim)}
 .viewer-credit b{font-weight:600;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
@@ -462,6 +470,20 @@ footer a{color:var(--ink-soft)}
   </div>
 </section>
 
+<!-- ===== VISITOR MAP =====
+     Powered by mapmyvisitors.com. To activate, register this site at
+     https://www.mapmyvisitors.com and paste your own "d=" tracking ID into
+     VISITOR_MAP_ID below. While it is empty the section stays hidden. -->
+<section id="visitors" hidden>
+  <div class="wrap vmap-wrap reveal">
+    <div class="eyebrow" style="justify-content:center">Around the world</div>
+    <h2 class="h2">Visitor <span class="gtext">Map</span></h2>
+    <p class="lead" style="margin:0 auto 24px">Where people are reading from — thanks for stopping by! 🌍</p>
+    <div class="vmap-box"><div class="vmap-inner" id="vmapInner"></div></div>
+    <div class="vmap-note">Live visitor map powered by <a href="https://www.mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a></div>
+  </div>
+</section>
+
 <footer>
   © <span id="yr"></span> Tingting Dan · Built with ☕ &amp; curiosity ·
   <a href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
@@ -578,6 +600,21 @@ document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
 const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
+
+/* ---------- visitor map (mapmyvisitors.com) ----------
+   Paste your own tracking ID here to switch the section on.
+   Get it free at https://www.mapmyvisitors.com (register this site,
+   then copy the value of the "d=" parameter from the snippet it gives you). */
+const VISITOR_MAP_ID = "";
+(function(){
+  const sec=document.getElementById('visitors'),box=document.getElementById('vmapInner');
+  if(!sec||!box||!VISITOR_MAP_ID)return;      // stays hidden until an ID is set
+  sec.hidden=false;
+  const s=document.createElement('script');
+  s.async=true;
+  s.src='https://mapmyvisitors.com/map.js?d='+VISITOR_MAP_ID+'&cl=ffffff&w=a';
+  box.appendChild(s);
+})();
 
 /* ---------- brain viewer tabs ---------- */
 (function(){
