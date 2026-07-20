@@ -125,9 +125,11 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 }
 .float-card .k{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .float-card .v{font-size:.72rem;color:var(--ink-dim);letter-spacing:.5px}
-.fc-1{top:6%;left:-46px;animation:bob 5s ease-in-out infinite}
-.fc-2{top:42%;right:-44px;animation:bob 6s ease-in-out infinite .5s}
-.fc-3{bottom:7%;left:-30px;animation:bob 5.5s ease-in-out infinite 1s}
+.float-card .k{white-space:nowrap}
+.fc-1{top:2%;left:-46px;animation:bob 5s ease-in-out infinite}
+.fc-2{top:20%;right:-44px;animation:bob 6s ease-in-out infinite .5s}
+.fc-3{bottom:19%;left:-46px;animation:bob 5.5s ease-in-out infinite 1s}
+.fc-4{bottom:1%;right:-42px;animation:bob 6.5s ease-in-out infinite 1.5s}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 
 /* ===== STATS ===== */
@@ -262,7 +264,13 @@ footer a{color:var(--ink-soft)}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;right:14px;left:14px;background:rgba(11,15,36,.97);border:1px solid var(--panel-brd);border-radius:16px;padding:14px}
   .nav-links.open a{width:100%}
   .menu-btn{display:block}
-  .fc-1{left:-12px}.fc-2{right:-8px}.fc-3{left:-8px}
+  .float-card{padding:8px 11px}
+  .float-card .k{font-size:.92rem}
+  .float-card .v{font-size:.64rem}
+  .fc-1{top:0;left:-10px}
+  .fc-2{top:22%;right:-8px}
+  .fc-3{bottom:21%;left:-10px}
+  .fc-4{bottom:0;right:-8px}
 }
 </style>
 </head>
