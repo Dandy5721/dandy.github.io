@@ -471,16 +471,17 @@ footer a{color:var(--ink-soft)}
 </section>
 
 <!-- ===== VISITOR MAP =====
-     Powered by mapmyvisitors.com. To activate, register this site at
-     https://www.mapmyvisitors.com and paste your own "d=" tracking ID into
-     VISITOR_MAP_ID below. While it is empty the section stays hidden. -->
-<section id="visitors" hidden>
+     Powered by mapmyvisitors.com (image embed — logs each visit and renders
+     as a scalable PNG). Stats dashboard: https://mapmyvisitors.com/web/1c6q0 -->
+<section id="visitors">
   <div class="wrap vmap-wrap reveal">
     <div class="eyebrow" style="justify-content:center">Around the world</div>
     <h2 class="h2">Visitor <span class="gtext">Map</span></h2>
     <p class="lead" style="margin:0 auto 24px">Where people are reading from — thanks for stopping by! 🌍</p>
-    <div class="vmap-box"><div class="vmap-inner" id="vmapInner"></div></div>
-    <div class="vmap-note">Live visitor map powered by <a href="https://www.mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a></div>
+    <div class="vmap-box"><div class="vmap-inner">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=MOBbAi4E2MRQtDQZDwgzEVX9OUFoV9_DmZfcjF8FMdU&cl=ffffff&w=a"></script>
+    </div></div>
+    <div class="vmap-note">Live visitor map powered by <a href="https://mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a></div>
   </div>
 </section>
 
@@ -600,21 +601,6 @@ document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
 const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
-
-/* ---------- visitor map (mapmyvisitors.com) ----------
-   Paste your own tracking ID here to switch the section on.
-   Get it free at https://www.mapmyvisitors.com (register this site,
-   then copy the value of the "d=" parameter from the snippet it gives you). */
-const VISITOR_MAP_ID = "";
-(function(){
-  const sec=document.getElementById('visitors'),box=document.getElementById('vmapInner');
-  if(!sec||!box||!VISITOR_MAP_ID)return;      // stays hidden until an ID is set
-  sec.hidden=false;
-  const s=document.createElement('script');
-  s.async=true;
-  s.src='https://mapmyvisitors.com/map.js?d='+VISITOR_MAP_ID+'&cl=ffffff&w=a';
-  box.appendChild(s);
-})();
 
 /* ---------- brain viewer tabs ---------- */
 (function(){
