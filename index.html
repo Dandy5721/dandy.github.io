@@ -27,7 +27,7 @@
   --shadow:0 20px 60px -20px rgba(99,102,241,.45);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth;scroll-padding-top:90px;overflow-x:clip}
 body{
   font-family:'Inter',system-ui,sans-serif;
   background:var(--bg);
@@ -246,7 +246,7 @@ footer a{color:var(--ink-soft)}
 #reactions{padding-top:30px;padding-bottom:30px}
 .reactions-wrap{text-align:center}
 .react-title{font-family:'Space Grotesk';font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:600;color:#fff;margin-bottom:20px}
-.react-bar{display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.react-bar{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .react-btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink);padding:13px 22px;border-radius:100px;font-family:inherit;font-size:1rem;font-weight:600;cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.2,1.4),border-color .2s,background .2s}
 .react-btn:hover{border-color:var(--violet);background:rgba(139,92,246,.12);transform:translateY(-2px)}
 .react-btn:active{transform:scale(.93)}
@@ -257,6 +257,12 @@ footer a{color:var(--ink-soft)}
 .react-note{margin-top:16px;font-size:.82rem;color:var(--ink-dim)}
 .floater{position:fixed;z-index:9998;pointer-events:none;font-size:1.5rem;will-change:transform,opacity;animation:floatUp 1.15s ease-out forwards}
 @keyframes floatUp{0%{opacity:0;transform:translate(-50%,-50%) scale(.4) rotate(0)}18%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx,0px)),calc(-50% - var(--dy,150px))) scale(1.25) rotate(var(--rot,0deg))}}
+@media(max-width:520px){
+  .react-bar{gap:9px}
+  .react-btn{padding:9px 13px;font-size:.88rem;gap:7px}
+  .react-btn .rb-emoji{font-size:1.05rem}
+  .react-btn .rb-count{min-width:24px;padding:2px 7px;font-size:.75rem}
+}
 
 /* ===== VISITOR MAP ===== */
 #visitors{padding-top:10px;padding-bottom:70px}
@@ -495,7 +501,16 @@ footer a{color:var(--ink-soft)}
         <span class="rb-emoji">❤️</span><span class="rb-label">Like</span><span class="rb-count" id="cntLike">·</span>
       </button>
       <button class="react-btn" id="btnFlower" data-key="flowers" data-emoji="🌸" type="button" aria-label="Send a flower">
-        <span class="rb-emoji">🌸</span><span class="rb-label">Send a flower</span><span class="rb-count" id="cntFlower">·</span>
+        <span class="rb-emoji">🌸</span><span class="rb-label">Flower</span><span class="rb-count" id="cntFlower">·</span>
+      </button>
+      <button class="react-btn" id="btnStar" data-key="stars" data-emoji="⭐" type="button" aria-label="Star">
+        <span class="rb-emoji">⭐</span><span class="rb-label">Star</span><span class="rb-count" id="cntStar">·</span>
+      </button>
+      <button class="react-btn" id="btnCheer" data-key="cheers" data-emoji="🎉" type="button" aria-label="Cheer">
+        <span class="rb-emoji">🎉</span><span class="rb-label">Cheer</span><span class="rb-count" id="cntCheer">·</span>
+      </button>
+      <button class="react-btn" id="btnCoffee" data-key="coffees" data-emoji="☕" type="button" aria-label="Buy a coffee">
+        <span class="rb-emoji">☕</span><span class="rb-label">Coffee</span><span class="rb-count" id="cntCoffee">·</span>
       </button>
     </div>
     <p class="react-note">Give it a tap — watch them fly! 🌸✨</p>
