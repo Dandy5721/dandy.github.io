@@ -242,6 +242,22 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 
 footer{position:relative;z-index:1;text-align:center;padding:34px 18px;color:var(--ink-dim);font-size:.85rem;border-top:1px solid var(--panel-brd)}
 footer a{color:var(--ink-soft)}
+/* ===== REACTIONS ===== */
+#reactions{padding-top:30px;padding-bottom:30px}
+.reactions-wrap{text-align:center}
+.react-title{font-family:'Space Grotesk';font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:600;color:#fff;margin-bottom:20px}
+.react-bar{display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.react-btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink);padding:13px 22px;border-radius:100px;font-family:inherit;font-size:1rem;font-weight:600;cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.2,1.4),border-color .2s,background .2s}
+.react-btn:hover{border-color:var(--violet);background:rgba(139,92,246,.12);transform:translateY(-2px)}
+.react-btn:active{transform:scale(.93)}
+.react-btn.pop{animation:btnPop .4s cubic-bezier(.2,.8,.2,1.5)}
+@keyframes btnPop{0%{transform:scale(1)}40%{transform:scale(1.14)}100%{transform:scale(1)}}
+.react-btn .rb-emoji{font-size:1.25rem;line-height:1}
+.react-btn .rb-count{min-width:34px;padding:2px 10px;border-radius:100px;background:rgba(0,0,0,.25);font-size:.85rem;font-weight:700;background:var(--grad);color:#fff}
+.react-note{margin-top:16px;font-size:.82rem;color:var(--ink-dim)}
+.floater{position:fixed;z-index:9998;pointer-events:none;font-size:1.5rem;will-change:transform,opacity;animation:floatUp 1.15s ease-out forwards}
+@keyframes floatUp{0%{opacity:0;transform:translate(-50%,-50%) scale(.4) rotate(0)}18%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx,0px)),calc(-50% - var(--dy,150px))) scale(1.25) rotate(var(--rot,0deg))}}
+
 /* ===== VISITOR MAP ===== */
 #visitors{padding-top:10px;padding-bottom:70px}
 .vmap-wrap{text-align:center}
@@ -470,6 +486,22 @@ footer a{color:var(--ink-soft)}
   </div>
 </section>
 
+<!-- ===== REACTIONS ===== -->
+<section id="reactions">
+  <div class="wrap reactions-wrap reveal">
+    <p class="react-title">Enjoyed my page? Leave some love 💜</p>
+    <div class="react-bar">
+      <button class="react-btn" id="btnLike" data-key="likes" data-emoji="❤️" type="button" aria-label="Like">
+        <span class="rb-emoji">❤️</span><span class="rb-label">Like</span><span class="rb-count" id="cntLike">·</span>
+      </button>
+      <button class="react-btn" id="btnFlower" data-key="flowers" data-emoji="🌸" type="button" aria-label="Send a flower">
+        <span class="rb-emoji">🌸</span><span class="rb-label">Send a flower</span><span class="rb-count" id="cntFlower">·</span>
+      </button>
+    </div>
+    <p class="react-note">Give it a tap — watch them fly! 🌸✨</p>
+  </div>
+</section>
+
 <!-- ===== VISITOR MAP =====
      Powered by mapmyvisitors.com (image embed — logs each visit and renders
      as a scalable PNG). Stats dashboard: https://mapmyvisitors.com/web/1c6q0 -->
@@ -601,6 +633,60 @@ document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
 const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
+
+/* ---------- reactions: like / send a flower ---------- */
+(function(){
+  const NS='tingtingdan-homepage';                 // unique namespace for this site
+  const API='https://abacus.jasoncameron.dev';
+  const fmt=n=>{n=+n||0;return n>=1000?(n/1000).toFixed(n>=10000?0:1).replace(/\.0$/,'')+'k':''+n;};
+  const buttons=[...document.querySelectorAll('.react-btn')];
+  if(!buttons.length)return;
+
+  // load current counts without incrementing
+  buttons.forEach(async btn=>{
+    const key=btn.dataset.key,el=btn.querySelector('.rb-count');
+    try{const d=await(await fetch(`${API}/get/${NS}/${key}`)).json();el.textContent=fmt(d.value);}
+    catch(e){el.textContent=fmt(localStorage.getItem('react_'+key));}
+  });
+
+  function burst(btn,emoji){
+    const r=btn.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
+    const n=7+Math.floor(Math.random()*4);
+    for(let i=0;i<n;i++){
+      const f=document.createElement('span');
+      f.className='floater';f.textContent=emoji;
+      f.style.left=cx+'px';f.style.top=cy+'px';
+      f.style.setProperty('--dx',(Math.random()*160-80).toFixed(0)+'px');
+      f.style.setProperty('--dy',(120+Math.random()*90).toFixed(0)+'px');
+      f.style.setProperty('--rot',(Math.random()*120-60).toFixed(0)+'deg');
+      f.style.animationDelay=(Math.random()*.12).toFixed(2)+'s';
+      f.style.fontSize=(1.1+Math.random()*.9).toFixed(2)+'rem';
+      document.body.appendChild(f);
+      setTimeout(()=>f.remove(),1400);
+    }
+  }
+
+  const last={};
+  buttons.forEach(btn=>{
+    const key=btn.dataset.key,emoji=btn.dataset.emoji,el=btn.querySelector('.rb-count');
+    btn.addEventListener('click',async()=>{
+      burst(btn,emoji);
+      btn.classList.remove('pop');void btn.offsetWidth;btn.classList.add('pop');
+      const now=Date.now();
+      if(now-(last[key]||0)<350)return;            // throttle rapid taps
+      last[key]=now;
+      // optimistic bump
+      const shown=(el.textContent.match(/[\d.]+/)||['0'])[0];
+      try{
+        const d=await(await fetch(`${API}/hit/${NS}/${key}`)).json();
+        el.textContent=fmt(d.value);
+      }catch(e){
+        const v=(+localStorage.getItem('react_'+key)||+shown||0)+1;
+        localStorage.setItem('react_'+key,v);el.textContent=fmt(v);
+      }
+    });
+  });
+})();
 
 /* ---------- brain viewer tabs ---------- */
 (function(){
