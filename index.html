@@ -524,11 +524,11 @@ footer a{color:var(--ink-soft)}
   <div class="wrap vmap-wrap reveal">
     <div class="eyebrow" style="justify-content:center">Around the world</div>
     <h2 class="h2">Visitor <span class="gtext">Map</span></h2>
-    <p class="lead" style="margin:0 auto 24px">Where people are reading from — thanks for stopping by! 🌍</p>
-    <div class="vmap-box"><div class="vmap-inner">
+    <p class="lead" style="margin:0 auto 22px">Thanks for stopping by — you're one of <b class="gtext" id="visitCount">…</b> visitors! 🌍</p>
+    <div class="vmap-box" id="vmapBox"><div class="vmap-inner">
       <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=MOBbAi4E2MRQtDQZDwgzEVX9OUFoV9_DmZfcjF8FMdU&cl=ffffff&w=a"></script>
     </div></div>
-    <div class="vmap-note">Live visitor map powered by <a href="https://mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a></div>
+    <div class="vmap-note">Live visitor map powered by <a href="https://mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a> — some browsers with tracker-blocking may hide the map.</div>
   </div>
 </section>
 
@@ -648,6 +648,29 @@ document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
 const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
+
+/* ---------- visitor counter + map fallback ---------- */
+(function(){
+  const NS='tingtingdan-homepage',API='https://abacus.jasoncameron.dev';
+  const el=document.getElementById('visitCount');
+  if(el){
+    const fmt=n=>(+n||0).toLocaleString('en-US');
+    const seen=sessionStorage.getItem('tt_visited');
+    const url=`${API}/${seen?'get':'hit'}/${NS}/visits`;
+    fetch(url).then(r=>r.json()).then(d=>{el.textContent=fmt(d.value);sessionStorage.setItem('tt_visited','1');})
+      .catch(()=>{el.textContent='many';});
+  }
+  // If the MapMyVisitors widget doesn't render (blocked by a tracker blocker
+  // or unavailable over HTTPS), hide the empty box so the section stays clean.
+  const box=document.getElementById('vmapBox');
+  if(box){
+    setTimeout(()=>{
+      const inner=box.querySelector('.vmap-inner');
+      const ok=inner&&[...inner.querySelectorAll('img,canvas,svg')].some(e=>e.getBoundingClientRect().height>20);
+      if(!ok)box.style.display='none';
+    },5000);
+  }
+})();
 
 /* ---------- reactions: like / send a flower ---------- */
 (function(){
