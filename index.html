@@ -530,7 +530,7 @@ footer a{color:var(--ink-soft)}
     <h2 class="h2">Visitor <span class="gtext">Map</span></h2>
     <p class="lead" style="margin:0 auto 22px">Thanks for stopping by — you're one of <b class="gtext" id="visitCount">…</b> visitors, joining from <b class="gtext" id="visitFrom">🌍</b></p>
     <div class="worldmap-card"><div id="worldmap"></div></div>
-    <div class="vmap-note">📍 The glowing dot is roughly where you're visiting from. Interactive map — hover the regions!</div>
+    <div class="vmap-note">📍 Each glowing dot is a visitor's approximate location. Hover a dot to see where they're from!</div>
   </div>
 </section>
 
@@ -653,9 +653,10 @@ const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
 
-/* ---------- visitor counter + self-hosted world map ---------- */
+/* ---------- visitor counter + world map with all visitors (Firebase) ---------- */
 (function(){
   const NS='tingtingdan-homepage',API='https://abacus.jasoncameron.dev';
+  const FB='https://personalsite-92f45-default-rtdb.firebaseio.com';   // Realtime DB (REST)
   const fmt=n=>(+n||0).toLocaleString('en-US');
 
   // total visits (counted once per session)
@@ -672,31 +673,50 @@ render();
   const hideCard=()=>{const c=mapEl.closest('.worldmap-card');if(c)c.style.display='none';};
   if(typeof jsVectorMap==='undefined'){hideCard();return;}      // library blocked/offline
 
-  function flag(cc){try{return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>127397+c.charCodeAt(0)));}catch(e){return'📍';}}
-  function build(marker){
+  const flag=cc=>{try{return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>127397+c.charCodeAt(0)));}catch(e){return'📍';}};
+
+  function render(markers){
     try{
       new jsVectorMap({
-        selector:'#worldmap',map:'world',zoomButtons:false,zoomOnScroll:false,
-        backgroundColor:'transparent',
+        selector:'#worldmap',map:'world',zoomButtons:false,zoomOnScroll:false,backgroundColor:'transparent',
         regionStyle:{initial:{fill:'#2b3160',stroke:'#0b0f24','stroke-width':.4},hover:{fill:'#6366f1',fillOpacity:1}},
-        markers:marker?[marker]:[],
-        markerStyle:{initial:{fill:'#22d3ee',stroke:'#eaf2ff','stroke-width':1.4,r:6},hover:{fill:'#a5b4fc',r:8}},
+        markers:markers,
+        markerStyle:{initial:{fill:'#22d3ee',stroke:'#0b0f24','stroke-width':1,r:5,fillOpacity:.85},hover:{fill:'#a5b4fc',r:8}},
         markerLabelStyle:{initial:{fontFamily:'Inter',fontSize:12,fill:'#eef1ff'}}
       });
     }catch(e){hideCard();}
   }
 
-  // geolocate the current visitor (non-tracker API), then draw the map
-  let done=false;const go=g=>{if(done)return;done=true;
-    let marker=null;
+  const geo=()=>Promise.race([
+    fetch('https://ipwho.is/').then(r=>r.json()).catch(()=>null),
+    new Promise(res=>setTimeout(()=>res(null),3000))
+  ]);
+
+  (async function(){
+    const g=await geo();
+    // show "you're joining from ..." and record this visitor once per browser
     if(g&&g.success&&g.latitude!=null){
-      marker={name:`You are here${g.city?' · '+g.city:''}`,coords:[g.latitude,g.longitude]};
       if(fEl)fEl.textContent=`${g.city?g.city+', ':''}${g.country||''} ${g.country_code?flag(g.country_code):'🌍'}`.trim();
+      if(!localStorage.getItem('tt_geo_logged')){
+        const rec={lat:Math.round(g.latitude*10)/10,lng:Math.round(g.longitude*10)/10,
+                   city:(g.city||'').slice(0,60),country:(g.country||'').slice(0,60),cc:g.country_code||'',ts:Date.now()};
+        try{await fetch(`${FB}/visitors.json`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(rec)});
+            localStorage.setItem('tt_geo_logged','1');}catch(e){}
+      }
     }
-    build(marker);
-  };
-  fetch('https://ipwho.is/').then(r=>r.json()).then(go).catch(()=>go(null));
-  setTimeout(()=>go(null),3000);   // don't wait forever on geo
+    // read every visitor and plot them all
+    let markers=[];
+    try{
+      const data=await fetch(`${FB}/visitors.json`).then(r=>r.json());
+      if(data)markers=Object.values(data)
+        .filter(v=>v&&typeof v.lat==='number'&&typeof v.lng==='number')
+        .map(v=>({name:(`${v.city?v.city+', ':''}${v.country||''}`.trim())||'A visitor',coords:[v.lat,v.lng]}));
+    }catch(e){}
+    // guarantee the current visitor shows even if the read hasn't propagated
+    if(g&&g.success&&g.latitude!=null&&!markers.some(m=>Math.abs(m.coords[0]-g.latitude)<.2&&Math.abs(m.coords[1]-g.longitude)<.2))
+      markers.push({name:`You · ${g.city||''}`.trim(),coords:[Math.round(g.latitude*10)/10,Math.round(g.longitude*10)/10]});
+    render(markers);
+  })();
 })();
 
 /* ---------- reactions: like / send a flower ---------- */
