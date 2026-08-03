@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Great+Vibes&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/jsvectormap.min.css" />
 <style>
 :root{
   --bg:#070a17;
@@ -267,9 +268,10 @@ footer a{color:var(--ink-soft)}
 /* ===== VISITOR MAP ===== */
 #visitors{padding-top:10px;padding-bottom:70px}
 .vmap-wrap{text-align:center}
-.vmap-box{display:inline-block;background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--r);padding:16px;max-width:100%;line-height:0}
-.vmap-inner{width:340px;max-width:80vw;max-height:230px;overflow:hidden}
-.vmap-inner img,.vmap-inner canvas,.vmap-inner iframe,.vmap-inner div,.vmap-inner a{max-width:100%!important;max-height:230px!important}
+.worldmap-card{max-width:780px;margin:0 auto;background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--r);padding:14px 16px 8px;box-shadow:var(--shadow)}
+#worldmap{width:100%;height:min(54vw,400px);min-height:240px}
+.jvm-container{background:transparent!important}
+.jvm-tooltip{background:#0b0f24!important;border:1px solid var(--panel-brd)!important;border-radius:8px!important;font-family:'Inter',sans-serif!important;font-size:.8rem!important;padding:5px 10px!important;box-shadow:var(--shadow)!important}
 .vmap-note{margin-top:12px;font-size:.8rem;color:var(--ink-dim);line-height:1.6}
 
 .viewer-credit{margin-top:16px;text-align:center;font-size:.88rem;color:var(--ink-dim)}
@@ -518,17 +520,17 @@ footer a{color:var(--ink-soft)}
 </section>
 
 <!-- ===== VISITOR MAP =====
-     Powered by mapmyvisitors.com (image embed — logs each visit and renders
-     as a scalable PNG). Stats dashboard: https://mapmyvisitors.com/web/1c6q0 -->
+     Self-hosted interactive world map (jsVectorMap, loaded from jsdelivr — a
+     library CDN, not a tracker, so ad-blockers don't block it). The current
+     visitor's location is geolocated via ipwho.is and pinned on the map.
+     Total visits are counted with Abacus. -->
 <section id="visitors">
   <div class="wrap vmap-wrap reveal">
     <div class="eyebrow" style="justify-content:center">Around the world</div>
     <h2 class="h2">Visitor <span class="gtext">Map</span></h2>
-    <p class="lead" style="margin:0 auto 22px">Thanks for stopping by — you're one of <b class="gtext" id="visitCount">…</b> visitors! 🌍</p>
-    <div class="vmap-box" id="vmapBox"><div class="vmap-inner">
-      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=MOBbAi4E2MRQtDQZDwgzEVX9OUFoV9_DmZfcjF8FMdU&cl=ffffff&w=a"></script>
-    </div></div>
-    <div class="vmap-note">Live visitor map powered by <a href="https://mapmyvisitors.com" target="_blank" rel="noopener" style="color:#a5b4fc">MapMyVisitors</a> — some browsers with tracker-blocking may hide the map.</div>
+    <p class="lead" style="margin:0 auto 22px">Thanks for stopping by — you're one of <b class="gtext" id="visitCount">…</b> visitors, joining from <b class="gtext" id="visitFrom">🌍</b></p>
+    <div class="worldmap-card"><div id="worldmap"></div></div>
+    <div class="vmap-note">📍 The glowing dot is roughly where you're visiting from. Interactive map — hover the regions!</div>
   </div>
 </section>
 
@@ -537,6 +539,8 @@ footer a{color:var(--ink-soft)}
   <a href="https://github.com/Dandy5721" target="_blank" rel="noopener">GitHub</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/jsvectormap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/maps/world.js"></script>
 <script>
 /* ---------- year ---------- */
 document.getElementById('yr').textContent = new Date().getFullYear();
@@ -649,27 +653,50 @@ const moreBtn=document.getElementById('showMore');
 moreBtn.onclick=()=>{expanded=!expanded;render();moreBtn.textContent=expanded?'Show fewer ↑':'Show all publications ↓';};
 render();
 
-/* ---------- visitor counter + map fallback ---------- */
+/* ---------- visitor counter + self-hosted world map ---------- */
 (function(){
   const NS='tingtingdan-homepage',API='https://abacus.jasoncameron.dev';
-  const el=document.getElementById('visitCount');
-  if(el){
-    const fmt=n=>(+n||0).toLocaleString('en-US');
+  const fmt=n=>(+n||0).toLocaleString('en-US');
+
+  // total visits (counted once per session)
+  const cEl=document.getElementById('visitCount');
+  if(cEl){
     const seen=sessionStorage.getItem('tt_visited');
-    const url=`${API}/${seen?'get':'hit'}/${NS}/visits`;
-    fetch(url).then(r=>r.json()).then(d=>{el.textContent=fmt(d.value);sessionStorage.setItem('tt_visited','1');})
-      .catch(()=>{el.textContent='many';});
+    fetch(`${API}/${seen?'get':'hit'}/${NS}/visits`).then(r=>r.json())
+      .then(d=>{cEl.textContent=fmt(d.value);sessionStorage.setItem('tt_visited','1');})
+      .catch(()=>{cEl.textContent='many';});
   }
-  // If the MapMyVisitors widget doesn't render (blocked by a tracker blocker
-  // or unavailable over HTTPS), hide the empty box so the section stays clean.
-  const box=document.getElementById('vmapBox');
-  if(box){
-    setTimeout(()=>{
-      const inner=box.querySelector('.vmap-inner');
-      const ok=inner&&[...inner.querySelectorAll('img,canvas,svg')].some(e=>e.getBoundingClientRect().height>20);
-      if(!ok)box.style.display='none';
-    },5000);
+
+  const mapEl=document.getElementById('worldmap'),fEl=document.getElementById('visitFrom');
+  if(!mapEl)return;
+  const hideCard=()=>{const c=mapEl.closest('.worldmap-card');if(c)c.style.display='none';};
+  if(typeof jsVectorMap==='undefined'){hideCard();return;}      // library blocked/offline
+
+  function flag(cc){try{return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>127397+c.charCodeAt(0)));}catch(e){return'📍';}}
+  function build(marker){
+    try{
+      new jsVectorMap({
+        selector:'#worldmap',map:'world',zoomButtons:false,zoomOnScroll:false,
+        backgroundColor:'transparent',
+        regionStyle:{initial:{fill:'#2b3160',stroke:'#0b0f24','stroke-width':.4},hover:{fill:'#6366f1',fillOpacity:1}},
+        markers:marker?[marker]:[],
+        markerStyle:{initial:{fill:'#22d3ee',stroke:'#eaf2ff','stroke-width':1.4,r:6},hover:{fill:'#a5b4fc',r:8}},
+        markerLabelStyle:{initial:{fontFamily:'Inter',fontSize:12,fill:'#eef1ff'}}
+      });
+    }catch(e){hideCard();}
   }
+
+  // geolocate the current visitor (non-tracker API), then draw the map
+  let done=false;const go=g=>{if(done)return;done=true;
+    let marker=null;
+    if(g&&g.success&&g.latitude!=null){
+      marker={name:`You are here${g.city?' · '+g.city:''}`,coords:[g.latitude,g.longitude]};
+      if(fEl)fEl.textContent=`${g.city?g.city+', ':''}${g.country||''} ${g.country_code?flag(g.country_code):'🌍'}`.trim();
+    }
+    build(marker);
+  };
+  fetch('https://ipwho.is/').then(r=>r.json()).then(go).catch(()=>go(null));
+  setTimeout(()=>go(null),3000);   // don't wait forever on geo
 })();
 
 /* ---------- reactions: like / send a flower ---------- */
