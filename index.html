@@ -228,10 +228,16 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .project-feats li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft);font-size:.93rem}
 .project-feats li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--cyan)}
 .project-links{display:flex;gap:11px;flex-wrap:wrap}
-.access-line{margin:18px 0 14px;font-size:.95rem;color:var(--ink-soft)}
-.access-line b{color:#fff;font-weight:600}
-.access-line a{color:#a5b4fc;font-weight:600;text-decoration:none}
-.access-line a:hover{text-decoration:underline}
+.access-chip{display:flex;align-items:center;gap:13px;margin:18px 0 16px;padding:12px 16px;border-radius:14px;text-decoration:none;position:relative;overflow:hidden;background:linear-gradient(130deg,rgba(99,102,241,.16),rgba(34,211,238,.09));border:1px solid rgba(139,92,246,.35);transition:transform .25s,box-shadow .25s,border-color .25s}
+.access-chip::before{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);transform:skewX(-20deg);animation:shine 5s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%,55%{left:-60%}100%{left:140%}}
+.access-chip:hover{transform:translateY(-2px);border-color:var(--violet);box-shadow:0 14px 34px -14px var(--violet)}
+.ac-pulse{flex:none;width:10px;height:10px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
+.ac-body{display:flex;flex-direction:column;gap:2px;line-height:1.2;flex:1;min-width:0}
+.ac-label{font-family:'JetBrains Mono';font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan)}
+.ac-url{font-family:'Space Grotesk';font-weight:700;font-size:1.04rem;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ac-go{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--grad);color:#fff;font-size:1.05rem;font-weight:700;box-shadow:0 8px 20px -8px var(--violet);transition:.25s}
+.access-chip:hover .ac-go{transform:translateX(2px) scale(1.07)}
 .video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--panel-brd);box-shadow:var(--shadow);background:#000}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
@@ -429,7 +435,14 @@ footer a{color:var(--ink-soft)}
         <div class="video-frame">
           <iframe src="https://www.youtube-nocookie.com/embed/rDU-kkI3ZA4" title="CyberNeuro Assistant demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <p class="access-line">🔑 <b>How to access:</b> <a href="https://wanda-cyberbench.com/" target="_blank" rel="noopener">wanda-cyberbench.com ↗</a></p>
+        <a class="access-chip" href="https://wanda-cyberbench.com/" target="_blank" rel="noopener" title="Launch CyberNeuro Assistant">
+          <span class="ac-pulse"></span>
+          <span class="ac-body">
+            <span class="ac-label">🔑 How to access · Live</span>
+            <span class="ac-url">wanda-cyberbench.com</span>
+          </span>
+          <span class="ac-go">↗</span>
+        </a>
         <div class="project-links">
           <a class="btn btn-primary" href="https://www.youtube.com/watch?v=rDU-kkI3ZA4" target="_blank" rel="noopener">▶ Watch demo</a>
           <a class="btn btn-ghost" href="https://acmlab.github.io/brain-network-chart/" target="_blank" rel="noopener">🌐 Live demo</a>
