@@ -228,6 +228,11 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .project-feats li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft);font-size:.93rem}
 .project-feats li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--cyan)}
 .project-links{display:flex;gap:11px;flex-wrap:wrap}
+.access-box{margin:4px 0 20px;background:linear-gradient(135deg,rgba(99,102,241,.14),rgba(34,211,238,.07));border:1px solid rgba(139,92,246,.32);border-radius:14px;padding:16px 18px}
+.access-box .access-label{font-family:'JetBrains Mono';font-size:.74rem;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+.access-box p{color:var(--ink-soft);font-size:.92rem;margin:0 0 12px}
+.access-url{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;font-weight:700;font-size:1rem;padding:11px 20px;border-radius:100px;text-decoration:none;box-shadow:0 10px 26px -10px var(--violet);transition:.25s;word-break:break-all}
+.access-url:hover{filter:brightness(1.08);transform:translateY(-2px)}
 .video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--panel-brd);box-shadow:var(--shadow);background:#000}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
@@ -420,6 +425,11 @@ footer a{color:var(--ink-soft)}
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Interactive 3D visualization of complex brain connectivity &amp; network structures</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Built for the MedGemma Impact Challenge to accelerate mental-health discovery</li>
         </ul>
+        <div class="access-box">
+          <div class="access-label">🔑 How to access</div>
+          <p>CyberNeuro Assistant is live — launch it right in your browser, no install needed:</p>
+          <a class="access-url" href="https://wanda-cyberbench.com/" target="_blank" rel="noopener">🚀 wanda-cyberbench.com ↗</a>
+        </div>
         <div class="project-links">
           <a class="btn btn-primary" href="https://www.youtube.com/watch?v=rDU-kkI3ZA4" target="_blank" rel="noopener">▶ Watch demo</a>
           <a class="btn btn-ghost" href="https://acmlab.github.io/brain-network-chart/" target="_blank" rel="noopener">🌐 Live demo</a>
