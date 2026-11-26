@@ -75,6 +75,9 @@ nav.scrolled{background:rgba(7,10,23,.82);border-bottom:1px solid var(--panel-br
 .nav-cta{background:var(--grad);color:#fff !important;font-weight:600 !important;box-shadow:0 8px 24px -8px var(--violet)}
 .nav-cta:hover{filter:brightness(1.1)}
 .menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+.nav-right{display:flex;align-items:center;gap:12px}
+.theme-toggle{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:11px;background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink);cursor:pointer;font-size:1.05rem;line-height:1;transition:.2s;font-family:inherit;flex:none}
+.theme-toggle:hover{transform:translateY(-1px);border-color:var(--violet);background:rgba(139,92,246,.12)}
 
 /* ===== layout ===== */
 section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
@@ -355,21 +358,75 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
   .fc-3{bottom:21%;left:-10px}
   .fc-4{bottom:0;right:-8px}
 }
+
+/* ===== LIGHT THEME (Dose-style cream) ===== */
+:root[data-theme="light"]{
+  --bg:#f5f3ec;--bg-2:#eceae1;
+  --panel:rgba(26,28,54,.045);--panel-brd:rgba(26,28,54,.12);
+  --ink:#1b1d2e;--ink-soft:#4a4e68;--ink-dim:#777b94;
+  --shadow:0 22px 50px -26px rgba(79,70,229,.3);
+}
+:root[data-theme="light"] nav{background:rgba(245,243,236,.62)}
+:root[data-theme="light"] nav.scrolled{background:rgba(245,243,236,.9)}
+:root[data-theme="light"] .orb{opacity:.16}
+:root[data-theme="light"] .orb.b{opacity:.12}
+:root[data-theme="light"] .orb.c{opacity:.1}
+/* white/near-white emphasis text -> dark ink */
+:root[data-theme="light"] [style*="color:#fff"],
+:root[data-theme="light"] .nav-links a:hover,
+:root[data-theme="light"] .menu-btn,
+:root[data-theme="light"] .hero-desc strong,
+:root[data-theme="light"] .tl-body b,
+:root[data-theme="light"] .recruit b,
+:root[data-theme="light"] .recruit-banner .rb-body b,
+:root[data-theme="light"] .recruit-banner .rb-title,
+:root[data-theme="light"] .react-title{color:var(--ink)!important}
+/* light-on-dark accent text -> deeper indigo for contrast */
+:root[data-theme="light"] .about-card a,
+:root[data-theme="light"] .tl-body a,
+:root[data-theme="light"] .recruit a,
+:root[data-theme="light"] .recruit-banner .rb-body a,
+:root[data-theme="light"] .pub-links a,
+:root[data-theme="light"] .mail-ico,
+:root[data-theme="light"] .vmap-note a{color:#4f46e5}
+:root[data-theme="light"] .socials a:hover,
+:root[data-theme="light"] .filter:hover,
+:root[data-theme="light"] .pub-links a:hover,
+:root[data-theme="light"] .vtab:hover,
+:root[data-theme="light"] .vtab.vopen:hover,
+:root[data-theme="light"] .mail-ico:hover,
+:root[data-theme="light"] .pub-title a:hover{color:#4f46e5}
+:root[data-theme="light"] .project-card .sub{color:#5b55d6}
+:root[data-theme="light"] .chip{color:#4338ca}
+:root[data-theme="light"] .tl-body .venue{color:#0e7490;background:rgba(34,211,238,.16);border-color:rgba(34,211,238,.45)}
+/* white-ish literal fills -> dark tint on light */
+:root[data-theme="light"] .btn-ghost:hover{background:rgba(26,28,54,.06)}
+:root[data-theme="light"] .react-btn{background:rgba(26,28,54,.04)}
+:root[data-theme="light"] .vtab{background:rgba(26,28,54,.04)}
+:root[data-theme="light"] .theme-toggle:hover{background:rgba(26,28,54,.06)}
+:root[data-theme="light"] .float-card{background:rgba(255,255,255,.82)}
+:root[data-theme="light"] .swap-hint{color:var(--ink-soft);background:rgba(255,255,255,.72)}
+:root[data-theme="light"] .portrait::after{background:linear-gradient(160deg,transparent 60%,rgba(255,255,255,.28))}
+:root[data-theme="light"] .kc-hint b{color:var(--ink-soft)}
 </style>
+<script>try{if(localStorage.getItem('tt_theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 </head>
 <body>
 <div class="bg-orbs"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
 
 <nav id="nav">
   <a class="brand" href="#hero" aria-label="Wanda"><span class="dot"></span><span class="wm" aria-hidden="true"><span style="animation-delay:.1s">W</span><span style="animation-delay:.24s">a</span><span style="animation-delay:.38s">n</span><span style="animation-delay:.52s">d</span><span style="animation-delay:.66s">a</span></span></a>
-  <button class="menu-btn" id="menuBtn">☰</button>
-  <div class="nav-links" id="navLinks">
-    <a href="#about">About</a>
-    <a href="#cyberneuro">CyberNeuro</a>
-    <a href="#brainviewer">Brain Viewer</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-    <a class="nav-cta" href="#contact">Get in touch</a>
+  <div class="nav-right">
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#cyberneuro">CyberNeuro</a>
+      <a href="#brainviewer">Brain Viewer</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark theme" title="Switch theme">🌙</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
   </div>
 </nav>
 
@@ -616,6 +673,22 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
 <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/jsvectormap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/maps/world.js"></script>
 <script>
+/* ---------- theme toggle (dark / light) ---------- */
+(function(){
+  const root=document.documentElement,btn=document.getElementById('themeToggle'),meta=document.querySelector('meta[name=theme-color]');
+  function apply(t){
+    if(t==='light')root.setAttribute('data-theme','light');else root.removeAttribute('data-theme');
+    if(btn)btn.textContent=t==='light'?'☀️':'🌙';
+    if(meta)meta.setAttribute('content',t==='light'?'#f5f3ec':'#6366f1');
+  }
+  let saved='dark';try{if(localStorage.getItem('tt_theme')==='light')saved='light';}catch(e){}
+  apply(saved);
+  if(btn)btn.addEventListener('click',()=>{
+    const next=root.getAttribute('data-theme')==='light'?'dark':'light';
+    apply(next);try{localStorage.setItem('tt_theme',next);}catch(e){}
+  });
+})();
+
 /* ---------- year ---------- */
 document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -926,6 +999,10 @@ render();
   addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;});
   addEventListener('mouseleave',()=>{mouse.x=mouse.y=-999;});
   function loop(){
+    const light=document.documentElement.getAttribute('data-theme')==='light';
+    const nodeCol=light?'rgba(79,70,229,.8)':'rgba(165,180,252,.9)';
+    const haloCol=light?'rgba(99,102,241,.06)':'rgba(139,92,246,.08)';
+    const lineMul=light?.7:.5;
     x.clearRect(0,0,w,h);
     for(const p of nodes){
       p.x+=p.vx;p.y+=p.vy;
@@ -938,7 +1015,7 @@ render();
       for(let j=i+1;j<nodes.length;j++){
         const a=nodes[i],b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
         if(d<128){
-          const o=(1-d/128)*.5;
+          const o=(1-d/128)*lineMul;
           const g=x.createLinearGradient(a.x,a.y,b.x,b.y);
           g.addColorStop(0,`rgba(99,102,241,${o})`);
           g.addColorStop(1,`rgba(34,211,238,${o})`);
@@ -949,9 +1026,9 @@ render();
     }
     for(const p of nodes){
       x.beginPath();x.arc(p.x,p.y,p.r,0,7);
-      x.fillStyle='rgba(165,180,252,.9)';x.fill();
+      x.fillStyle=nodeCol;x.fill();
       x.beginPath();x.arc(p.x,p.y,p.r*3,0,7);
-      x.fillStyle='rgba(139,92,246,.08)';x.fill();
+      x.fillStyle=haloCol;x.fill();
     }
     requestAnimationFrame(loop);
   }
