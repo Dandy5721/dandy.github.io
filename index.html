@@ -39,7 +39,7 @@ body{
   background:var(--bg);
   color:var(--ink);
   line-height:1.6;
-  overflow-x:hidden;
+  overflow-x:clip;
   -webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none}
@@ -86,7 +86,7 @@ section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
 .gtext{background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
 /* ===== HERO ===== */
-#hero{min-height:100vh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px}
+#hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px}
 #net{position:absolute;inset:0;z-index:0;width:100%;height:100%}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
 .hero-tag{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--panel-brd);padding:7px 16px;border-radius:100px;font-size:.82rem;color:var(--ink-soft);margin-bottom:26px}
@@ -229,8 +229,8 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .project-feats li svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--cyan)}
 .project-links{display:flex;gap:11px;flex-wrap:wrap}
 .access-chip{display:flex;align-items:center;gap:13px;margin:18px 0 16px;padding:12px 16px;border-radius:14px;text-decoration:none;position:relative;overflow:hidden;background:linear-gradient(130deg,rgba(99,102,241,.16),rgba(34,211,238,.09));border:1px solid rgba(139,92,246,.35);transition:transform .25s,box-shadow .25s,border-color .25s}
-.access-chip::before{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);transform:skewX(-20deg);animation:shine 5s ease-in-out infinite;pointer-events:none}
-@keyframes shine{0%,55%{left:-60%}100%{left:140%}}
+.access-chip::before{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);transform:translateX(0) skewX(-20deg);animation:shine 5s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%,55%{transform:translateX(0) skewX(-20deg)}100%{transform:translateX(445%) skewX(-20deg)}}
 .access-chip:hover{transform:translateY(-2px);border-color:var(--violet);box-shadow:0 14px 34px -14px var(--violet)}
 .ac-pulse{flex:none;width:10px;height:10px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
 .ac-body{display:flex;flex-direction:column;gap:2px;line-height:1.2;flex:1;min-width:0}
@@ -238,6 +238,21 @@ h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,6vw,4.4rem);font-weight:70
 .ac-url{font-family:'Space Grotesk';font-weight:700;font-size:1.04rem;background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ac-go{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--grad);color:#fff;font-size:1.05rem;font-weight:700;box-shadow:0 8px 20px -8px var(--violet);transition:.25s}
 .access-chip:hover .ac-go{transform:translateX(2px) scale(1.07)}
+
+/* ===== GALLERY ===== */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery .shot{position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px solid var(--panel-brd);cursor:zoom-in;background:#0d1126}
+.gallery .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gallery .shot:hover img{transform:scale(1.07)}
+.gallery .shot::after{content:"⤢";position:absolute;inset:0;display:grid;place-items:center;font-size:1.5rem;color:#fff;opacity:0;background:linear-gradient(160deg,rgba(99,102,241,.25),rgba(7,10,23,.45));transition:.3s}
+.gallery .shot:hover::after{opacity:1}
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(5,6,15,.93);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:94vw;max-height:88vh;border-radius:12px;box-shadow:var(--shadow)}
+.lightbox .lb-close{position:absolute;top:16px;right:22px;font-size:2.1rem;color:#fff;cursor:pointer;line-height:1;background:none;border:none}
+.lightbox .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:2.6rem;color:#fff;cursor:pointer;background:none;border:none;padding:8px 14px;opacity:.75;transition:.2s}
+.lightbox .lb-nav:hover{opacity:1}
+.lightbox .lb-prev{left:8px}.lightbox .lb-next{right:8px}
 .video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--panel-brd);box-shadow:var(--shadow);background:#000}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
@@ -296,6 +311,16 @@ footer a{color:var(--ink-soft)}
 .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 
+/* keyboard focus ring (accessibility) */
+a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visible,.filter:focus-visible,.access-chip:focus-visible,.gallery .shot:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:8px}
+
+/* respect reduced-motion preference */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .ring,.ring.two,.float-card,.hero-tag .pulse,.ac-pulse,.access-chip::before,.viewer-load .spin{animation:none!important}
+}
+
 @media(max-width:900px){
   .hero-grid{grid-template-columns:1fr;gap:30px;text-align:center}
   .hero-tag,.cta-row,.socials{justify-content:center}
@@ -339,7 +364,7 @@ footer a{color:var(--ink-soft)}
 
 <!-- ===== HERO ===== -->
 <section id="hero">
-  <canvas id="net"></canvas>
+  <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
       <div class="hero-tag"><span class="pulse"></span>Assistant Professor · Recruiting students &amp; open to collaboration</div>
@@ -425,10 +450,10 @@ footer a{color:var(--ink-soft)}
         <div class="sub">A Next-Generation Platform for Mental Health Research</div>
         <p><b style="color:#fff">CyberNeuro Assistant</b> brings large medical foundation models and a team of cooperating AI agents to the neuroscientist's desk — turning raw connectomes and neuroimaging data into insight through natural-language conversation and interactive visualization.</p>
         <ul class="project-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Chat with your data — ask questions about brain networks &amp; neuroimaging in plain language</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Multi-agent reasoning that plans, retrieves and analyzes across modalities</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Interactive 3D visualization of complex brain connectivity &amp; network structures</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Built for the MedGemma Impact Challenge to accelerate mental-health discovery</li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Chat with your data — ask questions about brain networks &amp; neuroimaging in plain language</li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Multi-agent reasoning that plans, retrieves and analyzes across modalities</li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Interactive 3D visualization of complex brain connectivity &amp; network structures</li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>Built for the MedGemma Impact Challenge to accelerate mental-health discovery</li>
         </ul>
       </div>
       <div class="pc-media">
