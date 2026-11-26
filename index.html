@@ -421,9 +421,6 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
 :root[data-theme="light"] .swap-hint{color:var(--ink-soft);background:rgba(255,255,255,.72)}
 :root[data-theme="light"] .portrait::after{background:linear-gradient(160deg,transparent 60%,rgba(255,255,255,.28))}
 :root[data-theme="light"] .kc-hint b{color:var(--ink-soft)}
-/* visitor map -> green on light */
-:root[data-theme="light"] #worldmap .jvm-region{fill:#b7e2cb!important}
-:root[data-theme="light"] #worldmap .jvm-marker,:root[data-theme="light"] #worldmap circle{fill:#0e7a4e!important;stroke:#f6f3eb!important}
 </style>
 <script>try{if(localStorage.getItem('tt_theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 </head>
@@ -696,6 +693,7 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
     if(t==='light')root.setAttribute('data-theme','light');else root.removeAttribute('data-theme');
     if(btn)btn.textContent=t==='light'?'☀️':'🌙';
     if(meta)meta.setAttribute('content',t==='light'?'#f5f3ec':'#6366f1');
+    window.dispatchEvent(new CustomEvent('themechange'));
   }
   let saved='dark';try{if(localStorage.getItem('tt_theme')==='light')saved='light';}catch(e){}
   apply(saved);
@@ -841,17 +839,26 @@ render();
 
   const flag=cc=>{try{return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>127397+c.charCodeAt(0)));}catch(e){return'📍';}};
 
-  function render(markers){
+  let mapInstance=null,mapMarkers=[];
+  function draw(){
+    const light=document.documentElement.getAttribute('data-theme')==='light';
+    const C=light
+      ?{region:'#b7e2cb',regionHover:'#10b981',stroke:'#f6f3eb',marker:'#0e7a4e',markerHover:'#065f46',label:'#17241f'}
+      :{region:'#2b3160',regionHover:'#6366f1',stroke:'#0b0f24',marker:'#22d3ee',markerHover:'#a5b4fc',label:'#eef1ff'};
+    try{if(mapInstance&&mapInstance.destroy)mapInstance.destroy();}catch(e){}
+    mapEl.innerHTML='';
     try{
-      new jsVectorMap({
+      mapInstance=new jsVectorMap({
         selector:'#worldmap',map:'world',zoomButtons:false,zoomOnScroll:false,backgroundColor:'transparent',
-        regionStyle:{initial:{fill:'#2b3160',stroke:'#0b0f24','stroke-width':.4},hover:{fill:'#6366f1',fillOpacity:1}},
-        markers:markers,
-        markerStyle:{initial:{fill:'#22d3ee',stroke:'#0b0f24','stroke-width':1,r:5,fillOpacity:.85},hover:{fill:'#a5b4fc',r:8}},
-        markerLabelStyle:{initial:{fontFamily:'Inter',fontSize:12,fill:'#eef1ff'}}
+        regionStyle:{initial:{fill:C.region,stroke:C.stroke,'stroke-width':.4},hover:{fill:C.regionHover,fillOpacity:1}},
+        markers:mapMarkers,
+        markerStyle:{initial:{fill:C.marker,stroke:C.stroke,'stroke-width':1,r:5,fillOpacity:.85},hover:{fill:C.markerHover,r:8}},
+        markerLabelStyle:{initial:{fontFamily:'Inter',fontSize:12,fill:C.label}}
       });
     }catch(e){hideCard();}
   }
+  function render(markers){mapMarkers=markers;draw();}
+  window.addEventListener('themechange',draw);
 
   const geo=()=>Promise.race([
     fetch('https://ipwho.is/').then(r=>r.json()).catch(()=>null),
