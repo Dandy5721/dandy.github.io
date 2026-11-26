@@ -86,8 +86,11 @@ section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
 .gtext{background:var(--grad-2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
 /* ===== HERO ===== */
-#hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px}
+#hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px;overflow:hidden}
 #net{position:absolute;inset:0;z-index:0;width:100%;height:100%}
+/* giant background wordmark */
+.hero-watermark{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;pointer-events:none;user-select:none;text-align:center}
+.hero-watermark span{font-family:'Space Grotesk',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.02em;line-height:.82;white-space:nowrap;font-size:clamp(3.4rem,17vw,15rem);background:linear-gradient(120deg,#818cf8,#c084fc,#22d3ee);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;opacity:.07}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
 .hero-tag{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--panel-brd);padding:7px 16px;border-radius:100px;font-size:.82rem;color:var(--ink-soft);margin-bottom:26px}
 .hero-tag .pulse{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
@@ -365,6 +368,7 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
 <!-- ===== HERO ===== -->
 <section id="hero">
   <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-watermark" aria-hidden="true"><span>UNC</span><span>ACMLAB</span></div>
   <div class="wrap hero-grid">
     <div>
       <div class="hero-tag"><span class="pulse"></span>Assistant Professor · Recruiting students &amp; open to collaboration</div>
