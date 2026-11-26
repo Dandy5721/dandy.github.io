@@ -88,9 +88,12 @@ section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
 /* ===== HERO ===== */
 #hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px;overflow:hidden}
 #net{position:absolute;inset:0;z-index:0;width:100%;height:100%}
-/* giant background wordmark */
-.hero-watermark{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;pointer-events:none;user-select:none;text-align:center}
-.hero-watermark span{font-family:'Space Grotesk',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.02em;line-height:.82;white-space:nowrap;font-size:clamp(3.4rem,17vw,15rem);background:linear-gradient(120deg,#818cf8,#c084fc,#22d3ee);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;opacity:.07}
+/* 3D "piano key" background wordmark */
+.keycaps{position:absolute;left:50%;bottom:5%;z-index:1;transform:translateX(-50%) perspective(1000px) rotateX(28deg);transform-style:preserve-3d;display:flex;align-items:flex-end;gap:clamp(5px,.9vw,11px);pointer-events:none;user-select:none;filter:drop-shadow(0 34px 44px rgba(0,0,0,.45));opacity:.9}
+.keycaps .kc-gap{width:clamp(9px,3vw,34px)}
+.keycaps .key{display:grid;place-items:center;width:clamp(30px,6.4vw,78px);height:clamp(38px,7.6vw,90px);border-radius:clamp(9px,1.4vw,14px);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1rem,2.8vw,2.4rem);color:#fff;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 78%,#fff),var(--c) 52%,color-mix(in srgb,var(--c) 62%,#000));box-shadow:inset 0 2px 0 rgba(255,255,255,.55),0 7px 0 color-mix(in srgb,var(--c) 52%,#000),0 16px 26px -8px rgba(0,0,0,.55);text-shadow:0 1px 3px rgba(0,0,0,.3);animation:keyfloat 5s ease-in-out infinite}
+.keycaps .key:nth-child(2){animation-delay:.2s}.keycaps .key:nth-child(3){animation-delay:.4s}.keycaps .key:nth-child(5){animation-delay:.6s}.keycaps .key:nth-child(6){animation-delay:.8s}.keycaps .key:nth-child(7){animation-delay:1s}.keycaps .key:nth-child(8){animation-delay:1.2s}.keycaps .key:nth-child(9){animation-delay:1.4s}.keycaps .key:nth-child(10){animation-delay:1.6s}
+@keyframes keyfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;width:100%}
 .hero-tag{display:inline-flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--panel-brd);padding:7px 16px;border-radius:100px;font-size:.82rem;color:var(--ink-soft);margin-bottom:26px}
 .hero-tag .pulse{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
@@ -368,7 +371,18 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
 <!-- ===== HERO ===== -->
 <section id="hero">
   <canvas id="net" aria-hidden="true"></canvas>
-  <div class="hero-watermark" aria-hidden="true"><span>UNC</span><span>ACMLAB</span></div>
+  <div class="keycaps" aria-hidden="true">
+    <span class="key" style="--c:#f472b6">U</span>
+    <span class="key" style="--c:#fb923c">N</span>
+    <span class="key" style="--c:#facc15">C</span>
+    <span class="kc-gap"></span>
+    <span class="key" style="--c:#34d399">A</span>
+    <span class="key" style="--c:#22d3ee">C</span>
+    <span class="key" style="--c:#38bdf8">M</span>
+    <span class="key" style="--c:#6366f1">L</span>
+    <span class="key" style="--c:#8b5cf6">A</span>
+    <span class="key" style="--c:#c084fc">B</span>
+  </div>
   <div class="wrap hero-grid">
     <div>
       <div class="hero-tag"><span class="pulse"></span>Assistant Professor · Recruiting students &amp; open to collaboration</div>
