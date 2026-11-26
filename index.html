@@ -359,18 +359,31 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
   .fc-4{bottom:0;right:-8px}
 }
 
-/* ===== LIGHT THEME (Dose-style cream) ===== */
+/* ===== LIGHT THEME — Dose palette (cream paper + green) ===== */
 :root[data-theme="light"]{
-  --bg:#f5f3ec;--bg-2:#eceae1;
-  --panel:rgba(26,28,54,.045);--panel-brd:rgba(26,28,54,.12);
-  --ink:#1b1d2e;--ink-soft:#4a4e68;--ink-dim:#777b94;
-  --shadow:0 22px 50px -26px rgba(79,70,229,.3);
+  --bg:#f6f3eb;--bg-2:#eef2ea;
+  --panel:rgba(23,36,31,.05);--panel-brd:rgba(23,36,31,.14);
+  --ink:#17241f;--ink-soft:#3b4a43;--ink-dim:#5c6b63;
+  --indigo:#1a8a5c;--violet:#167a50;--cyan:#0f9f6e;
+  --grad:linear-gradient(120deg,#1a8a5c 0%,#10b981 55%,#34d399 100%);
+  --grad-2:linear-gradient(120deg,#157a50,#2cc98a);
+  --shadow:0 22px 50px -26px rgba(16,114,76,.32);
 }
-:root[data-theme="light"] nav{background:rgba(245,243,236,.62)}
-:root[data-theme="light"] nav.scrolled{background:rgba(245,243,236,.9)}
-:root[data-theme="light"] .orb{opacity:.16}
+:root[data-theme="light"] nav{background:rgba(246,243,235,.64)}
+:root[data-theme="light"] nav.scrolled{background:rgba(246,243,235,.9)}
+:root[data-theme="light"] .orb.a{background:#10b981}
+:root[data-theme="light"] .orb.b{background:#34d399}
+:root[data-theme="light"] .orb.c{background:#5eead4}
+:root[data-theme="light"] .orb{opacity:.14}
 :root[data-theme="light"] .orb.b{opacity:.12}
 :root[data-theme="light"] .orb.c{opacity:.1}
+:root[data-theme="light"] .brand .wm span{background:linear-gradient(120deg,#1a8a5c,#10b981,#34d399)}
+:root[data-theme="light"] .ring{border-color:rgba(16,153,102,.3)}
+:root[data-theme="light"] .ring.two{border-color:rgba(52,211,153,.2)}
+:root[data-theme="light"] .contact-card{background:linear-gradient(160deg,rgba(16,185,129,.1),rgba(52,211,153,.05))}
+:root[data-theme="light"] .recruit-banner{background:linear-gradient(135deg,rgba(16,185,129,.12),rgba(52,211,153,.05));border-color:rgba(16,153,102,.3)}
+:root[data-theme="light"] .access-chip{background:linear-gradient(130deg,rgba(16,185,129,.14),rgba(52,211,153,.08));border-color:rgba(16,153,102,.32)}
+:root[data-theme="light"] .hero-tag .pulse{background:#10b981}
 /* white/near-white emphasis text -> dark ink */
 :root[data-theme="light"] [style*="color:#fff"],
 :root[data-theme="light"] .nav-links a:hover,
@@ -388,22 +401,22 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
 :root[data-theme="light"] .recruit-banner .rb-body a,
 :root[data-theme="light"] .pub-links a,
 :root[data-theme="light"] .mail-ico,
-:root[data-theme="light"] .vmap-note a{color:#4f46e5}
+:root[data-theme="light"] .vmap-note a,
 :root[data-theme="light"] .socials a:hover,
 :root[data-theme="light"] .filter:hover,
 :root[data-theme="light"] .pub-links a:hover,
 :root[data-theme="light"] .vtab:hover,
 :root[data-theme="light"] .vtab.vopen:hover,
 :root[data-theme="light"] .mail-ico:hover,
-:root[data-theme="light"] .pub-title a:hover{color:#4f46e5}
-:root[data-theme="light"] .project-card .sub{color:#5b55d6}
-:root[data-theme="light"] .chip{color:#4338ca}
-:root[data-theme="light"] .tl-body .venue{color:#0e7490;background:rgba(34,211,238,.16);border-color:rgba(34,211,238,.45)}
+:root[data-theme="light"] .pub-title a:hover,
+:root[data-theme="light"] .project-card .sub{color:#146b47}
+:root[data-theme="light"] .chip{color:#146b47;background:rgba(16,153,102,.1);border-color:rgba(16,153,102,.3)}
+:root[data-theme="light"] .tl-body .venue{color:#0f6b47;background:rgba(16,185,129,.14);border-color:rgba(16,185,129,.4)}
 /* white-ish literal fills -> dark tint on light */
-:root[data-theme="light"] .btn-ghost:hover{background:rgba(26,28,54,.06)}
-:root[data-theme="light"] .react-btn{background:rgba(26,28,54,.04)}
-:root[data-theme="light"] .vtab{background:rgba(26,28,54,.04)}
-:root[data-theme="light"] .theme-toggle:hover{background:rgba(26,28,54,.06)}
+:root[data-theme="light"] .btn-ghost:hover{background:rgba(23,36,31,.06)}
+:root[data-theme="light"] .react-btn{background:rgba(23,36,31,.04)}
+:root[data-theme="light"] .vtab{background:rgba(23,36,31,.04)}
+:root[data-theme="light"] .theme-toggle:hover{background:rgba(23,36,31,.06)}
 :root[data-theme="light"] .float-card{background:rgba(255,255,255,.82)}
 :root[data-theme="light"] .swap-hint{color:var(--ink-soft);background:rgba(255,255,255,.72)}
 :root[data-theme="light"] .portrait::after{background:linear-gradient(160deg,transparent 60%,rgba(255,255,255,.28))}
@@ -1000,9 +1013,10 @@ render();
   addEventListener('mouseleave',()=>{mouse.x=mouse.y=-999;});
   function loop(){
     const light=document.documentElement.getAttribute('data-theme')==='light';
-    const nodeCol=light?'rgba(79,70,229,.8)':'rgba(165,180,252,.9)';
-    const haloCol=light?'rgba(99,102,241,.06)':'rgba(139,92,246,.08)';
+    const nodeCol=light?'rgba(16,122,80,.8)':'rgba(165,180,252,.9)';
+    const haloCol=light?'rgba(16,185,129,.07)':'rgba(139,92,246,.08)';
     const lineMul=light?.7:.5;
+    const lc0=light?'16,153,102':'99,102,241',lc1=light?'52,211,153':'34,211,238';
     x.clearRect(0,0,w,h);
     for(const p of nodes){
       p.x+=p.vx;p.y+=p.vy;
@@ -1017,8 +1031,8 @@ render();
         if(d<128){
           const o=(1-d/128)*lineMul;
           const g=x.createLinearGradient(a.x,a.y,b.x,b.y);
-          g.addColorStop(0,`rgba(99,102,241,${o})`);
-          g.addColorStop(1,`rgba(34,211,238,${o})`);
+          g.addColorStop(0,`rgba(${lc0},${o})`);
+          g.addColorStop(1,`rgba(${lc1},${o})`);
           x.strokeStyle=g;x.lineWidth=.7;
           x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();
         }
