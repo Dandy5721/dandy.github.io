@@ -89,7 +89,9 @@ section{position:relative;z-index:1;padding:96px clamp(18px,5vw,48px)}
 #hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px;overflow:hidden}
 #net{position:absolute;inset:0;z-index:0;width:100%;height:100%}
 /* 3D "piano key" background wordmark */
-.keycaps{position:absolute;left:50%;bottom:5%;z-index:1;transform:translateX(-50%) perspective(1000px) rotateX(28deg);transform-style:preserve-3d;display:flex;align-items:flex-end;gap:clamp(5px,.9vw,11px);pointer-events:none;user-select:none;filter:drop-shadow(0 34px 44px rgba(0,0,0,.45));opacity:.9}
+.keycaps{position:absolute;left:50%;bottom:7.5%;z-index:1;transform:translateX(-50%) perspective(1000px) rotateX(28deg);transform-style:preserve-3d;display:flex;align-items:flex-end;gap:clamp(5px,.9vw,11px);pointer-events:none;user-select:none;filter:drop-shadow(0 34px 44px rgba(0,0,0,.45));opacity:.9}
+.kc-hint{position:absolute;left:50%;bottom:2.4%;transform:translateX(-50%);z-index:1;pointer-events:none;text-align:center;white-space:nowrap;font-size:clamp(.66rem,1.4vw,.78rem);color:var(--ink-dim);letter-spacing:.3px;opacity:.85}
+.kc-hint b{font-family:'JetBrains Mono',monospace;color:var(--ink-soft);font-weight:500;letter-spacing:1px}
 .keycaps .kc-gap{width:clamp(9px,3vw,34px)}
 .keycaps .key{pointer-events:auto;cursor:pointer;display:grid;place-items:center;width:clamp(30px,6.4vw,78px);height:clamp(38px,7.6vw,90px);border-radius:clamp(9px,1.4vw,14px);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1rem,2.8vw,2.4rem);color:#fff;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 78%,#fff),var(--c) 52%,color-mix(in srgb,var(--c) 62%,#000));box-shadow:inset 0 2px 0 rgba(255,255,255,.55),0 7px 0 color-mix(in srgb,var(--c) 52%,#000),0 16px 26px -8px rgba(0,0,0,.55);text-shadow:0 1px 3px rgba(0,0,0,.3);animation:keyfloat 5s ease-in-out infinite}
 .keycaps .key:nth-child(2){animation-delay:.2s}.keycaps .key:nth-child(3){animation-delay:.4s}.keycaps .key:nth-child(5){animation-delay:.6s}.keycaps .key:nth-child(6){animation-delay:.8s}.keycaps .key:nth-child(7){animation-delay:1s}.keycaps .key:nth-child(8){animation-delay:1.2s}.keycaps .key:nth-child(9){animation-delay:1.4s}.keycaps .key:nth-child(10){animation-delay:1.6s}
@@ -386,6 +388,7 @@ a:focus-visible,button:focus-visible,.react-btn:focus-visible,.vtab:focus-visibl
     <span class="key" style="--c:#8b5cf6">A</span>
     <span class="key" style="--c:#c084fc">B</span>
   </div>
+  <div class="kc-hint" aria-hidden="true">🎹 tap a key — or play with <b>A S D F G H J K L</b></div>
   <div class="wrap hero-grid">
     <div>
       <div class="hero-tag"><span class="pulse"></span>Assistant Professor · Recruiting students &amp; open to collaboration</div>
@@ -866,10 +869,24 @@ render();
       o.start(t);o.stop(t+.62);
     }catch(e){}
   }
+  function playKey(i){
+    const k=keys[i];if(!k)return;
+    note(freqs[i%freqs.length]);
+    k.classList.remove('pressed');void k.offsetWidth;k.classList.add('pressed');
+  }
   keys.forEach((k,i)=>{
-    const hit=()=>{note(freqs[i%freqs.length]);k.classList.remove('pressed');void k.offsetWidth;k.classList.add('pressed');};
-    k.addEventListener('pointerdown',e=>{e.preventDefault();hit();});
+    k.addEventListener('pointerdown',e=>{e.preventDefault();playKey(i);});
     k.addEventListener('animationend',()=>k.classList.remove('pressed'));
+  });
+  // play with the computer keyboard: home row A S D F G H J K L -> the 9 keys
+  const kbmap={a:0,s:1,d:2,f:3,g:4,h:5,j:6,k:7,l:8};
+  addEventListener('keydown',e=>{
+    if(e.repeat||e.ctrlKey||e.metaKey||e.altKey)return;
+    const t=e.target;
+    if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable))return;
+    const i=kbmap[(e.key||'').toLowerCase()];
+    if(i==null)return;
+    playKey(i);
   });
 })();
 
